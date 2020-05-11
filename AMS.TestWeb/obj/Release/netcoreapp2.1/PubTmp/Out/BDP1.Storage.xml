@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BDP1.Storage</name>
+    </assembly>
+    <members>
+        <member name="T:BDP1.Storage.BussinessException">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>
+        </member>
+        <member name="T:BDP1.Storage.Context.AreaManagerContext">
+            <summary>
+            区域管理链接上下文
+            </summary>
+        </member>
+        <member name="M:BDP1.Storage.Context.AreaManagerContext.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:BDP1.Storage.Context.AreaManagerContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{BDP1.Storage.Context.AreaManagerContext})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="T:BDP1.Storage.Models.TArea">
+            <summary>
+            区域
+            </summary>
+        </member>
+        <member name="P:BDP1.Storage.Models.TLocationConvert.CalcId">
+            <summary>
+            计算Id
+            </summary>
+        </member>
+        <member name="T:BDP1.Storage.Repository.PolymerRepository">
+            <summary>
+            聚合仓储
+            </summary>
+        </member>
+        <member name="M:BDP1.Storage.Repository.PolymerRepository.GetExistedProvince(System.String)">
+            <summary>
+            根据区域Id获取存在省份
+            </summary>
+            <param name="areaId">区域Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.PolymerRepository.GetAreaIdByLocationId(System.Int32)">
+            <summary>
+            根据区域Id获取存在省份
+            </summary>
+            <param name="areaId">区域Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.PolymerRepository.GetAreaProvinceIdByCountryId(System.Int32)">
+            <summary>
+            根据国家Id获取区域下所有省份ID
+            by:zhiwei.Tang 2018.06.29
+            </summary>
+            <param name="countryId">国家Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:BDP1.Storage.Repository.TAreaLocationRepository">
+            <summary>
+            区域关联
+            </summary>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TAreaLocationRepository.LoadQueryable">
+            <summary>
+            获取区域关联集合
+            --魏明 2018.08.08
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TAreaLocationRepository.BatchDeleteByAreaIdAsync(System.String)">
+            <summary>
+            根据区域Id批量删除
+            by:zhiwei.Tang 2018.06.20
+            </summary>
+            <param name="areaId">区域Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TAreaLocationRepository.GetByAreaIds(System.Collections.Generic.List{System.String})">
+            <summary>
+            根据一组区域Id查询
+            by:zhiwei.Tang 2018.06.20
+            </summary>
+            <param name="areaIds">一组区域Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TAreaLocationRepository.GetByAreaIds(System.String)">
+            <summary>
+            根据区域Id查询
+            by:zhiwei.Tang 2018.06.20
+            </summary>
+            <param name="areaId">一组区域Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TAreaRepository.LoadQueryable">
+            <summary>
+            获取区域集合
+            --魏明 2018.08.08
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TAreaRepository.GetAreaDetailsById(System.String)">
+            <summary>
+            根据主键Id获取区域信息
+            by:zhiwei.Tang 2018.06.20
+            </summary>
+            <param name="id">主键Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TAreaRepository.GetAreaById(System.Collections.Generic.List{System.String})">
+            <summary>
+            根据主键Id获取区域信息
+            by:zhiwei.Tang 2018.06.25
+            </summary>
+            <param name="id">主键Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TAreaRepository.GetAll(System.Boolean)">
+            <summary>
+            获取所有区域数据
+            by:zhiwei.Tang 2018.06.20
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TAreaRepository.GetAreaByCountryId(System.Int32)">
+            <summary>
+            根据国家Id查询区域信息
+            by:zhiwei.Tang 2018.06.20
+            </summary>
+            <param name="countryId">国家Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TAreaRepository.GetAllCountryId">
+            <summary>
+            获取所有国家
+            by:zhiwei.Tang 2018.07.23
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetAllAsync">
+            <summary>
+            获取所有地点
+            by:zhiwei.Tang 2018.06.19
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetAll">
+            <summary>
+            获取所有地点
+            by:zhiwei.Tang 2018.06.19
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetAllLocations">
+            <summary>
+            获取所有地点
+            -魏明 2018.08.13
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetCountries">
+            <summary>
+            获取所有国家
+            by:zhiwei.Tang 2018.06.19
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetByPId(System.Int32)">
+            <summary>
+            根据PID条件获取
+            by:zhiwei.Tang 2018.06.19
+            </summary>
+            <param name="pId">父Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetByPId(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            根据PID条件获取
+            by:zhiwei.Tang 2018.06.19
+            </summary>
+            <param name="pId">父Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetByPId(System.Int32,System.Int32)">
+            <summary>
+            根据PID条件获取
+            by:zhiwei.Tang 2018.06.19
+            </summary>
+            <param name="pId">父Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetById(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            根据一组主键Id获取
+            by:zhiwei.Tang 2018.06.20
+            </summary>
+            <param name="ids">一组主键Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetByNameCn(System.Collections.Generic.List{System.String})">
+            <summary>
+            根据中文名称获取数据
+            by:zhiwei.Tang 2018.07.09
+            </summary>
+            <param name="nameCns">一组中文名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetByNameCn(System.String)">
+            <summary>
+            根据中文名称获取数据
+            by:zhiwei.Tang 2018.07.09
+            </summary>
+            <param name="name">中文名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.Storage.Repository.TLocationRepository.GetProvinces">
+            <summary>
+            获取所有省份
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

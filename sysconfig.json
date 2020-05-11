@@ -1,0 +1,11 @@
+{
+  "TermAuditShowUrl": "",
+  "TermCourseTimetableAuditShowUrl": "",
+  "JobAccessSecret": "5af911d9dsznhEkfO8tJ8HdFtyrEdOWH",
+  "TermType": {
+    "Spring": 13983659425720320,
+    "Summer": 13983659548239872,
+    "Autumn": 13983659498825728,
+    "Winter": 13983659691108352
+  }
+}

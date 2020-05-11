@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BDP2.Storage</name>
+    </assembly>
+    <members>
+        <member name="T:BDP2.Storage.Context.BDPContext">
+            <summary>
+            数据库链接上下文
+            </summary>
+        </member>
+        <member name="M:BDP2.Storage.Context.BDPContext.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:BDP2.Storage.Context.BDPContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{BDP2.Storage.Context.BDPContext})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="T:BDP2.Storage.Mapping.TCommonDataChangeLogMap">
+            <summary>
+            公共数据变更记录
+            </summary>
+        </member>
+        <member name="T:BDP2.Storage.Mapping.TCommonDataMap">
+            <summary>
+            公共数据
+            </summary>
+        </member>
+        <member name="T:BDP2.Storage.Models.TCommonData">
+            <summary>
+            公共数据
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonData.CommID">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonData.BussinessID">
+            <summary>
+            业务号
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonData.CommCode">
+            <summary>
+            数据编号
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonData.CommName">
+            <summary>
+            数据名称
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonData.CommValue">
+            <summary>
+            数据值集合
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonData.IsFlag">
+            <summary>
+            是否可叠加
+            </summary>
+        </member>
+        <member name="T:BDP2.Storage.Models.TCommonDataChangeLog">
+            <summary>
+            公共数据变更记录
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonDataChangeLog.CommID">
+            <summary>
+            公共数据Id
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonDataChangeLog.BussinessID">
+            <summary>
+            业务号
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonDataChangeLog.CommCode">
+            <summary>
+            数据编号
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonDataChangeLog.CommName">
+            <summary>
+            数据名称
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonDataChangeLog.CommValue">
+            <summary>
+            数据值集合
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonDataChangeLog.IsFlag">
+            <summary>
+            是否可叠加
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonDataChangeLog.UserId">
+            <summary>
+            变更人Id
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonDataChangeLog.ChangeTime">
+            <summary>
+            变更时间
+            </summary>
+        </member>
+        <member name="P:BDP2.Storage.Models.TCommonDataChangeLog.Msg">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="T:BDP2.Storage.Repository.BaseRepository`1">
+            <summary>
+            仓储基类
+            </summary>
+        </member>
+        <member name="M:BDP2.Storage.Repository.BusinessInfoRepository.GetBusinesses">
+            <summary>
+            获取所有业务
+            --魏明 2018年9月1日
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BDP2.Storage.Repository.TCommonDataChangeLogRepository">
+            <summary>
+            TCommonDataChangeLog仓储
+            </summary>
+        </member>
+        <member name="T:BDP2.Storage.Repository.TCommonDataRepository">
+            <summary>
+            TCommonData仓储
+            </summary>
+        </member>
+        <member name="M:BDP2.Storage.Repository.TCommonDataRepository.UpdateCommonData(BDP2.Storage.Models.TCommonDataChangeLog,BDP2.Storage.Models.TCommonData)">
+            <summary>
+            更新
+            --魏明 2018.08.28
+            </summary>
+            <param name="dataDto"></param>
+            <param name="userId">更新人Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP2.Storage.Repository.TCommonDataRepository.GetListByCommonCode(System.String)">
+            <summary>
+            根据数据关键字获取数据集合
+            --魏明 2018.08.28
+            </summary>
+            <param name="commonCode">数据关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP2.Storage.Repository.TCommonDataRepository.GetListByBussinessId(System.Byte)">
+            <summary>
+            根据业务编号获取数据集合
+            --魏明 2018.08.29
+            </summary>
+            <param name="bussinessId">业务编号</param>
+            <returns></returns>
+        </member>
+        <member name="T:BDP2.Storage.Repository.UnitOfWork">
+            <summary>
+            事件单元
+            </summary>
+        </member>
+        <member name="M:BDP2.Storage.Repository.UnitOfWork.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:BDP2.Storage.Repository.UnitOfWork.Begin">
+            <summary>
+            开启事务
+            </summary>
+        </member>
+        <member name="M:BDP2.Storage.Repository.UnitOfWork.Commit">
+            <summary>
+            提交事务
+            </summary>
+        </member>
+        <member name="M:BDP2.Storage.Repository.UnitOfWork.Rollback">
+            <summary>
+            事务回滚
+            </summary>
+        </member>
+        <member name="T:BDP2.Storage.TestRepository">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>
+        </member>
+    </members>
+</doc>

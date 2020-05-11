@@ -1,0 +1,24 @@
+﻿2019-03-18 11:18:24,111 线程ID:[29] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-18 11:18:24 100	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLBA113DCHA moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：OMC.API.Controllers.CompanyController.Get (AMS.API)
+RequestParameter：
+
+                   ErrorMessage: token为空
+                   StackMessage:    at Jerrisoft.Platform.IdentityClient.Filters.AuthenticationService.ValidateSsoUser()
+   at Jerrisoft.Platform.IdentityClient.Filters.SsoAuthorizeAttribute.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-18 19:58:07,139 线程ID:[35] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-18 07:58:07 109	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-18 19:58:12,384 线程ID:[35] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-18 07:58:12 384	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+

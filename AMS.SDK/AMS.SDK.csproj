@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Request\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.Service\AMS.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Jerrisoft.Platform.Logic">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Storage">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Storage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

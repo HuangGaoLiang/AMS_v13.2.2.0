@@ -1,0 +1,1161 @@
+﻿2019-03-16 09:52:37,624 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 09:52:37 611	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9M73N8J8T moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"撒大大"}
+
+
+                   ErrorMessage: 将 expression 转换为数据类型 datetime 时出现算术溢出错误。
+语句已终止。
+                   StackMessage:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Z.EntityFramework.Plus.BatchDelete.Execute[T](IQueryable`1 query)
+   at Jerrisoft.Platform.Storage.EFRepository`2.Delete(Expression`1 whereLambda) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 449
+   at AMS.Storage.TblDatClassReplenishWeekRepository.DeleteDatClassReplenishWeek(String schoolId, String teacherId, Int64 studentId, Int64 classId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\TblDatClassReplenishWeekRepository.cs:line 47
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 112
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 09:56:33,916 线程ID:[18] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 09:56:33 915	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9M73N8J8T moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"撒大大"}
+
+
+                   ErrorMessage: 将 expression 转换为数据类型 datetime 时出现算术溢出错误。
+语句已终止。
+                   StackMessage:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Z.EntityFramework.Plus.BatchDelete.Execute[T](IQueryable`1 query)
+   at Jerrisoft.Platform.Storage.EFRepository`2.Delete(Expression`1 whereLambda) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 449
+   at AMS.Storage.TblDatClassReplenishWeekRepository.DeleteDatClassReplenishWeek(String schoolId, String teacherId, Int64 studentId, Int64 classId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\TblDatClassReplenishWeekRepository.cs:line 47
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 112
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 10:00:23,608 线程ID:[16] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 10:00:23 595	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9MCGC81BT moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"撒大大"}
+
+
+                   ErrorMessage: 列名 'TblDatClassReplenishWeek_CreateTime' 无效。
+                   StackMessage:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Jerrisoft.Platform.Storage.EFRepository`2.Load(Expression`1 lambdaExpression, Boolean isContinueToOperate) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 185
+   at AMS.Storage.TblDatClassReplenishWeekRepository.GetClassReplenishWeek(String schoolId, String teacherId, Int64 studentId, Int64 classId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\TblDatClassReplenishWeekRepository.cs:line 47
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 112
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 10:02:24,801 线程ID:[17] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 10:02:24 788	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9MDK6RNT4 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"撒大大"}
+
+
+                   ErrorMessage: 列名 'TblDatClassReplenishWeek_CreateTime' 无效。
+                   StackMessage:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Jerrisoft.Platform.Storage.EFRepository`2.Load(Expression`1 lambdaExpression, Boolean isContinueToOperate) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 185
+   at AMS.Storage.TblDatClassReplenishWeekRepository.GetClassReplenishWeek(String schoolId, String teacherId, Int64 studentId, Int64 classId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\TblDatClassReplenishWeekRepository.cs:line 47
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 112
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 10:02:42,005 线程ID:[18] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 10:02:42 005	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9MDK6RNT4 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"撒大大"}
+
+
+                   ErrorMessage: 列名 'TblDatClassReplenishWeek_CreateTime' 无效。
+                   StackMessage:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Jerrisoft.Platform.Storage.EFRepository`2.Load(Expression`1 lambdaExpression, Boolean isContinueToOperate) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 185
+   at AMS.Storage.TblDatClassReplenishWeekRepository.GetClassReplenishWeek(String schoolId, String teacherId, Int64 studentId, Int64 classId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\TblDatClassReplenishWeekRepository.cs:line 47
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 112
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 10:05:50,796 线程ID:[22] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 10:05:50 784	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9MFGDRK20 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"撒大大"}
+
+
+                   ErrorMessage: 列名 'TblDatClassReplenishWeek_CreateTime' 无效。
+                   StackMessage:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Jerrisoft.Platform.Storage.EFRepository`2.Load(Expression`1 lambdaExpression, Boolean isContinueToOperate) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 185
+   at AMS.Storage.TblDatClassReplenishWeekRepository.GetClassReplenishWeek(String schoolId, String teacherId, Int64 studentId, Int64 classId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\TblDatClassReplenishWeekRepository.cs:line 47
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 112
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 10:23:39,373 线程ID:[17] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 10:23:39 358	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9MO8N74DV moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.GetReplenishWeekList (AMS.API)
+RequestParameter：request = {"TermId":14082796406080513,"CourseId":0,"ClassNo":null,"PageIndex":1,"PageSize":10}
+
+
+                   ErrorMessage: 除非另外还指定了 TOP、OFFSET 或 FOR XML，否则，ORDER BY 子句在视图、内联函数、派生表、子查询和公用表表达式中无效。
+                   StackMessage:    at Jerrisoft.Platform.Storage.IQueryableExtend.ToPagerSource[T](IQueryable`1 query, Int32 pageIndex, Int32 pageSize) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EntityFramework.Extend\IQueryableExtend.cs:line 129
+   at AMS.Storage.Repository.ViewReplenishWeekRepository.GetReplenishWeekList(ReplenishWeekListSearchRequest search) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\ViewReplenishWeekRepository.cs:line 126
+   at AMS.Service.ReplenishWeekService.GetReplenishWeekList(ReplenishWeekListSearchRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 73
+   at AMS.API.Controllers.Internal.ReplenishWeekController.GetReplenishWeekList(ReplenishWeekListSearchRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 10:27:09,258 线程ID:[30] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 10:27:09 258	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9MO8N74DV moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.GetReplenishWeekList (AMS.API)
+RequestParameter：request = {"TermId":14082796406080513,"CourseId":0,"ClassNo":null,"PageIndex":1,"PageSize":10}
+
+
+                   ErrorMessage: 除非另外还指定了 TOP、OFFSET 或 FOR XML，否则，ORDER BY 子句在视图、内联函数、派生表、子查询和公用表表达式中无效。
+                   StackMessage:    at Jerrisoft.Platform.Storage.IQueryableExtend.ToPagerSource[T](IQueryable`1 query, Int32 pageIndex, Int32 pageSize) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EntityFramework.Extend\IQueryableExtend.cs:line 129
+   at AMS.Storage.Repository.ViewReplenishWeekRepository.GetReplenishWeekList(ReplenishWeekListSearchRequest search) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\ViewReplenishWeekRepository.cs:line 126
+   at AMS.Service.ReplenishWeekService.GetReplenishWeekList(ReplenishWeekListSearchRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 73
+   at AMS.API.Controllers.Internal.ReplenishWeekController.GetReplenishWeekList(ReplenishWeekListSearchRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 10:29:58,582 线程ID:[44] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 10:29:58 582	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9MO8N74DV moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.GetReplenishWeekList (AMS.API)
+RequestParameter：request = {"TermId":14082796406080513,"CourseId":0,"ClassNo":null,"PageIndex":1,"PageSize":10}
+
+
+                   ErrorMessage: 除非另外还指定了 TOP、OFFSET 或 FOR XML，否则，ORDER BY 子句在视图、内联函数、派生表、子查询和公用表表达式中无效。
+                   StackMessage:    at Jerrisoft.Platform.Storage.IQueryableExtend.ToPagerSource[T](IQueryable`1 query, Int32 pageIndex, Int32 pageSize) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EntityFramework.Extend\IQueryableExtend.cs:line 129
+   at AMS.Storage.Repository.ViewReplenishWeekRepository.GetReplenishWeekList(ReplenishWeekListSearchRequest search) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\ViewReplenishWeekRepository.cs:line 126
+   at AMS.Service.ReplenishWeekService.GetReplenishWeekList(ReplenishWeekListSearchRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 73
+   at AMS.API.Controllers.Internal.ReplenishWeekController.GetReplenishWeekList(ReplenishWeekListSearchRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 10:31:39,171 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 10:31:39 159	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9MTRINV6J moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.GetReplenishWeekList (AMS.API)
+RequestParameter：request = {"TermId":14082796406080513,"CourseId":0,"ClassNo":null,"PageIndex":1,"PageSize":10}
+
+
+                   ErrorMessage: 除非另外还指定了 TOP、OFFSET 或 FOR XML，否则，ORDER BY 子句在视图、内联函数、派生表、子查询和公用表表达式中无效。
+                   StackMessage:    at Jerrisoft.Platform.Storage.IQueryableExtend.ToPagerSource[T](IQueryable`1 query, Int32 pageIndex, Int32 pageSize) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EntityFramework.Extend\IQueryableExtend.cs:line 129
+   at AMS.Storage.Repository.ViewReplenishWeekRepository.GetReplenishWeekList(ReplenishWeekListSearchRequest search) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\ViewReplenishWeekRepository.cs:line 126
+   at AMS.Service.ReplenishWeekService.GetReplenishWeekList(ReplenishWeekListSearchRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 73
+   at AMS.API.Controllers.Internal.ReplenishWeekController.GetReplenishWeekList(ReplenishWeekListSearchRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 11:17:42,643 线程ID:[22] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:17:42 625	[AMS.Storage	AMS.Storage.TblDatClassReplenishWeekRepository]	[Debug]	[执行SaveChanges() 出现了'DbUpdateException: 更新条目时出错。'异常信息：将截断字符串或二进制数据。
+语句已终止。An error occurred while updating the entries. See the inner exception for details.
+]
+
+2019-03-16 11:17:43,712 线程ID:[22] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:17:43 711	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9NNIJ7D00 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"5555555"}
+
+
+                   ErrorMessage: An error occurred while updating the entries. See the inner exception for details.
+                   StackMessage:    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Jerrisoft.Platform.Storage.EFRepository`2.SaveChanges() in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 1024
+   at Jerrisoft.Platform.Storage.EFRepository`2.Add(T entity, Boolean isCommit) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 127
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 121
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 11:20:19,676 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:20:19 665	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9NP05E4I5 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14090292223460352
+request = {"StudentName":"黄思涵1","Sex":2,"Birthday":"2015-05-01T00:00:00","HeadFaceUrl":"","CurrentSchool":"诺贝尔幼儿园","AreaId":"1","HomeAddress":"湖北省武汉市洪山区11号","HomeAddressFormat":{"State":"中国大陆","Province":"湖北省","City":"武汉市","CountyArea":"洪山区","Address":"1112号"},"IDType":1,"IDNumber":"42098220150501454","LinkMobile":"18986473198","LinkMail":"46546465@qq.com","ContactPerson":[{"GuardianName":"黄爸爸","Relationship":"父女","Mobile":"15512345678","Email":"89855855@qq.com"},{"GuardianName":"黄妈妈","Relationship":"母女","Mobile":"13689898989","Email":"999999999@qq.com"}],"CustomerFrom":1,"Remark":"小孩有点自私，不喜欢别人抢她的东西","ParentId":0}
+
+
+                   ErrorMessage: 系统中已经存在此学生
+                   StackMessage:    at AMS.Service.StudentService.Verification(Int64 studentId, String studentName, String linkMobile) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 701
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 411
+   at AMS.API.Controllers.Internal.StudentController.Put(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Cst\StudentController.cs:line 113
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 11:24:39,678 线程ID:[15] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:24:39 660	[AMS.Storage	AMS.Storage.TblDatClassReplenishWeekRepository]	[Debug]	[执行SaveChanges() 出现了'DbUpdateException: 更新条目时出错。'异常信息：将截断字符串或二进制数据。
+语句已终止。An error occurred while updating the entries. See the inner exception for details.
+]
+
+2019-03-16 11:24:40,845 线程ID:[15] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:24:40 845	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9NR9R8MEQ moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"5555555"}
+
+
+                   ErrorMessage: An error occurred while updating the entries. See the inner exception for details.
+                   StackMessage:    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Jerrisoft.Platform.Storage.EFRepository`2.SaveChanges() in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 1024
+   at Jerrisoft.Platform.Storage.EFRepository`2.Add(T entity, Boolean isCommit) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 127
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 121
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 11:25:58,357 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:25:58 357	[AMS.Storage	AMS.Storage.TblDatClassReplenishWeekRepository]	[Debug]	[执行SaveChanges() 出现了'DbUpdateException: 更新条目时出错。'异常信息：将截断字符串或二进制数据。
+语句已终止。An error occurred while updating the entries. See the inner exception for details.
+]
+
+2019-03-16 11:25:59,331 线程ID:[9] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:25:59 331	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9NR9R8MEQ moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"5555555"}
+
+
+                   ErrorMessage: An error occurred while updating the entries. See the inner exception for details.
+                   StackMessage:    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Jerrisoft.Platform.Storage.EFRepository`2.SaveChanges() in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 1024
+   at Jerrisoft.Platform.Storage.EFRepository`2.Add(T entity, Boolean isCommit) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 127
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 121
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 11:29:02,466 线程ID:[23] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:29:02 449	[AMS.Storage	AMS.Storage.TblDatClassReplenishWeekRepository]	[Debug]	[执行SaveChanges() 出现了'DbUpdateException: 更新条目时出错。'异常信息：将截断字符串或二进制数据。
+语句已终止。An error occurred while updating the entries. See the inner exception for details.
+]
+
+2019-03-16 11:29:03,630 线程ID:[23] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:29:03 629	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9NTV5F0QI moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"5555555"}
+
+
+                   ErrorMessage: An error occurred while updating the entries. See the inner exception for details.
+                   StackMessage:    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Jerrisoft.Platform.Storage.EFRepository`2.SaveChanges() in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 1024
+   at Jerrisoft.Platform.Storage.EFRepository`2.Add(T entity, Boolean isCommit) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 127
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 125
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 11:30:22,869 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:30:22 869	[AMS.Storage	AMS.Storage.TblDatClassReplenishWeekRepository]	[Debug]	[执行SaveChanges() 出现了'DbUpdateException: 更新条目时出错。'异常信息：将截断字符串或二进制数据。
+语句已终止。An error occurred while updating the entries. See the inner exception for details.
+]
+
+2019-03-16 11:30:23,734 线程ID:[9] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:30:23 734	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9NTV5F0QI moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark (AMS.API)
+RequestParameter：request = {"StudentId":14083045728420864,"ClassId":14082830900921344,"Remark":"5555555"}
+
+
+                   ErrorMessage: An error occurred while updating the entries. See the inner exception for details.
+                   StackMessage:    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Jerrisoft.Platform.Storage.EFRepository`2.SaveChanges() in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 1024
+   at Jerrisoft.Platform.Storage.EFRepository`2.Add(T entity, Boolean isCommit) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 127
+   at AMS.Service.ReplenishWeekService.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 125
+   at AMS.API.Controllers.Internal.ReplenishWeekController.ModifyRemark(ReplenishWeekModifyRemarkRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 60
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 11:31:56,503 线程ID:[15] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:31:56 486	[AMS.Storage	AMS.Storage.TblDatClassReplenishWeekRepository]	[Debug]	[执行SaveChanges() 出现了'DbUpdateException: 更新条目时出错。'异常信息：将截断字符串或二进制数据。
+语句已终止。An error occurred while updating the entries. See the inner exception for details.
+]
+
+2019-03-16 11:34:15,704 线程ID:[24] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:34:15 684	[AMS.Storage	AMS.Storage.TblDatClassReplenishWeekRepository]	[Debug]	[执行SaveChanges() 出现了'DbUpdateException: 更新条目时出错。'异常信息：将截断字符串或二进制数据。
+语句已终止。An error occurred while updating the entries. See the inner exception for details.
+]
+
+2019-03-16 11:36:12,173 线程ID:[21] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:36:12 155	[AMS.Storage	AMS.Storage.TblDatClassReplenishWeekRepository]	[Debug]	[执行SaveChanges() 出现了'DbUpdateException: 更新条目时出错。'异常信息：将截断字符串或二进制数据。
+语句已终止。An error occurred while updating the entries. See the inner exception for details.
+]
+
+2019-03-16 11:55:05,239 线程ID:[23] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:55:05 189	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 11:55:37,125 线程ID:[23] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:55:37 125	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 11:55:46,977 线程ID:[34] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:55:46 976	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9OCCH3V5T moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14090292223460352
+request = {"StudentName":"黄思涵1","Sex":2,"Birthday":"2015-05-01T00:00:00","HeadFaceUrl":"","CurrentSchool":"诺贝尔幼儿园","AreaId":"1","HomeAddress":"湖北省武汉市洪山区11号","HomeAddressFormat":{"State":"中国大陆","Province":"湖北省","City":"武汉市","CountyArea":"洪山区","Address":"1112号"},"IDType":1,"IDNumber":"42098220150501454","LinkMobile":"18986473198","LinkMail":"46546465@qq.com","ContactPerson":[{"GuardianName":"黄爸爸","Relationship":"父女","Mobile":"15512345678","Email":"89855855@qq.com"},{"GuardianName":"黄妈妈","Relationship":"母女","Mobile":"13689898989","Email":"999999999@qq.com"}],"CustomerFrom":1,"Remark":"小孩有点自私，不喜欢别人抢她的东西","ParentId":0}
+
+
+                   ErrorMessage: 系统中已经存在此学生
+                   StackMessage:    at AMS.Service.StudentService.Verification(Int64 studentId, String studentName, String linkMobile) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 701
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 411
+   at AMS.API.Controllers.Internal.StudentController.Put(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Cst\StudentController.cs:line 113
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 11:56:52,215 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:56:52 203	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 11:57:05,427 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:57:05 427	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 11:57:25,840 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:57:25 840	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 11:57:38,608 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:57:38 608	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 11:59:06,779 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:59:06 768	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 11:59:11,032 线程ID:[14] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:59:11 032	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9OESHA8BS moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14090292223460352
+request = {"StudentName":"黄思涵1","Sex":2,"Birthday":"2015-05-01T00:00:00","HeadFaceUrl":"","CurrentSchool":"诺贝尔幼儿园","AreaId":"1","HomeAddress":"湖北省武汉市洪山区11号","HomeAddressFormat":{"State":"中国大陆","Province":"湖北省","City":"武汉市","CountyArea":"洪山区","Address":"1112号"},"IDType":1,"IDNumber":"42098220150501454","LinkMobile":"18986473198","LinkMail":"46546465@qq.com","ContactPerson":[{"GuardianName":"黄爸爸","Relationship":"父女","Mobile":"15512345678","Email":"89855855@qq.com"},{"GuardianName":"黄妈妈","Relationship":"母女","Mobile":"13689898989","Email":"999999999@qq.com"}],"CustomerFrom":1,"Remark":"小孩有点自私，不喜欢别人抢她的东西","ParentId":0}
+
+
+                   ErrorMessage: Object reference not set to an instance of an object.
+                   StackMessage:    at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 511
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 440
+   at AMS.API.Controllers.Internal.StudentController.Put(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Cst\StudentController.cs:line 113
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 11:59:11,047 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 11:59:11 047	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 12:03:11,944 线程ID:[18] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 12:03:09 940	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 12:06:33,587 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 12:06:33 575	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 12:09:07,311 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 12:09:07 300	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 12:09:36,949 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 12:09:36 949	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 12:36:55,848 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 12:36:55 836	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 12:45:33,067 线程ID:[22] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 12:45:32 422	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 12:51:09,690 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 12:51:09 679	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 12:54:13,413 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 12:54:13 413	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 12:55:06,397 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 12:55:06 397	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 12:55:07,021 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 12:55:07 005	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 13:05:55,378 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:05:55 365	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 13:06:02,657 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:06:02 656	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 13:07:06,032 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:07:06 032	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 13:07:06,593 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:07:06 593	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 13:10:15,254 线程ID:[19] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:10:15 243	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 13:10:58,971 线程ID:[19] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:10:20 341	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 13:12:29,164 线程ID:[29] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:12:29 164	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 13:13:29,967 线程ID:[29] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:13:29 967	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 13:15:28,421 线程ID:[26] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:15:28 016	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 13:15:49,524 线程ID:[26] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:15:49 523	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 13:17:41,328 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:17:41 315	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 13:17:49,850 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:17:49 850	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 13:19:10,917 线程ID:[22] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:19:10 917	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 13:19:21,251 线程ID:[22] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:19:21 251	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 13:21:07,349 线程ID:[22] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:21:07 336	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 13:21:22,051 线程ID:[22] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:21:22 051	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 13:25:12,834 线程ID:[38] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:25:12 833	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9PSM86H92 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Post (AMS.API)
+RequestParameter：request = {"StudentName":"张三","Sex":0,"Birthday":"2018-03-15T00:00:00","HeadFaceUrl":"","CurrentSchool":"777","AreaId":"1","HomeAddress":"hdfgdgdgfdgdgd","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"宣武区","CountyArea":"","Address":"沃尔沃热无若无热无若无若"},"IDType":1,"IDNumber":"5555555555555555555","LinkMobile":"18888888888","LinkMail":"string","ContactPerson":[{"GuardianName":"张爸爸","Relationship":"父女","Mobile":"18057740207","Email":"3453543@qq.com"},{"GuardianName":"yyy","Relationship":"ff","Mobile":"19912345678","Email":"342543252554343535@qq.com"},{"GuardianName":"kk","Relationship":"kk","Mobile":"16612345678","Email":"242342@qq.com"}],"CustomerFrom":1,"Remark":"的风格的广泛的飞哥","ParentId":0}
+
+
+                   ErrorMessage: token已过期!
+                   StackMessage:    at Jerrisoft.Platform.IdentityClient.Filters.AuthenticationService.ValidateSsoUser()
+   at Jerrisoft.Platform.IdentityClient.Filters.SsoAuthorizeAttribute.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 13:25:41,277 线程ID:[21] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:25:41 277	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 13:25:50,213 线程ID:[21] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:25:50 213	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 13:27:10,869 线程ID:[15] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:27:10 857	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9Q02D6T1D moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Post (AMS.API)
+RequestParameter：request = {"StudentName":"张三","Sex":0,"Birthday":"2018-03-15T00:00:00","HeadFaceUrl":"","CurrentSchool":"777","AreaId":"1","HomeAddress":"hdfgdgdgfdgdgd","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"宣武区","CountyArea":"","Address":"沃尔沃热无若无热无若无若"},"IDType":1,"IDNumber":"5555555555555555555","LinkMobile":"18888888888","LinkMail":"string","ContactPerson":[{"GuardianName":"张爸爸","Relationship":"父女","Mobile":"18057740207","Email":"3453543@qq.com"},{"GuardianName":"yyy","Relationship":"ff","Mobile":"19912345678","Email":"342543252554343535@qq.com"},{"GuardianName":"kk","Relationship":"kk","Mobile":"16612345678","Email":"242342@qq.com"}],"CustomerFrom":1,"Remark":"的风格的广泛的飞哥","ParentId":0}
+
+
+                   ErrorMessage: 系统中已经存在此学生
+                   StackMessage:    at AMS.Service.StudentService.Verification(Int64 studentId, String studentName, String linkMobile) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 708
+   at AMS.Service.StudentService.Register(StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 543
+   at AMS.API.Controllers.Internal.StudentController.Post(StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Cst\StudentController.cs:line 96
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 13:27:51,075 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:27:51 031	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:YMMART方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-16 13:28:19,229 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 01:28:19 229	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-16 15:13:56,918 线程ID:[29] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 03:13:56 901	[AMS.Storage.Repository	AMS.Storage.Repository.TblTimAdjustLessonRepository]	[Debug]	[执行SaveChanges() 出现了'DbUpdateException: 更新条目时出错。'异常信息：不能将值 NULL 插入列 'FromTeacherId'，表 'AMS.dbo.TblTimAdjustLesson'；列不允许有 Null 值。INSERT 失败。
+语句已终止。An error occurred while updating the entries. See the inner exception for details.
+]
+
+2019-03-16 15:14:31,779 线程ID:[29] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 03:14:31 778	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9RQNQ2JTE moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: An error occurred while updating the entries. See the inner exception for details.
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 269
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 15:31:21,750 线程ID:[15] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 03:31:21 738	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9S4P1K4FH moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: The required column 'AdjustType' was not present in the results of a 'FromSql' operation.
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 269
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:11:01,826 线程ID:[23] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:11:01 812	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9SRK54V8M moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: token已过期!
+                   StackMessage:    at Jerrisoft.Platform.IdentityClient.Filters.AuthenticationService.ValidateSsoUser()
+   at Jerrisoft.Platform.IdentityClient.Filters.SsoAuthorizeAttribute.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:11:16,725 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:11:16 725	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9SRK54V8M moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: token已过期!
+                   StackMessage:    at Jerrisoft.Platform.IdentityClient.Filters.AuthenticationService.ValidateSsoUser()
+   at Jerrisoft.Platform.IdentityClient.Filters.SsoAuthorizeAttribute.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:11:23,990 线程ID:[9] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:11:23 990	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9SRK54V8M moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: token已过期!
+                   StackMessage:    at Jerrisoft.Platform.IdentityClient.Filters.AuthenticationService.ValidateSsoUser()
+   at Jerrisoft.Platform.IdentityClient.Filters.SsoAuthorizeAttribute.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:11:25,230 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:11:25 230	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9SRK54V8M moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: token已过期!
+                   StackMessage:    at Jerrisoft.Platform.IdentityClient.Filters.AuthenticationService.ValidateSsoUser()
+   at Jerrisoft.Platform.IdentityClient.Filters.SsoAuthorizeAttribute.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:13:27,344 线程ID:[23] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:13:27 344	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9SRK54V8M moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: “;”附近有语法错误。
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 273
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:14:37,856 线程ID:[23] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:14:37 856	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9SRK54V8M moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: “;”附近有语法错误。
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 273
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:24:57,556 线程ID:[23] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:24:57 541	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9T33LROH9 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: 未找到数据
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 274
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:26:24,170 线程ID:[13] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:26:24 170	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9T33LROH9 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: 未找到数据
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 274
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:26:49,140 线程ID:[9] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:26:49 140	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9T33LROH9 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: 未找到数据
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 274
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:27:11,962 线程ID:[40] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:27:11 962	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9T33LROH9 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082830900921344,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: 未找到数据
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 274
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:52:22,393 线程ID:[22] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:52:22 379	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9TI9SB50F moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082831474738177,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: 未找到数据
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 274
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:53:44,451 线程ID:[32] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:53:44 451	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9TI9SB50F moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082831474738177,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: 未找到数据
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 274
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:54:54,081 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:54:54 081	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9TI9SB50F moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082831474738177,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: 未找到数据
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 274
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:57:13,076 线程ID:[48] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:57:13 076	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9TI9SB50F moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082831474738177,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: 未找到数据
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 274
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 16:57:49,304 线程ID:[19] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 04:57:49 304	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9TI9SB50F moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14083045728420864,"ClassRoomId":14082813624812544,"ClassId":14082831474738177,"TermId":14082796406080512}]
+
+
+                   ErrorMessage: 未找到数据
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 274
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-16 18:01:21,832 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-16 06:01:21 819	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLL9UO932OIT moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.Post (AMS.API)
+RequestParameter：request = [{"ClassDate":"2019-03-16T00:00:00","ClassBeginTime":"09:00","ClassEndTime":"10:30","StudentId":14084433107059712,"ClassRoomId":14082813624812544,"ClassId":14082828934185984,"TermId":14082796406080513}]
+
+
+                   ErrorMessage: 未找到数据
+                   StackMessage:    at AMS.Service.ReplenishWeekService.AddClassTime(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 274
+   at AMS.API.Controllers.Internal.ReplenishWeekController.Post(List`1 request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 84
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+

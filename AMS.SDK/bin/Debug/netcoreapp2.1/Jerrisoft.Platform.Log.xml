@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jerrisoft.Platform.Log</name>
+    </assembly>
+    <members>
+        <member name="T:Jerrisoft.Platform.Log.LoggerType">
+            <summary>
+            日志类别
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Log.LoggerType.Debug">
+            <summary>
+            调试信息
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Log.LoggerType.Info">
+            <summary>
+            提示信息
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Log.LoggerType.Warn">
+            <summary>
+            警告信息
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Log.LoggerType.Error">
+            <summary>
+            错误信息
+            <para>日志写入本地文本文件同时写入日志系统</para>
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Log.LoggerType.Fatal">
+            <summary>
+            失败信息
+            <para>日志写入本地文本文件同时写入日志系统</para>
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.Logic.Reflex">
+             <summary>
+             处理反射处理
+             </summary>
+             <remarks>
+             调用示例
+             
+             Reflex.Handle(source);
+            
+             </remarks>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Logic.Reflex.Handle(System.Object)">
+            <summary>
+            处理反射，得到结果
+            </summary>
+            <param name="source">反射源</param>
+            <returns>结果值</returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter.OnException(System.Exception)">
+            <summary>
+            全局异常捕获
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.Logs.ConfigurationModel">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.ConfigurationModel.AppId">
+            <summary>
+            AppId 日志管理系统中配置
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.ConfigurationModel.AppKey">
+            <summary>
+             AppKey 日志管理系统中配置
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.ConfigurationModel.LogApiUrl">
+            <summary>
+            写入日志的API地址
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.Logs.FileAttribute">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.FileAttribute.AssemblyLocation">
+            <summary>
+            文件详细路径
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.FileAttribute.AssemblyQualifiedName">
+            <summary>
+            文件详细名称
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.FileAttribute.MethodName">
+            <summary>
+            调用方法名称
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.FileAttribute.ClassName">
+            <summary>
+            调用类名称
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.Logs.LoggerRepositoryModel">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.Logs.LogModel">
+             <summary>
+             日志对象
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.LogModel.UserOnlyCode">
+            <summary>
+            操作用户唯一标示
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.LogModel.FunctionName">
+            <summary>
+            涉及的方法名称
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.LogModel.FilePath">
+            <summary>
+            涉及的文件地址
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.LogModel.Content">
+            <summary>
+            详细的日志内容
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.LogModel.Utc">
+            <summary>
+            当前时间戳
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Logs.LogModel.ConvertToUnixTimestamp(System.DateTime)">
+            <summary>
+            转换时间为unix时间戳
+            </summary>
+            <param name="date">需要传递UTC时间,避免时区误差,例:DataTime.UTCNow</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.Logs.LogReturnModel">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.LogReturnModel.State">
+            <summary>
+            错误代码：0失败|1成功
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Logs.LogReturnModel.Err">
+            <summary>
+            错误代码
+            <para>
+            4001	未知错误
+            </para>
+            <para>
+            4002	非法数据内容
+            </para>
+            <para>
+            4003	content字段内容读取失败
+            </para>
+            <para>
+            4004	非法访问
+            </para>
+            <para>
+            4005	数据格式错误
+            </para>
+            <para>
+            4006	签名错误
+            </para>
+            <para>
+            4007	从header中读取jrlog-appid和jrlog-hash失败 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.LogWriter">
+            <summary>
+            日志模块
+            </summary>
+            <remarks>
+            调用示例
+            LogModular.Write(this,"写入日志的内容文本",LoggerType.Debug);
+            LogModular.Write(this,new Exception ex);
+            </remarks> 
+        </member>
+        <member name="F:Jerrisoft.Platform.Log.LogWriter._Parameter">
+            <summary>
+            启动路径
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.LogWriter.Write(System.Object,System.String,Jerrisoft.Platform.Log.LoggerType)">
+             <summary>
+             写日志
+             </summary>
+             <param name="source">对象</param>
+             <param name="message">对象</param>
+             <param name="type">类型</param>
+             <remarks>
+            日志记录格式：时间 业务ID号  模块名称 方法名  用户ID  日志级别  消息内容 
+            eg:2018-07-12 09:31:30.005 [07]  [DataLog]  [WriteLog] [10003]  [Debug]  进入当前系统
+             </remarks>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.LogWriter.Write(System.Object,System.Exception)">
+             <summary>
+             写日志
+             </summary>
+             <param name="source">对象</param>
+             <param name="ex">错误信息</param>
+             <remarks>
+            日志记录格式：时间 业务ID号  模块名称 方法名  用户ID  日志级别  消息内容 
+            eg:2018-07-12 09:31:30.005 [07]  [DataLog]  [WriteLog] [10003]  [Debug]  进入当前系统
+             </remarks> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.LogWriter.Write(System.String,Jerrisoft.Platform.Log.LoggerType,System.Object)">
+            <summary>
+            写文件
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.StartupParameter">
+            <summary>
+            日志启动参数配置
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.StartupParameter.Type">
+            <summary>
+            日志写入类型
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.StartupParameter.Path">
+            <summary>
+            日志写入路径，如果为文本写入，即为文件路径，如果为数据库写入，本值为数据库连接字符串
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.StartupParameter.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.WriteType">
+            <summary>
+            写入日志类型
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Log.WriteType.Text">
+            <summary>
+            写入文本
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Log.WriteType.Data">
+            <summary>
+            写入数据库
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.Services.IJerrisoftLoggerServices">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.IJerrisoftLoggerServices.Debug(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary>
+            <para>记录【调试信息】</para>
+            日志写入本地文本文件
+            </summary>
+            <param name="source">this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.IJerrisoftLoggerServices.Info(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary>
+            <para>记录【提示信息】</para>
+            日志写入本地文本文件
+            </summary>
+            <param name="source">this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.IJerrisoftLoggerServices.Warn(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary>
+            <para>记录【警告信息】</para>
+            日志写入本地文本文件
+            </summary>
+            <param name="source">this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.IJerrisoftLoggerServices.Error(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary>
+            <para>记录【错误信息】</para>
+            日志写入本地文本文件同时写入日志系统
+            </summary>
+            <param name="source">this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.IJerrisoftLoggerServices.Fatal(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary> 
+            <para>记录【失败信息】</para>
+            日志写入本地文本文件同时写入日志系统
+            </summary>
+            <param name="source">this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param> 
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.Services.JerrisoftLoggerServices">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="P:Jerrisoft.Platform.Log.Services.JerrisoftLoggerServices.CurrentDataLog">
+            <summary>
+            将日志写入“日志管理平台”。
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Log.Services.JerrisoftLoggerServices._strError">
+            <summary>
+            日志文本信息
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.JerrisoftLoggerServices.Debug(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary> 
+            <para>记录【调试信息】</para>
+            日志写入本地文本文件
+            </summary>
+            <param name="source">固定：this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.JerrisoftLoggerServices.Info(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary> 
+            <para>记录【提示信息】</para>
+            日志写入本地文本文件
+            </summary>
+            <param name="source">固定：this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.JerrisoftLoggerServices.Warn(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary> 
+            <para>记录【警告信息】</para>
+            日志写入本地文本文件
+            </summary>
+            <param name="source">固定：this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.JerrisoftLoggerServices.Error(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary> 
+            <para>记录【错误信息】</para>
+            日志写入本地文本文件同时写入日志系统
+            </summary>
+            <param name="source">固定：this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.JerrisoftLoggerServices.Fatal(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary> 
+            <para>记录【失败信息】</para>
+            日志写入本地文本文件同时写入日志系统
+            </summary>
+            <param name="source">固定：this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.Services.JerrisoftLoggerServices.StrMessage(System.Tuple{Jerrisoft.Platform.Log.Logs.FileAttribute,System.Diagnostics.StackTrace},System.String,System.String)">
+            <summary> 
+            <para>拼接日志信息</para> 
+            </summary>
+            <param name="source">固定：this</param>
+            <param name="message">具体的错误日志信息</param>
+            <param name="userOnlyCode">用户唯一标示</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.WriteLog.DataLog">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="T:Jerrisoft.Platform.Log.WriteLog.TextLog">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Debug(System.Object,System.String)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Debug(System.Object,System.String,System.Object[])">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="ps">ps</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Debug(System.Type,System.String)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Info(System.Object,System.Object)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Info(System.Type,System.Object)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Warn(System.Object,System.Object)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Warn(System.Type,System.Object)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Error(System.Object,System.Object)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Error(System.Type,System.Object)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Fatal(System.Object,System.Object)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Fatal(System.Type,System.Object)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Debug(System.Object,System.Object,System.Exception)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Debug(System.Type,System.Object,System.Exception)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Info(System.Object,System.Object,System.Exception)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Info(System.Type,System.Object,System.Exception)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Warn(System.Object,System.Object,System.Exception)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Warn(System.Type,System.Object,System.Exception)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Error(System.Object,System.Object,System.Exception)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Error(System.Type,System.Object,System.Exception)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Fatal(System.Object,System.Object,System.Exception)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Log.WriteLog.TextLog.WriteLogs.Fatal(System.Type,System.Object,System.Exception)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+    </members>
+</doc>

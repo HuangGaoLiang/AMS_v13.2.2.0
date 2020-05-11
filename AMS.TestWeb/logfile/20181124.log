@@ -1,0 +1,11 @@
+﻿2018-11-24 20:59:20,213 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2018-11-24 08:59:20 206	[AMS.Anticorrosion.HRS	AMS.Anticorrosion.HRS.PersonalService]	[Debug]	[请求user:Y1868方法:GetPersonnelDataByCompanyId描述:根据组织架构获取用户信息请求地址:异常:Object reference not set to an instance of an object.System.NullReferenceException: Object reference not set to an instance of an object.
+   at YMM.HRS.Storage.Context.HrsContext.OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at Jerrisoft.Platform.Storage.EFRepository`2.LoadList(Expression`1 whereLamdbaExpression) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 575
+   at YMM.HRS.Storage.Repository.PersonnelRepository.GetCompanyPersonnelList(List`1 companyId)
+   at YMM.HRS.SDK.HrSystem.GetPersonnelDataByCompanyId(List`1 companyIds)
+   at AMS.Anticorrosion.HRS.PersonalService.GetSchoolEmployeeByCompanyId() in D:\svn\AMS\trunk\2.软件代码\Develop\AMS_v13.2.1.0\API\AMS\AMS.Anticorrosion\HRS\Service\PersonalService.cs:line 64]

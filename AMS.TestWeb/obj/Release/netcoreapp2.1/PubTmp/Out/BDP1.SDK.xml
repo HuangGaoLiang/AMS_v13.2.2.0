@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BDP1.SDK</name>
+    </assembly>
+    <members>
+        <member name="T:BDP1.SDK.AreaSdk">
+            <summary>
+            区域SDK服务
+            </summary>
+        </member>
+        <member name="F:BDP1.SDK.AreaSdk.Redis_AreaData_Key">
+            <summary>
+            Redis使用，完整的树形数据
+            </summary>
+        </member>
+        <member name="F:BDP1.SDK.AreaSdk.Redis_NormalData_Key">
+            <summary>
+            Redis使用，不带划分区的树形数据
+            </summary>
+        </member>
+        <member name="F:BDP1.SDK.AreaSdk._dictionary">
+            <summary>
+            区域缓存字典
+            </summary>
+        </member>
+        <member name="P:BDP1.SDK.AreaSdk.AreaData">
+            <summary>
+            带区域的树缓存
+            </summary>
+        </member>
+        <member name="P:BDP1.SDK.AreaSdk.NormalData">
+            <summary>
+            不带区域的树缓存
+            </summary>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.CreateAreaTree">
+            <summary>
+            获取完整的树，包括国家/区域/省/市/区/街道
+            --魏明 2018.08.13
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.BuildProvince(System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{BDP1.Storage.Models.TLocation}},BDP1.SDK.Dto.AreaData,BDP1.Storage.Models.TLocation[])">
+            <summary>
+            寻找区域下的省份
+            </summary>
+            <param name="locationS">数据源</param>
+            <param name="areaData">区域</param>
+            <param name="arealocations">区域与省份的关联数据</param>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.FillChildDatas(System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{BDP1.Storage.Models.TLocation}},BDP1.SDK.Dto.AreaData)">
+            <summary>
+            填充数据
+            </summary>
+            <param name="dictionary">数据源</param>
+            <param name="areaData">当前节点</param>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.CreateNormalTree">
+            <summary>
+            创建一棵不带划分区的树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.GetNormalData(BDP1.SDK.Dto.AreaData,System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{BDP1.Storage.Models.TLocation}})">
+            <summary>
+            递归获取子集
+            </summary>
+            <param name="id">父级Id</param>
+            <param name="dictionary">数据源</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.GetData(System.Collections.Generic.List{BDP1.SDK.Dto.AreaData},System.String,BDP1.SDK.Enum.AreaLevel)">
+            <summary>
+            获取一棵到指定级别的数据树
+            </summary>
+            <param name="datas">数据源</param>
+            <param name="areaId">顶级Id</param>
+            <param name="level">级别</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.GetAreaInfo(System.Collections.Generic.List{BDP1.SDK.Dto.AreaData},System.String)">
+            <summary>
+            获取指定区域的详细信息
+            </summary>
+            <param name="areaId">区域Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.GetAreaInfos(System.Collections.Generic.List{BDP1.SDK.Dto.AreaData},System.Collections.Generic.List{System.String})">
+            <summary>
+            获取一组指定区域的详细信息
+            </summary>
+            <param name="datas">数据源</param>
+            <param name="areaIds">区域Id集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.GetRecursionArea(System.Collections.Generic.List{BDP1.SDK.Dto.AreaData},System.Collections.Generic.List{System.String},System.Collections.Generic.List{BDP1.SDK.Dto.AreaData}@)">
+            <summary>
+            递归计算查找一组指定区域数据集合
+            --魏明 2018.08.13
+            </summary>
+            <param name="datas">数据源</param>
+            <param name="areaIds">指定区域集合Id</param>
+            <param name="result">获取到的信息</param>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.GetParentData(System.Collections.Generic.List{BDP1.SDK.Dto.AreaData},System.Collections.Generic.List{System.String},BDP1.SDK.Enum.AreaLevel)">
+            <summary>
+            获取父级
+            </summary>
+            <param name="datas">原数据</param>
+            <param name="areaIds">地点Id集合</param>
+            <param name="level">层级</param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:BDP1.SDK.AreaSdk.AreaDataToOutput(System.Collections.Generic.List{BDP1.SDK.Dto.AreaData},System.Nullable{BDP1.SDK.Enum.AreaLevel})”忽略有格式错误的 XML 注释 -->
+        <member name="M:BDP1.SDK.AreaSdk.SetParent(System.Collections.Generic.List{BDP1.SDK.Dto.AreaData},BDP1.SDK.Dto.AreaData)">
+            <summary>
+            设置Parent属性
+            </summary>
+            <param name="datas"></param>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.SetParentToNull(System.Collections.Generic.List{BDP1.SDK.Dto.AreaData})">
+            <summary>
+             设置Parent属性成Null
+            </summary>
+            <param name="datas"></param>
+        </member>
+        <member name="M:BDP1.SDK.AreaSdk.InitDataToRedis">
+            <summary>
+            系统启动后初始化数据，并将数据放入Redis。
+            后续，调用“区域”数据，将会统一从Redis中读取。
+            </summary>
+        </member>
+        <!-- 对于成员“M:BDP1.SDK.AreaSdk.DataToRedis(System.Collections.Generic.List{BDP1.SDK.Dto.AreaData},System.Collections.Generic.List{BDP1.SDK.Dto.AreaData})”忽略有格式错误的 XML 注释 -->
+        <member name="M:BDP1.SDK.AreaSdk.GetZone(System.String,BDP1.SDK.Enum.AreaLevel,BDP1.SDK.Enum.AreaLevel)">
+            <summary>
+            获取指定区域下的键值(跳跃性)区域
+            例如areaId=0，levelK=1,levelV=4，意思是获取全球下以国家为键城市为值的数据。
+            --魏明 2018年11月2日
+            </summary>
+            <param name="areaId">指定区域</param>
+            <param name="levelK">键区域</param>
+            <param name="levelV">值区域</param>
+        </member>
+        <member name="P:BDP1.SDK.Dto.AreaDataBase.ID">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="P:BDP1.SDK.Dto.AreaDataBase.Level">
+            <summary>
+            层级
+            </summary>
+        </member>
+        <member name="P:BDP1.SDK.Dto.AreaDataBase.ParentID">
+            <summary>
+            父级Id
+            </summary>
+        </member>
+        <member name="P:BDP1.SDK.Dto.AreaDataBase.Name">
+            <summary>
+            地点名称
+            </summary>
+        </member>
+        <member name="T:BDP1.SDK.Dto.AreaData">
+            <summary>
+            区域树
+            </summary>
+        </member>
+        <member name="P:BDP1.SDK.Dto.AreaData.Parent">
+            <summary>
+            父级数据 代替逆推Id
+            </summary>
+        </member>
+        <member name="P:BDP1.SDK.Dto.AreaData.Childs">
+            <summary>
+            子集集合
+            </summary>
+        </member>
+        <member name="P:BDP1.SDK.Dto.ZoneAreaData.Childs">
+            <summary>
+            子集集合
+            </summary>
+        </member>
+        <member name="T:BDP1.SDK.Enum.AreaLevel">
+            <summary>
+            区域级别
+            </summary>
+        </member>
+        <member name="F:BDP1.SDK.Enum.AreaLevel.Countary">
+            <summary>
+            国家
+            </summary>
+        </member>
+        <member name="F:BDP1.SDK.Enum.AreaLevel.Area">
+            <summary>
+            区域
+            </summary>
+        </member>
+        <member name="F:BDP1.SDK.Enum.AreaLevel.Province">
+            <summary>
+            州/省
+            </summary>
+        </member>
+        <member name="F:BDP1.SDK.Enum.AreaLevel.City">
+            <summary>
+            市
+            </summary>
+        </member>
+        <member name="F:BDP1.SDK.Enum.AreaLevel.Region">
+            <summary>
+            区
+            </summary>
+        </member>
+        <member name="F:BDP1.SDK.Enum.AreaLevel.Street">
+            <summary>
+            街道
+            </summary>
+        </member>
+    </members>
+</doc>

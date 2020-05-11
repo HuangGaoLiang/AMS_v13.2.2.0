@@ -1,0 +1,144 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin\Debug</OutputPath>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DocumentationFile>..\..\bin\Debug\netcoreapp2.1\AMS.TestWeb.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\**" />
+    <Content Remove="Views\**" />
+    <EmbeddedResource Remove="Views\**" />
+    <None Remove="Views\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="2.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.API\AMS.API.csproj" />
+    <ProjectReference Include="..\AMS.Core\AMS.Core.csproj" />
+    <ProjectReference Include="..\AMS.SDK\AMS.SDK.csproj" />
+    <ProjectReference Include="..\AMS.Service\AMS.Service.csproj" />
+    <ProjectReference Include="..\AMS.Storage\AMS.Storage.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Aliyun_MQ_SDK">
+      <HintPath>..\..\DLL\Aliyun_MQ_SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP1.SDK">
+      <HintPath>..\..\DLL\BDP1.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP1.Storage">
+      <HintPath>..\..\DLL\BDP1.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP2.Core">
+      <HintPath>..\..\DLL\BDP2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP2.SDK">
+      <HintPath>..\..\DLL\BDP2.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP2.Service">
+      <HintPath>..\..\DLL\BDP2.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP2.Storage">
+      <HintPath>..\..\DLL\BDP2.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="FP3.Core">
+      <HintPath>..\..\DLL\FP3.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FP3.SDK">
+      <HintPath>..\..\DLL\FP3.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="FP3.Service">
+      <HintPath>..\..\DLL\FP3.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="FP3.Storage">
+      <HintPath>..\..\DLL\FP3.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="FP8.SDK">
+      <HintPath>..\..\DLL\FP8.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.API">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Cache">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Config">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Exception">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Exception.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.IdentityClient">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.IdentityClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Log">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Logic">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Protect">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Protect.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Public">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Public.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Storage">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="NS1.Core">
+      <HintPath>..\..\DLL\NS1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NS1.Service">
+      <HintPath>..\..\DLL\NS1.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="NS1.Storage">
+      <HintPath>..\..\DLL\NS1.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="ons">
+      <HintPath>..\..\DLL\ons.dll</HintPath>
+    </Reference>
+    <Reference Include="YMM.HRS.Cache">
+      <HintPath>..\..\DLL\YMM.HRS.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="YMM.HRS.SDK">
+      <HintPath>..\..\DLL\YMM.HRS.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Z.EntityFramework.Plus.EFCore">
+      <HintPath>..\..\DLL\Z.EntityFramework.Plus.EFCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

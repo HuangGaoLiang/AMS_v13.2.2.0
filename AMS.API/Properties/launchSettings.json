@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Jerrisoft.Base.API": {
+      "commandName": "Executable"
+    }
+  }
+}

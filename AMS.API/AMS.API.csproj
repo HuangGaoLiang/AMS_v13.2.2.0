@@ -1,0 +1,93 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DocumentationFile>..\..\bin\Debug\netcoreapp2.1\Swagger\AMS.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.Anticorrosion\AMS.Anticorrosion.csproj" />
+    <ProjectReference Include="..\AMS.Core\AMS.Core.csproj" />
+    <ProjectReference Include="..\AMS.Service\AMS.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BDP1.SDK">
+      <HintPath>..\..\DLL\BDP1.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP1.Storage">
+      <HintPath>..\..\DLL\BDP1.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP2.Core">
+      <HintPath>..\..\DLL\BDP2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP2.SDK">
+      <HintPath>..\..\DLL\BDP2.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP2.Service">
+      <HintPath>..\..\DLL\BDP2.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP2.Storage">
+      <HintPath>..\..\DLL\BDP2.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="FP3.SDK">
+      <HintPath>..\..\DLL\FP3.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="FP8.SDK">
+      <HintPath>..\..\DLL\FP8.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="JDW.SDK">
+      <HintPath>..\..\DLL\JDW.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.API">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Cache">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Config">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Exception">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Exception.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.IdentityClient">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.IdentityClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Log">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Logic">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Public">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Public.dll</HintPath>
+    </Reference>
+    <Reference Include="YMM.HRS.SDK">
+      <HintPath>..\..\DLL\YMM.HRS.SDK.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Reports\" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="if not exist &quot;$(OutDir)config&quot; md &quot;$(OutDir)config&quot;&#xD;&#xA;xcopy &quot;$(SolutionDir)config&quot; &quot;$(OutDir)config&quot; /s /y &#xD;&#xA;&#xD;&#xA;if not exist &quot;$(OutDir)exception\$(SolutionName)&quot; md &quot;$(OutDir)exception\$(SolutionName)&quot;&#xD;&#xA;xcopy &quot;$(SolutionDir)exception*.xml&quot; &quot;$(OutDir)exception\$(SolutionName)&quot; /s /y&#xD;&#xA;&#xD;&#xA;if not exist &quot;..\..\bin\$(ConfigurationName)\netcoreapp2.1\config&quot; md &quot;..\..\bin\$(ConfigurationName)\netcoreapp2.1\config&quot;&#xD;&#xA;xcopy &quot;$(SolutionDir)config&quot; &quot;..\..\bin\$(ConfigurationName)\netcoreapp2.1\config&quot; /s /y &#xD;&#xA;&#xD;&#xA;if not exist &quot;..\..\bin\$(ConfigurationName)\netcoreapp2.1\exception\$(SolutionName)&quot; md &quot;..\..\bin\$(ConfigurationName)\netcoreapp2.1\exception\$(SolutionName)&quot;&#xD;&#xA;xcopy &quot;$(SolutionDir)exception*.xml&quot; &quot;..\..\bin\$(ConfigurationName)\netcoreapp2.1\exception\$(SolutionName)&quot; /s /y&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if not exist &quot;..\..\bin\$(ConfigurationName)\netcoreapp2.1\YMM_Configs\$(SolutionName)&quot; md &quot;..\..\bin\$(ConfigurationName)\netcoreapp2.1\YMM_Configs\$(SolutionName)&quot;&#xD;&#xA;xcopy &quot;$(SolutionDir)*.json&quot; &quot;..\..\bin\$(ConfigurationName)\netcoreapp2.1\YMM_Configs\$(SolutionName)&quot; /y" />
+  </Target>
+</Project>

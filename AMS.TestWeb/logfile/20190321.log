@@ -1,0 +1,475 @@
+﻿2019-03-21 11:07:48,133 线程ID:[60] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:07:48 120	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 11:08:03,210 线程ID:[60] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:08:03 210	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-21 11:08:09,041 线程ID:[57] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:08:09 040	[AMS.Service	AMS.Service.StudentFamilyProducerService]	[Error]	[RocketMQ初始化失败The type initializer for 'ons.ONSClient4CPPPINVOKE' threw an exception.]
+
+2019-03-21 11:08:10,072 线程ID:[57] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:08:10 072	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDL4QP04A6 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"13409944852","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"19912345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"19912345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 520
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 439
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 11:13:55,938 线程ID:[14] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:13:55 759	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 11:14:00,325 线程ID:[14] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:14:00 325	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-21 11:15:18,148 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:15:18 147	[AMS.Service	AMS.Service.StudentFamilyProducerService]	[Error]	[RocketMQ初始化失败The type initializer for 'ons.ONSClient4CPPPINVOKE' threw an exception.]
+
+2019-03-21 11:15:19,211 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:15:19 211	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDLCIU9HLO moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"13409944852","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"19912345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"19912345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 520
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 443
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 11:17:00,262 线程ID:[45] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:17:00 262	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 11:17:00,428 线程ID:[45] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:17:00 428	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-21 11:17:47,081 线程ID:[39] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:17:47 081	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDLCIU9HLO moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"11111111","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"22222222","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"33333333","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 520
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 443
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 11:21:38,871 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:21:38 780	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 11:21:49,058 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:21:49 058	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-21 11:22:43,961 线程ID:[16] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:22:43 960	[AMS.Service	AMS.Service.StudentFamilyProducerService]	[Error]	[RocketMQ初始化失败The type initializer for 'ons.ONSClient4CPPPINVOKE' threw an exception.]
+
+2019-03-21 11:22:45,094 线程ID:[16] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:22:45 094	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDLGUVFIP7 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"1","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"2","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"3","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 520
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 443
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 11:24:38,123 线程ID:[62] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:24:38 123	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 11:24:38,338 线程ID:[62] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:24:38 338	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-21 11:24:54,143 线程ID:[41] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:24:54 143	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDLGUVFIP7 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"4","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"5","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"6","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 520
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 443
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 11:29:44,419 线程ID:[29] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:29:44 406	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 11:29:48,039 线程ID:[29] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:29:48 039	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-21 11:33:38,995 线程ID:[24] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:33:38 981	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDLNRP0EM9 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"7","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"8","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"9","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+                   StackMessage:    at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at AMS.Service.StudentService.GetStudentContact(Int64 studentId, String contactPerson) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 569
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 404
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 11:35:39,088 线程ID:[34] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:35:39 073	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 11:35:50,082 线程ID:[34] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:35:50 082	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-21 11:37:26,926 线程ID:[38] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:37:26 926	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 11:37:27,138 线程ID:[38] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 11:37:27 138	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-21 13:04:23,602 线程ID:[3] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:04:23 590	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 13:05:08,138 线程ID:[17] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:05:08 137	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDNAI8IDMK moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"18986473198","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"15512345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"17112345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo, List`1 oldStudentMobiles) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 571
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 447
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 13:06:02,869 线程ID:[13] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:06:02 869	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 13:06:52,314 线程ID:[9] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:06:52 314	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDNAI8IDMK moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"18986473198","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"15512345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"17112345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo, List`1 oldStudentMobiles) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 571
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 447
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 13:08:29,100 线程ID:[25] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:08:29 100	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 13:08:59,411 线程ID:[20] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:08:59 411	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDNAI8IDMK moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"18986473198","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"15512345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"17112345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo, List`1 oldStudentMobiles) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 571
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 447
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 13:09:15,128 线程ID:[34] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:09:15 128	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 13:09:43,854 线程ID:[29] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:09:43 854	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDNAI8IDMK moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"18986473198","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"15512345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"17112345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo, List`1 oldStudentMobiles) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 571
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 447
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 13:48:24,788 线程ID:[63] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:48:24 012	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 13:49:35,378 线程ID:[60] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:49:35 377	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDNO2HT5ER moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"18986473198","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"15512345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"17112345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentFamilyProducerService..ctor() in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentFamilyProducerService.cs:line 45
+   at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo, List`1 oldStudentMobiles) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 571
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 445
+   at AMS.API.Controllers.Internal.StudentController.Put(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Cst\StudentController.cs:line 113
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 13:50:19,026 线程ID:[74] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:50:19 026	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 13:54:15,573 线程ID:[13] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:54:14 748	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 13:59:08,645 线程ID:[12] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:59:08 634	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 13:59:57,364 线程ID:[17] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 01:59:57 363	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDO94SOIEU moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"18986473198","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"15512345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"17112345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentFamilyProducerService..ctor() in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentFamilyProducerService.cs:line 45
+   at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo, List`1 oldStudentMobiles) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 569
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 445
+   at AMS.API.Controllers.Internal.StudentController.Put(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Cst\StudentController.cs:line 113
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 14:05:03,420 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 02:05:03 408	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 14:09:07,106 线程ID:[17] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 02:09:07 105	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDOBOFGUKT moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"18986473198","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"15512345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"17112345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentFamilyProducerService..ctor() in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentFamilyProducerService.cs:line 45
+   at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo, List`1 oldStudentMobiles) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 569
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 445
+   at AMS.API.Controllers.Internal.StudentController.Put(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Cst\StudentController.cs:line 113
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 14:24:11,335 线程ID:[18] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 02:24:11 324	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 14:24:31,235 线程ID:[9] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 02:24:31 234	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDOMESIJ2C moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18986473198","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"18986473198","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"15512345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"17112345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentFamilyProducerService..ctor() in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentFamilyProducerService.cs:line 45
+   at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo, List`1 oldStudentMobiles) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 581
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 445
+   at AMS.API.Controllers.Internal.StudentController.Put(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Cst\StudentController.cs:line 113
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 14:24:50,345 线程ID:[18] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 02:24:50 345	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 14:25:23,806 线程ID:[9] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 02:25:23 806	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLDOMESIJ2C moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentController.Put (AMS.API)
+RequestParameter：studentId = 14138347548935168
+request = {"StudentName":"黄晓","Sex":1,"Birthday":"2016-02-01T00:00:00","HeadFaceUrl":"http://jerrisoft-test.oss-cn-shenzhen.aliyuncs.com/Development/UploadFiles/Images/2019/03/16/2b4ffb411d7d428197bc536977f4185b.png","CurrentSchool":"龙岗小学","AreaId":"1","HomeAddress":"中国大陆北京东城区","HomeAddressFormat":{"State":"中国大陆","Province":"北京","City":"东城区","CountyArea":"","Address":""},"IDType":1,"IDNumber":"1561561561","LinkMobile":"18057740207","LinkMail":"13409944852@qq.com","ContactPerson":[{"GuardianName":"黄晓明","Relationship":"爸爸妈妈","Mobile":"18986473198","Email":"13409944852@qq.com"},{"GuardianName":"Angelababy","Relationship":"爸爸妈妈","Mobile":"15512345678","Email":"8974649@qq.com"},{"GuardianName":"黄爷爷","Relationship":"爷爷奶奶","Mobile":"17112345678","Email":"2423432@qq.com"}],"CustomerFrom":0,"Remark":"小孩爱动，请老师留意","ParentId":0,"HeadFaceUrl2":null}
+
+
+                   ErrorMessage: The type initializer for 'AMS.Service.StudentFamilyProducerService' threw an exception.
+                   StackMessage:    at AMS.Service.StudentFamilyProducerService..ctor() in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentFamilyProducerService.cs:line 45
+   at AMS.Service.StudentService.StudentPublish(StudentRegisterRequest newInfo, List`1 oldStudentMobiles) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 581
+   at AMS.Service.StudentService.Modify(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Cst\StudentService.cs:line 445
+   at AMS.API.Controllers.Internal.StudentController.Put(Int64 studentId, StudentRegisterRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Cst\StudentController.cs:line 113
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-21 16:44:21,411 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 04:44:21 398	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 16:44:44,674 线程ID:[8] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 04:44:44 674	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-21 16:44:51,991 线程ID:[17] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 04:44:51 991	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 16:44:54,480 线程ID:[17] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 04:44:54 480	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-21 16:47:32,621 线程ID:[15] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 04:47:32 621	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-21 16:47:37,943 线程ID:[15] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-21 04:47:37 943	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+

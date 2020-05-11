@@ -1,0 +1,126 @@
+﻿2019-03-20 11:04:52,499 线程ID:[35] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-20 11:04:51 912	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:读取配置文件地址测试http://192.168.99.29:3825/api/ArtLibrary/1002请求地址:异常:]
+
+2019-03-20 11:04:58,110 线程ID:[35] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-20 11:04:58 110	[34]	[AMS.Anticorrosion.AC	AMS.Anticorrosion.AC.ACService]	[Debug]	[请求user:f10ae356ca3542c580f192c8bed81dba方法:描述:修改学生信息到档案库:1个,保存:1个请求地址:异常:]
+
+2019-03-20 15:05:25,278 线程ID:[17] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-20 03:05:25 266	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLD09J405DO moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.ReplenishWeekController.GetReplenishWeekList (AMS.API)
+RequestParameter：request = {"TermId":14174882461352961,"CourseId":14174855884588032,"ClassNo":null,"PageIndex":1,"PageSize":10}
+
+
+                   ErrorMessage: “/”附近有语法错误。
+“/”附近有语法错误。
+                   StackMessage:    at Jerrisoft.Platform.Storage.IQueryableExtend.ToPagerSource[T](IQueryable`1 query, Int32 pageIndex, Int32 pageSize) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EntityFramework.Extend\IQueryableExtend.cs:line 129
+   at AMS.Storage.Repository.ViewReplenishWeekRepository.GetReplenishWeekList(ReplenishWeekListSearchRequest search) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\Repository\Datum\ViewReplenishWeekRepository.cs:line 124
+   at AMS.Service.ReplenishWeekService.GetReplenishWeekList(ReplenishWeekListSearchRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\ReplenishWeekService.cs:line 74
+   at AMS.API.Controllers.Internal.ReplenishWeekController.GetReplenishWeekList(ReplenishWeekListSearchRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\ReplenishWeekController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-20 16:07:13,233 线程ID:[17] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-20 04:07:13 221	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLD1BF4MHOQ moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentTimeLessonController.GetStudentNoAttendance (AMS.API)
+RequestParameter：searcher = {"StudentId":14172363141170176,"TermId":14174882461352961,"CourseId":0}
+
+
+                   ErrorMessage: 请选择校区
+                   StackMessage:    at AMS.API.Filter.SchoolIdValidator.OnActionExecuting(ActionExecutingContext context) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Filter\SchoolIdValidator.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-20 19:30:24,432 线程ID:[14] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-20 07:30:24 418	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLD4SM6DKRH moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentTimeLessonController.CancelMakeLesson (AMS.API)
+RequestParameter：studentId = 14172363141170176
+lessonId = 14175121379525632
+
+
+                   ErrorMessage: Object reference not set to an instance of an object.
+                   StackMessage:    at AMS.Service.AdjustLessonRevokeService.Adjust(IAdjustLessonRequest iRequest) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\AdjustLesson\AdjustLessonRevokeService.cs:line 120
+   at AMS.API.Controllers.Internal.StudentTimeLessonController.CancelMakeLesson(Int64 studentId, Int64 lessonId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\StudentTimeLessonController.cs:line 76
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-20 19:30:44,166 线程ID:[32] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-20 07:30:44 166	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLD4SM6DKRH moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentTimeLessonController.CancelMakeLesson (AMS.API)
+RequestParameter：studentId = 14172363141170176
+lessonId = 14175121379525632
+
+
+                   ErrorMessage: Object reference not set to an instance of an object.
+                   StackMessage:    at AMS.Service.AdjustLessonRevokeService.Adjust(IAdjustLessonRequest iRequest) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\AdjustLesson\AdjustLessonRevokeService.cs:line 120
+   at AMS.API.Controllers.Internal.StudentTimeLessonController.CancelMakeLesson(Int64 studentId, Int64 lessonId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Timetable\StudentTimeLessonController.cs:line 76
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-20 20:08:21,204 线程ID:[23] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-20 08:08:21 192	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLD5IS5CLIR moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.StudentTimeLessonController.GetStudentNoAttendance (AMS.API)
+RequestParameter：searcher = {"StudentId":14172363141170176,"TermId":14174882461352961,"CourseId":0}
+
+
+                   ErrorMessage: 列名 'CourseName' 无效。
+列名 'RoomNo' 无效。
+                   StackMessage:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider._FastQuery[TEntity](RelationalQueryContext relationalQueryContext, ShaperCommandContext shaperCommandContext, Func`3 materializer, Type contextType, IDiagnosticsLogger`1 logger)+MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at AMS.Service.StudentTimetableService.GetStudentNoAttendance(CancelMakeLessonSearchRequest searcher) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Timetable\StudentTimetableService.cs:line 697
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+

@@ -1,0 +1,10 @@
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\bin\Release\netcoreapp2.1\AMS.Storage.deps.json
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\bin\Release\netcoreapp2.1\AMS.Storage.dll
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\bin\Release\netcoreapp2.1\AMS.Storage.pdb
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\obj\Release\netcoreapp2.1\AMS.Storage.csprojAssemblyReference.cache
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\obj\Release\netcoreapp2.1\AMS.Storage.csproj.CoreCompileInputs.cache
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\obj\Release\netcoreapp2.1\AMS.Storage.AssemblyInfoInputs.cache
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\obj\Release\netcoreapp2.1\AMS.Storage.AssemblyInfo.cs
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\obj\Release\netcoreapp2.1\AMS.Storage.csproj.CopyComplete
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\obj\Release\netcoreapp2.1\AMS.Storage.dll
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Storage\obj\Release\netcoreapp2.1\AMS.Storage.pdb

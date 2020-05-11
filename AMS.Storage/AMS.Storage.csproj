@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin\debug</OutputPath>
+    <DocumentationFile>..\..\bin\debug\netcoreapp2.1\Swagger\AMS.Storage.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DLL\**" />
+    <EmbeddedResource Remove="DLL\**" />
+    <None Remove="DLL\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="AMS.Storage.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0" />
+	<PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Jerrisoft.Platform.Cache">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Config">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Exception">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Exception.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Log">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Public">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Public.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Storage">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Storage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.Core\AMS.Core.csproj" />
+    <ProjectReference Include="..\AMS.Dto\AMS.Dto.csproj" />
+    <ProjectReference Include="..\AMS.Models\AMS.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mapping\Reports\" />
+    <Folder Include="Repository\Reports\" />
+  </ItemGroup>
+</Project>

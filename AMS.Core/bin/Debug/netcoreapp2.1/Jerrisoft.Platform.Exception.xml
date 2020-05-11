@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jerrisoft.Platform.Exception</name>
+    </assembly>
+    <members>
+        <member name="T:Jerrisoft.Platform.Exception.BaseException">
+            <summary>
+                异常基类
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Exception.BaseException.#ctor(System.UInt16,System.String)">
+            <summary>
+            </summary>
+            <param name="innerExceptionID">当前业务内部异常码</param>
+            <param name="message">异常消息</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Exception.BaseException.#ctor(System.Byte,System.UInt16,System.String)">
+            <summary>
+            </summary>
+            <param name="modelID">所属模块值</param>
+            <param name="innerExceptionID">内部异常码</param>
+            <param name="message">异常消息内容</param>
+        </member>
+        <member name="P:Jerrisoft.Platform.Exception.BaseException.BussinessID">
+            <summary>
+                业务ID号
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Exception.BaseException.ModelID">
+            <summary>
+                所处模块ID号
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Exception.BaseException.InnerExceptionID">
+            <summary>
+                内部异常码值
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Exception.BaseException.ExceptionID">
+            <summary>
+                异常码值（全）
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Exception.ExceptionManager">
+            <summary>
+                异常管理类
+            </summary>
+            <remarks>
+                调用示例
+            </remarks>
+        </member>
+        <member name="M:Jerrisoft.Platform.Exception.ExceptionManager.GetMessage(System.UInt32)">
+            <summary>
+                通过异常码获取异常消息内容
+            </summary>
+            <param name="exceptionID">异常码</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Exception.PlatformException">
+            <summary>
+                平台异常类,非平台项目禁止使用此类
+            </summary>
+            <remarks>
+                调用示例
+            </remarks>
+        </member>
+        <member name="M:Jerrisoft.Platform.Exception.PlatformException.#ctor(System.UInt16,System.String)">
+            <summary>
+            </summary>
+            <param name="innerExceptionID">当前业务内部异常码</param>
+            <param name="message">异常消息</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Exception.PlatformException.#ctor(System.Byte,System.UInt16,System.String)">
+            <summary>
+            </summary>
+            <param name="modelID">所属模块值</param>
+            <param name="innerExceptionID">内部异常码</param>
+            <param name="message">异常消息内容</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1977 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jerrisoft.Platform.Public</name>
+    </assembly>
+    <members>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.AppConfigurtaionServices">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.AppConfigurtaionServices.GetAppSettings(System.String,System.String)">
+            <summary>
+            读取json文件中的数据
+            适用于简单json，如："key":"value"
+            </summary> 
+            <param name="key">需要获取value对应的key</param>
+            <param name="filePath">json文件路径。根目录直接传具体文件，如：“abc.json”。若文件在文件夹下，则传入：“/文件夹名称/xxx.json”</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.AppConfigurtaionServices.GetAppSettingsTask(System.String,System.String)">
+            <summary>
+            读取json文件中的数据
+            适用于简单json，如："key":"value"
+            </summary> 
+            <param name="key">需要获取value对应的key</param>
+            <param name="filePath">json文件路径。根目录直接传具体文件，如：“abc.json”。若文件在文件夹下，则传入：“/文件夹名称/xxx.json”</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.AppConfigurtaionServices.GetAppSettings``1(System.String,System.String)">
+            <summary>
+            读取json文件中的数据
+            </summary>
+            <typeparam name="T">每个json文件对应的自定义实体对象</typeparam>
+            <param name="key">需要获取value对应的key</param>
+            <param name="filePath">json文件路径。根目录直接传具体文件，如：“abc.json”。若文件在文件夹下，则传入：“/文件夹名称/xxx.json”</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.AppConfigurtaionServices.GetAppSettingsTask``1(System.String,System.String)">
+            <summary>
+            读取json文件中的数据
+            </summary>
+            <typeparam name="T">每个json文件对应的自定义实体对象</typeparam>
+            <param name="key">需要获取value对应的key</param>
+            <param name="filePath">json文件路径。根目录直接传具体文件，如：“abc.json”。若文件在文件夹下，则传入：“/文件夹名称/xxx.json”</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.AppConfigurtaionServices.GetListAppSettings``1(System.String,System.String)">
+            <summary>
+            读取json文件中的数据
+            </summary>
+            <typeparam name="T">每个json文件对应的自定义实体对象</typeparam>
+            <param name="key">需要获取value对应的key</param>
+            <param name="filePath">json文件路径。根目录直接传具体文件，如：“abc.json”。若文件在文件夹下，则传入：“/文件夹名称/xxx.json”</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.AppConfigurtaionServices.GetListAppSettingsTask``1(System.String,System.String)">
+            <summary>
+            读取json文件中的数据
+            </summary>
+            <typeparam name="T">每个json文件对应的自定义实体对象</typeparam>
+            <param name="key">需要获取value对应的key</param>
+            <param name="filePath">json文件路径。根目录直接传具体文件，如：“abc.json”。若文件在文件夹下，则传入：“/文件夹名称/xxx.json”</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.AppConfigurtaionModel">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>  
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.ConnString">
+            <summary>
+            Redis连接字符串
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.Redis_DbNumber">
+            <summary>
+            RedisDB编号
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.Prefix">
+            <summary>
+            前缀 
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.ExpireMinutes">
+            <summary>
+            （每个键的）过期时间(分钟为单位）
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.ConnectRetry">
+            <summary>
+            重试连接的次数
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.KeepAlive">
+            <summary>
+            保存x秒的活动连接
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.Ssl">
+            <summary>
+            ssl链接
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.Password">
+            <summary>
+            redis 链接密码
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.SyncTimeout">
+            <summary>
+            异步超时时间
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.ConnectTimeout">
+            <summary>
+            链接超时时间
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.AbortOnConnectFail">
+            <summary>
+            当为true时，当没有可用的服务器时则不会创建一个连接
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.AppConfigurtaionServices.Model.RedisConfigModel.AllowAdmin">
+            <summary>
+            总是以admin的身份（若为true，则不需密码）
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions">
+             <summary>
+             枚举，是一组特殊的常量。
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>  
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Status">
+            <summary>
+            成功或失败的状态
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Status.Fail">
+            <summary>
+            失败
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Status.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Status.TokenExpire">
+            <summary>
+            Token 已过期
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Status.UnAuthorized">
+            <summary>
+            未认证
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Status.NoPermission">
+            <summary>
+            无授权
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Gender.Male">
+            <summary>
+            男
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Gender.Female">
+            <summary>
+            女
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Gender.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Pages">
+            <summary>
+            分页
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Pages.CurrentPage">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Pages.PageSize">
+            <summary>
+            每页显示数据量
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Pages.TotalPage">
+            <summary>
+            数据源总页数
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.Extensions.ConstantExtensions.Pages.TotalData">
+            <summary>
+            数据源数据总量
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.BaseData">
+             <summary>
+              OUTPUT扩展基类
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.BaseData.Status">
+            <summary>
+            失败  Fail = 0
+            成功           Success = 1
+            Token已过期    TokenExpire=-9,
+            NoPermission   NoPermission=-8
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.BaseData.Message">
+            <summary>
+            返回给客户端的其他消息
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.Datas`1">
+            <summary>
+            OUTPUT 扩展
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.Datas`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.Pager`1">
+            <summary>
+            OUTPUT 扩展
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.Pager`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.OutPutDataPageList`1">
+            <summary>
+            列表数据集合
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.OutPutDataPageList`1.CurrentPage">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.OutPutDataPageList`1.PageSize">
+            <summary>
+            每页显示数据量
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.OutPutDataPageList`1.TotalPage">
+            <summary>
+            数据源总页数
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.OutPutDataPageList`1.TotalData">
+            <summary>
+            数据源数据总量
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.Extensions.OutPutDataPageList`1.Data">
+            <summary>
+            数据列表
+            </summary> 
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.ReturnDatas`1">
+            <summary>
+            数据返回
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.Extensions.VerificationExtensions">
+             <summary>
+              
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>  
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.VerificationExtensions.IsNullOrWhiteSpaces(System.String)">
+            <summary>
+            判断字符是否为空或者空格
+            </summary>
+            <param name="value">value</param> 
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.VerificationExtensions.StrMaxLength(System.String,System.Int32)">
+            <summary>
+            判断字符串长度是否符合要求
+            </summary>
+            <param name="value">value</param>
+            <param name="length">符合要求的最长长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.VerificationExtensions.IsMaxLength(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="length">判断的长度，0表示不判断</param>
+            <returns>当字符串为空或小于指定的长度，返回true,否则返回false</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.VerificationExtensions.IsNumberic(System.String)">
+            <summary>
+            判断是否为整数字符串
+            </summary>
+            <param name="value">value</param>
+            <returns>返回true, 否则为false</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.Extensions.VerificationExtensions.LengthIsMeetTheRequirements(System.String,System.Int32,System.Int32)">
+            <summary>
+            判断字符串长度是否符合要求
+            </summary>
+            <param name="value">value</param>
+            <param name="minLength">符合要求的最小长度</param>
+            <param name="maxLength">符合要求的最大长度</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.HtmlDiff">
+             <summary>
+              
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>  
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.#ctor(System.String,System.String)">
+            <summary>
+            初始化类新实例
+            </summary>
+            <param name="oldText">字符原文</param>
+            <param name="newText">字符修改文</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.Build">
+            <summary>
+            执行对比
+            </summary>
+            <returns>输出对比结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.IndexNewWords">
+            <summary>
+            对_newWords集合中的内容进行去重筛选，标注此内容所在集合的索引位置并形成_wordIndices集合
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.SplitInputsToWords">
+            <summary>
+            执行解析
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.ConvertHtmlToListOfWords(System.String[])">
+            <summary>
+            将字符数组根据html标签格式和标点符号将文字过滤出来，
+            并以每句话和完整html格式为标准组合成数组
+            </summary>
+            <param name="characterString">单个字符数组</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.IsStartOfTag(System.String)">
+            <summary>
+            html标签开始字符
+            </summary>
+            <param name="val">待判断字符</param>
+            <returns>返回判断结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.IsEndOfTag(System.String)">
+            <summary>
+            html标签结束字符
+            </summary>
+            <param name="val">待判断字符</param>
+            <returns>返回判断结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.IsWhiteSpace(System.String)">
+            <summary>
+            判断是否空表字符
+            </summary>
+            <param name="value">待判断字符</param>
+            <returns>返回判断结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.Explode(System.String)">
+            <summary>
+            将字符串按照字符拆分成数组
+            </summary>
+            <param name="value">待拆分字符串</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.PerformOperation(Jerrisoft.Platform.Public.Common.Operation)">
+            <summary>
+            更具操作状态执行操作，以不同html标签进行标识
+            </summary>
+            <param name="operation"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.ProcessReplaceOperation(Jerrisoft.Platform.Public.Common.Operation)">
+            <summary>
+            修改标识
+            </summary>
+            <param name="operation"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.ProcessInsertOperation(Jerrisoft.Platform.Public.Common.Operation,System.String)">
+            <summary>
+            添加标识
+            </summary>
+            <param name="operation"></param>
+            <param name="cssClass"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.ProcessDeleteOperation(Jerrisoft.Platform.Public.Common.Operation,System.String)">
+            <summary>
+            删除标识
+            </summary>
+            <param name="operation"></param>
+            <param name="cssClass"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.ProcessEqualOperation(Jerrisoft.Platform.Public.Common.Operation)">
+            <summary>
+            原文不变，不需标识
+            </summary>
+            <param name="operation"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.InsertTag(System.String,System.String,System.Collections.Generic.List{System.String})">
+             <summary>
+            将指定标签添加到相应的内容中
+             </summary>
+             <param name="tag">标签单词</param>
+             <param name="cssClass">样式</param>
+             <param name="words">需要添加标签的内容</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.IsOpeningTag(System.String)">
+            <summary>
+            判断是否html开始标签
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.IsClosingTag(System.String)">
+            <summary>
+            判断是否是html结束标签
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.Operations">
+            <summary>
+            对返回的差异结果标注操作状态
+            </summary>
+            <returns>返回结果集</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.MatchingBlocks">
+            <summary>
+            执行差异对比
+            </summary>
+            <returns>返回对比结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.FindMatchingBlocks(System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.List{Jerrisoft.Platform.Public.Common.Match})">
+            <summary>
+            记录差异对比结果
+            </summary>
+            <param name="startInOld">原文起始索引</param>
+            <param name="endInOld">原文集合length</param>
+            <param name="startInNew">修改文起始索引值</param>
+            <param name="endInNew">修改文集合Length</param>
+            <param name="matchingBlocks">返回集合</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.HtmlDiff.FindMatch(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            实现差异对比
+            </summary>
+            <param name="startInOld">原文起始索引</param>
+            <param name="endInOld">原文集合length</param>
+            <param name="startInNew">修改文起始索引值</param>
+            <param name="endInNew">修改文集合Length</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.FtpHelper">
+             <summary>
+              
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>  
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.FtpHelper.UploadFile(System.IO.FileInfo,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="fileinfo">需要上传的文件</param>
+            <param name="targetDir">目标路径</param>
+            <param name="hostname">ftp地址</param>
+            <param name="username">ftp用户名</param>
+            <param name="password">ftp密码</param>
+            <param name="ftpCatalog">ftp默认目录</param>
+            <param name="isPartition">是否分块：true:分块，false:不分块</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.FtpHelper.UploadFile(System.IO.FileInfo,System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="fileinfo">需要上传的文件</param>
+            <param name="targetDir">目标路径</param>
+            <param name="hostname">ftp地址</param>
+            <param name="username">ftp用户名</param>
+            <param name="password">ftp密码</param>
+            <param name="ftpCatalog">ftp默认目录</param>
+            <param name="type">类型0分片1不分片</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.FtpHelper.DownloadFile(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            下载文件
+            </summary>
+            <param name="localDir">下载至本地路径</param>
+            <param name="ftpDir">ftp目标文件路径</param>
+            <param name="ftpFile">从ftp要下载的文件名</param>
+            <param name="hostname">ftp地址即IP</param>
+            <param name="username">ftp用户名</param>
+            <param name="password">ftp密码</param>
+              <param name="ftpCatalog">ftp默认目录</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.FtpHelper.DownloadFileBytes(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            下载文件
+            </summary>
+            <param name="localDir">下载至本地路径</param>
+            <param name="ftpDir">ftp目标文件路径</param>
+            <param name="ftpFile">从ftp要下载的文件名</param>
+            <param name="hostname">ftp地址即IP</param>
+            <param name="username">ftp用户名</param>
+            <param name="password">ftp密码</param>
+            <param name="ftpCatalog">ftp默认目录</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.FtpHelper.MakeDir(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+             在ftp服务器上创建目录
+             </summary>
+             <param name="dirName">创建的目录名称</param>
+             <param name="ftpHostIp">ftp地址</param>
+             <param name="username">用户名</param>
+             <param name="password">密码</param>
+             <param name="ftpCatalog">ftp默认目录</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.FtpHelper.DelFile(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            删除文件
+            </summary>
+            <param name="dirName">创建的目录名称</param>
+            <param name="filename">文件名称</param>
+            <param name="ftpHostIp">ftp地址</param>
+            <param name="username">用户名</param>
+            <param name="password">密码</param>
+            <param name="ftpCatalog">ftp默认目录</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.FtpHelper.DelDir(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            删除目录
+            </summary>
+            <param name="dirName">创建的目录名称</param>
+            <param name="ftpHostIp">ftp地址</param>
+            <param name="username">用户名</param>
+            <param name="password">密码</param>
+            <param name="ftpCatalog">ftp默认目录</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.FtpHelper.Rename(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            文件重命名
+            </summary>
+            <param name="currentFilename">当前目录名称</param>
+            <param name="newFilename">重命名目录名称</param>
+            <param name="ftpServerIp">ftp地址</param>
+            <param name="username">用户名</param>
+            <param name="password">密码</param>
+            <param name="ftpCatalog">ftp默认目录</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.FtpHelper.FtpIsExistsFile(System.String,System.String,System.String,System.String)">
+            <summary>
+            判断ftp服务器上该目录是否存在
+            </summary>
+            <param name="dirName">目录名称</param>
+            <param name="ftpHostIp">ftp地址</param>
+            <param name="username">用户名</param>
+            <param name="password">密码</param> 
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.FtpHelper.UploadFiles(System.IO.FileInfo,System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            上传文件新修改
+            </summary>
+            <param name="fileinfo">需要上传的文件</param>
+            <param name="targetDir">目标路径</param>
+            <param name="hostname">ftp地址</param>
+            <param name="username">ftp用户名</param>
+            <param name="password">ftp密码</param>
+            <param name="ftpCatalog">ftp默认目录</param>
+            <param name="type">类型0分片1不分片</param>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.OpreateXml">
+             <summary>
+              
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>  
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.OpreateXml.GetXmlValue(Jerrisoft.Platform.Public.Common.TeachingSystemFieldType)">
+            <summary>
+            读取系统配置
+            刘美霞 2017.12.18
+            </summary>
+            <param name="cft">xml中的键</param>
+            <returns>键对应的值</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.OpreateXml.UpdateXmlValue(Jerrisoft.Platform.Public.Common.TeachingSystemFieldType,System.String)">
+            <summary>
+            修改系统配置
+            刘美霞 20147.12.18
+            </summary>
+            <param name="cft">xml键</param>
+            <param name="editVal">xml值</param>
+            <returns>键对应的值</returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.TeachingSystemFieldType">
+            <summary>
+            配置文件字段类型
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.TeachingSystemFieldType.SharingDevice">
+             <summary>
+            后台设置 装置分享有效期
+             </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.ReadJsonConfigFile">
+             <summary>
+              读取json文件
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReadJsonConfigFile.CommonReadJson(System.String)">
+            <summary>
+            统一的Json文件读取方法
+            </summary>
+            <param name="jsonPath">json路径</param>
+            <returns></returns>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.ReadJsonConfigFile.ReadWhiteListJson">
+            <summary>
+            读取白名单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.ReadJsonConfigFile.RedisJson">
+            <summary>
+            Redis配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.ReadJsonConfigFile.AliyunOssJson">
+            <summary>
+            阿里云OSS配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.ReadJsonConfigFile.SystemConfigurationJson">
+            <summary>
+            系统配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.ReadJsonConfigFile.MenuConfigurationJson">
+            <summary>
+            系统配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.RequestHelper">
+             <summary>
+              网络请求操作类
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.RequestHelper.PostRequest(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Text.Encoding,System.Text.Encoding,Jerrisoft.Platform.Public.Common.RequestHelper.ContentTypeEnum)">
+            <summary>
+            post 请求指定地址返回响应数据
+            </summary>
+            <param name="url">请求地址</param>
+            <param name="postData">请求数据</param>
+            <param name="timeout">请求超时时间（毫秒）</param>
+            <param name="requestCoding">请求编码</param>
+            <param name="responseCoding">响应编码</param>
+            <param name="contentType">执行post请求时的内容类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.RequestHelper.PostRequest(System.String,System.String,System.Text.Encoding,System.Text.Encoding,Jerrisoft.Platform.Public.Common.RequestHelper.ContentTypeEnum,System.Int32)">
+            <summary>
+            post 请求指定地址返回响应数据
+            </summary>
+            <param name="url">请求地址</param>
+            <param name="postData">请求数据</param> 
+            <param name="requestCoding">请求编码</param>
+            <param name="responseCoding">响应编码</param>
+            <param name="contentType">执行post请求时的内容类型</param>
+            <param name="timeout">请求超时时间（毫秒）</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.RequestHelper.PostRequest(System.String,System.String,System.Text.Encoding,Jerrisoft.Platform.Public.Common.RequestHelper.ContentTypeEnum,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            post 请求指定地址返回响应数据
+            </summary>
+            <param name="url">请求地址</param>
+            <param name="body">需要提交的数据</param>
+            <param name="requestCoding">请求编码</param> 
+            <param name="contentType">执行post请求时的内容类型</param>
+            <param name="headerDic">请求头数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.RequestHelper.GetRequest(System.String,System.Text.Encoding)">
+            <summary>
+            get 请求指定地址返回响应数据
+            </summary>
+            <param name="url">请求地址</param>
+            <param name="responseCoding">请求编码</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.RequestHelper.ContentTypeEnum">
+            <summary>
+            执行post请求时的内容类型
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.RequestHelper.ContentTypeEnum.UrlEncoded">
+            <summary>
+            application/x-www-form-urlencoded
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Common.RequestHelper.ContentTypeEnum.Stream">
+            <summary>
+            application/octet-stream
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.ReturnJson">
+             <summary>
+              请求返回数据格式
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.CreateResult``1(System.Int32,System.Int32,System.Collections.Generic.List{``0},System.String,System.Int32)">
+            <summary>
+            请求返回数据格式
+            --王飞 2017年11月18日
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="code">提示编码</param>
+            <param name="status">请求状态</param>
+            <param name="source">数据源</param>
+            <param name="message">提示消息</param>
+            <param name="total">数据总数</param>
+            <returns>返回Json</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.CreateResult``1(System.Int32,System.Int32,``0,System.String)">
+            <summary>
+            请求返回数据格式
+            --王飞 2017年11月18日
+            </summary>
+            <param name="status">请求状态</param>
+            <param name="code">提示编码</param>
+            <param name="source">数据源</param>
+            <param name="message">提示消息</param>
+            <returns>返回请求数据JSON</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.CreateResult(System.Int32,System.Int32,System.Object,System.String)">
+            <summary>
+            请求返回数据格式
+            --王飞 2017年11月18日
+            </summary>
+            <param name="status">请求状态</param>
+            <param name="code">提示编码</param>
+            <param name="source">数据源</param>
+            <param name="message">提示消息</param>
+            <returns>返回请求数据JSON</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.CreateResult(System.Int32,System.Int32,System.String)">
+            <summary>
+            请求返回数据格式，请求失败数据返回
+            --王飞 2017年11月18日
+            </summary>
+            <param name="status">请求状态</param>
+            <param name="code">提示编码</param>
+            <param name="message">消息提示</param>
+            <returns>返回请求数据JSON</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.Fail(System.Int32,System.String)">
+            <summary>
+            请求失败
+            --王飞 2017年11月18日
+            </summary>
+            <param name="message">提示消息</param>
+            <param name="code">提示编码</param>
+            <returns>返回请求数据JSON</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.Success(System.String)">
+            <summary>
+            请求成功
+            --王飞 2017年11月18日
+            </summary>
+            <param name="message">提示消息</param>
+            <returns>返回请求数据JSON</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.Success``1(``0,System.String)">
+            <summary>
+            请求成功,数据源T类型
+            --王飞 2017年11月18日
+            </summary>
+            <param name="source">数据源</param>
+            <param name="message">提示消息</param>
+            <returns>返回请求数据JSON</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.Success``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.String)">
+            <summary>
+            请求成功，数据源IEnumerable类型
+            --王飞 2017年11月18日
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="source">数据集合</param>
+            <param name="message">消息备注</param>
+            <param name="total">集合总数</param>
+            <returns>返回请求数据JSON</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.Success``1(System.Linq.IQueryable{``0},System.Int32,System.String)">
+            <summary>
+            请求成功，数据源IQueryable类型
+            --王飞 2017年11月18日
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="source">数据集合</param>
+            <param name="message">消息备注</param>
+            <param name="total">集合总数</param>
+            <returns>返回请求数据JSON</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.Success``1(System.Collections.Generic.IList{``0},System.Int32,System.String)">
+            <summary>
+            请求成功，数据源IList类型
+            --王飞 2017年11月18日
+            </summary>
+            <typeparam name="T">泛型</typeparam>
+            <param name="source">数据集合</param>
+            <param name="message">消息备注</param>
+            <param name="total">集合总数</param>
+            <returns>返回请求数据JSON</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.ReturnJson.Success(System.Object,System.String)">
+            <summary>
+            请求成功，数据源object类型
+            --王飞 2017年11月18日
+            </summary>
+            <param name="source">数据集合</param>
+            <param name="message">消息备注</param>
+            <returns>返回请求数据JSON</returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.ResultExt">
+            <summary>
+            返回数据结构
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.ResultExt.Status">
+            <summary>
+            数据请求返回状态
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.ResultExt.Code">
+            <summary>
+            返回错误编码
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.ResultExt.Tag">
+            <summary>
+            数据请求返回备注
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.ResultExt.total">
+            <summary>
+            列表数据总数 （为了适应EasyUI,只能小写）
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.Common.ResultExt.rows">
+            <summary>
+            列表数据集合 （为了适应EasyUI,只能小写）
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Common.TypeConverter">
+             <summary>
+             数据类型转换
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>   
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.StrToBool(System.Object,System.Boolean)">
+            <summary>
+            string型转换为bool型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的bool类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.StrToBool(System.String,System.Boolean)">
+            <summary>
+            string型转换为bool型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的bool类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.ObjectToInt(System.Object)">
+            <summary>
+            将对象转换为Int32类型
+            </summary>
+            <param name="strValue">要转换的字符串</param> 
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.ObjectToInt(System.Object,System.Int32)">
+            <summary>
+            将对象转换为Int32类型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.StrToInt(System.String)">
+            <summary>
+            将对象转换为Int32类型,转换失败返回0
+            </summary>
+            <param name="str">要转换的字符串</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.StrToInt(System.String,System.Int32)">
+            <summary>
+            将对象转换为Int32类型
+            </summary>
+            <param name="str">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.StrToFloat(System.Object,System.Single)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.ObjectToFloat(System.Object,System.Single)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.ObjectToFloat(System.Object)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param> 
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.StrToShort(System.String,System.Int16)">
+            <summary>
+            将对象转换为Int16类型
+            </summary>
+            <param name="str">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的short类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.StrToFloat(System.Object)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Common.TypeConverter.StrToFloat(System.String,System.Single)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.HttpContextCurrUser.UserPropertyKey">
+            <summary>
+            用户共享数据的名字
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.HttpContextCurrUser.ICurrentUser">
+            <summary>
+            当前用户接口
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.HttpContextCurrUser.ICurrentUser.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.HttpContextCurrUser.ICurrentUser.UserName">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.HttpContextCurrUser.ICurrentUser.Token">
+            <summary>
+            用户Token
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.HttpContextCurrUser.CurrentUser">
+            <summary>
+            当前用户信息
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.HttpContextCurrUser.CurrentUser.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.HttpContextCurrUser.CurrentUser.UserName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Public.HttpContextCurrUser.CurrentUser.Token">
+            <summary>
+            用户Token
+            </summary>
+        </member>
+        <!-- 对于成员“T:Jerrisoft.Platform.Public.HttpContextCurrUser.CurrHttpContainer”忽略有格式错误的 XML 注释 -->
+        <member name="M:Jerrisoft.Platform.Public.HttpContextCurrUser.CurrHttpContainer.SetInstance(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            在Startup中设置
+            </summary>
+            <param name="instance"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.FileItem.#ctor(System.IO.FileInfo)">
+            <summary>
+            基于本地文件的构造器。
+            </summary>
+            <param name="fileInfo">本地文件</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.FileItem.#ctor(System.String)">
+            <summary>
+            基于本地文件全路径的构造器。
+            </summary>
+            <param name="filePath">本地文件全路径</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.FileItem.#ctor(System.String,System.Byte[])">
+            <summary>
+            基于文件名和字节流的构造器。
+            </summary>
+            <param name="fileName">文件名称（服务端持久化字节流到磁盘时的文件名）</param>
+            <param name="content">文件字节流</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.FileItem.#ctor(System.String,System.Byte[],System.String)">
+            <summary>
+            基于文件名、字节流和媒体类型的构造器。
+            </summary>
+            <param name="fileName">文件名（服务端持久化字节流到磁盘时的文件名）</param>
+            <param name="content">文件字节流</param>
+            <param name="mimeType">媒体类型</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.FileItem.GetFileType(System.Byte[])">
+            <summary>
+            获取文件的真实媒体类型。目前只支持JPG, GIF, PNG, BMP四种图片文件。
+            </summary>
+            <param name="fileData">文件字节流</param>
+            <returns>媒体类型</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.FileItem.GetFileType(System.String)">
+            <summary>
+            根据文件后缀名获取文件的媒体类型。
+            </summary>
+            <param name="fileName">带后缀的文件名或文件全名</param>
+            <returns>媒体类型</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.FileItem.GetFileSuffix(System.Byte[])">
+            <summary>
+            获取文件的真实后缀名。目前只支持JPG, GIF, PNG, BMP四种图片文件。
+            </summary>
+            <param name="fileData">文件字节流</param>
+            <returns>JPG, GIF, PNG or null</returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Utils.RegexUtil">
+             <summary>
+             正则匹配工具类
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.GetInstance">
+            <summary>
+            静态实例化单体模式
+            保证应用程序操作某一全局对象，让其保持一致而产生的对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsChineseCh(System.String)">
+            <summary>
+            判断输入的字符串只包含汉字
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsPhone(System.String)">
+            <summary>
+            匹配3位或4位区号的电话号码，其中区号可以用小括号括起来，
+            也可以不用，区号与本地号间可以用连字号或空格间隔，
+            也可以没有间隔
+            \(0\d{2}\)[- ]?\d{8}|0\d{2}[- ]?\d{8}|\(0\d{3}\)[- ]?\d{7}|0\d{3}[- ]?\d{7}
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsMobilePhone(System.String)">
+            <summary>
+            判断输入的字符串是否是一个合法的手机号
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsNumber(System.String)">
+            <summary>
+            判断输入的字符串只包含数字
+            可以匹配整数和浮点数
+            ^-?\d+$|^(-?\d+)(\.\d+)?$
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsNotNagtive(System.String)">
+            <summary>
+            匹配非负整数
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsUint(System.String)">
+            <summary>
+            匹配正整数
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsEnglisCh(System.String)">
+            <summary>
+            判断输入的字符串字包含英文字母
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsEmail(System.String)">
+            <summary>
+            判断输入的字符串是否是一个合法的Email地址
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsNumAndEnCh(System.String)">
+            <summary>
+            判断输入的字符串是否只包含数字和英文字母
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsUrl(System.String)">
+            <summary>
+            判断输入的字符串是否是一个超链接
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsIPv4(System.String)">
+            <summary>
+            判断输入的字符串是否是表示一个IP地址
+            </summary>
+            <param name="input">被比较的字符串</param>
+            <returns>是IP地址则为True</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsIpv6(System.String)">
+            <summary>
+            判断输入的字符串是否是合法的IPV6 地址
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsPostCode(System.String)">
+            <summary>
+            判断输入的字符串是否是合法的邮编
+            </summary>
+            <param name="input">要匹配的邮编</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsTelePhone(System.String)">
+            <summary>
+            判断输入的固定电话是否合法 包含“-”线    如：0312-3614072
+            </summary>
+            <param name="input">要匹配的固定电话号码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.CheckIdCard18(System.String)">
+            <summary> 
+            验证18位身份证号 
+            </summary> 
+            <param name="input">身份证号</param> 
+            <returns>验证成功为True，否则为False</returns> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.CheckIdCard15(System.String)">
+            <summary> 
+            验证15位身份证号 
+            </summary> 
+            <param name="input">身份证号</param> 
+            <returns>验证成功为True，否则为False</returns> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.GetCount(System.String)">
+            <summary>
+            计算字符串的字符长度，一个汉字字符将被计算为两个字符
+            </summary>
+            <param name="input">需要计算的字符串</param>
+            <returns>返回字符串的长度</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.IsMatch(System.String,System.String)">
+            <summary>
+            调用Regex中IsMatch函数实现一般的正则表达式匹配
+            </summary>
+            <param name="pattern">要匹配的正则表达式模式。</param>
+            <param name="input">要搜索匹配项的字符串</param>
+            <returns>如果正则表达式找到匹配项，则为 true；否则，为 false。</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.Replace(System.String,System.String,System.String)">
+            <summary>
+            从输入字符串中的第一个字符开始，用替换字符串替换指定的正则表达式模式的所有匹配项。
+            </summary>
+            <param name="pattern">模式字符串</param>
+            <param name="input">输入字符串</param>
+            <param name="replacement">用于替换的字符串</param>
+            <returns>返回被替换后的结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.Split(System.String,System.String)">
+            <summary>
+            在由正则表达式模式定义的位置拆分输入字符串。
+            </summary>
+            <param name="pattern">模式字符串</param>
+            <param name="input">输入字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.GetStringCount(System.String,System.String)">
+            <summary>
+            判断字符串compare 在 input字符串中出现的次数
+            </summary>
+            <param name="input">源字符串</param>
+            <param name="compare">用于比较的字符串</param>
+            <returns>字符串compare 在 input字符串中出现的次数</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.GetTitleContent(System.String,System.String,System.String)">
+            <summary>  
+            获取字符中指定标签的值  
+            </summary>  
+            <param name="str">字符串</param>  
+            <param name="title">标签</param>  
+            <param name="attrib">属性名</param>  
+            <returns>属性</returns>  
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.RegexUtil.NoHtml(System.String,System.Boolean)">
+            <summary>
+            过滤html转义字符
+            </summary>
+            <param name="htmlstring">字符窜</param>
+            <param name="isRetain">是否保留图片,embed</param>
+            <returns>已经去除标记后的文字</returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Utils.TypeConverter">
+             <summary>
+             类型转换
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>  
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.StrToBool(System.Object,System.Boolean)">
+            <summary>
+            string型转换为bool型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的bool类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.StrToBool(System.String,System.Boolean)">
+            <summary>
+            string型转换为bool型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的bool类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.ObjectToInt(System.Object)">
+            <summary>
+            将对象转换为Int32类型
+            </summary>
+            <param name="strValue">要转换的字符串</param> 
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.ObjectToInt(System.Object,System.Int32)">
+            <summary>
+            将对象转换为Int32类型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.StrToInt(System.String)">
+            <summary>
+            将对象转换为Int32类型,转换失败返回0
+            </summary>
+            <param name="str">要转换的字符串</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.StrToInt(System.String,System.Int32)">
+            <summary>
+            将对象转换为Int32类型
+            </summary>
+            <param name="str">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.StrToFloat(System.Object,System.Single)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.ObjectToFloat(System.Object,System.Single)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.ObjectToFloat(System.Object)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param> 
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.StrToShort(System.String,System.Int16)">
+            <summary>
+            将对象转换为Int16类型
+            </summary>
+            <param name="str">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的short类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.StrToFloat(System.Object)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.TypeConverter.StrToFloat(System.String,System.Single)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Utils.Utils">
+             <summary>
+             工具类
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>  
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.Md5(System.String,Jerrisoft.Platform.Public.Utils.UtilsEnum.CharacterState)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="str">需要加密的字符串</param>
+            <param name="returnCharacterState">返回结果的大小写状态</param>
+            <returns>返回32位字符串</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.CutString(System.String,System.Int32,System.Int32)">
+            <summary>
+            从字符串的指定位置截取指定长度的子字符串
+            </summary>
+            <param name="str">原字符串</param>
+            <param name="startIndex">子字符串的起始位置</param>
+            <param name="length">子字符串的长度</param>
+            <returns>子字符串</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.FileExists(System.String)">
+            <summary>
+            返回文件是否存在
+            </summary>
+            <param name="filename">文件名</param>
+            <returns>是否存在</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.SplitString(System.String,System.String)">
+            <summary>
+            分割字符串
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.SplitString(System.String,System.String,System.Int32)">
+            <summary>
+            分割字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.IntToStr(System.Int32)">
+            <summary>
+            int型转换为string型
+            </summary>
+            <returns>转换后的string类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.GetEmailHostName(System.String)">
+            <summary>
+            获取邮箱名
+            </summary>
+            <param name="strEmail">xxx@mail.com..返回xxx</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.IsBase64String(System.String)">
+            <summary>
+            判断是否为base64字符串
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.IsSafeSqlString(System.String)">
+            <summary>
+            检测是否有Sql危险字符
+            </summary>
+            <param name="str">要判断字符串</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.IsSafeUserInfoString(System.String)">
+            <summary>
+            检测是否有危险的可能用于链接的字符串
+            </summary>
+            <param name="str">要判断字符串</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.CleanInput(System.String)">
+            <summary>
+            清理字符串
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.GetFilename(System.String)">
+            <summary>
+            返回URL中结尾的文件名
+            </summary>		
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrFormat(System.String)">
+            <summary>
+            替换回车换行符为html换行符
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.MashSql(System.String)">
+            <summary>
+            改正sql语句中的转义字符
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.ChkSql(System.String)">
+            <summary>
+            替换sql语句中的有问题符号
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.EncodeHtml(System.String)">
+            <summary>
+            替换html字符
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.HtmlEncode(System.String)">
+            <summary>
+            返回 HTML 字符串的编码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>编码结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.HtmlDecode(System.String)">
+            <summary>
+            返回 HTML 字符串的解码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>解码结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.UrlEncode(System.String)">
+            <summary>
+            返回 URL 字符串的编码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>编码结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.UrlDecode(System.String)">
+            <summary>
+            返回 URL 字符串的解码结果
+            </summary>
+            <param name="str">字符串</param>
+            <returns>解码结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.ReplaceStrToScript(System.String)">
+            <summary>
+            为脚本替换特殊字符串
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.IsIp(System.String)">
+            <summary>
+            是否为ip
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.GetQueryString(System.String,System.String)">
+            <summary>  
+            获取url字符串参数，返回参数值字符串  
+            </summary>  
+            <param name="name">参数名称</param>  
+            <param name="url">url字符串</param>  
+            <returns></returns>  
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.IsDateString(System.String)">
+            <summary>
+            判断字符串是否是yy-mm-dd字符串
+            </summary>
+            <param name="str">待判断字符串</param>
+            <returns>判断结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.RemoveHtml(System.String)">
+            <summary>
+            移除Html标记
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.RemoveUnsafeHtml(System.String)">
+            <summary>
+            过滤HTML中的不安全标签
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.GetTextFromHtml(System.String)">
+            <summary>
+            从HTML中获取文本,保留br,p,img
+            </summary>
+            <param name="html">html文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToBool(System.Object,System.Boolean)">
+            <summary>
+            object型转换为bool型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的bool类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToBool(System.String,System.Boolean)">
+            <summary>
+            string型转换为bool型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的bool类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToInt(System.Object,System.Int32)">
+            <summary>
+            将对象转换为Int32类型
+            </summary>
+            <param name="expression">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToInt(System.String,System.Int32)">
+            <summary>
+            将字符串转换为Int32类型
+            </summary>
+            <param name="expression">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToShort(System.String,System.Int16)">
+            <summary>
+            将字符串转换为Int16类型
+            </summary>
+            <param name="expression">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的short类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToByte(System.String,System.Byte)">
+            <summary>
+            将字符串转换为Byte类型
+            </summary>
+            <param name="expression">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToFloat(System.Object,System.Single)">
+            <summary>
+            Object型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToFloat(System.String,System.Single)">
+            <summary>
+            string型转换为float型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的int类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToDecimal(System.Object,System.Decimal)">
+            <summary>
+            Object型转换为decimal型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的decimal类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToDecimal(System.String,System.Decimal)">
+            <summary>
+            string型转换为decimal型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的decimal类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToDateTime(System.Object,System.DateTime)">
+            <summary>
+            Object型转换为DateTime型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的DateTime类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToDateTime(System.String,System.DateTime)">
+            <summary>
+            string型转换为DateTime型
+            </summary>
+            <param name="strValue">要转换的字符串</param>
+            <param name="defValue">缺省值</param>
+            <returns>转换后的DateTime类型结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.IsInt(System.String)">
+            <summary>
+            验证是否为正整数
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrIsNullOrEmpty(System.String)">
+            <summary>
+            字段串是否为Null或为""(空)
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.GetSourceTextByUrl(System.String)">
+            <summary>
+            根据Url获得源文件内容
+            </summary>
+            <param name="url">合法的Url地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.ConvertToUnixTimestamp(System.DateTime)">
+            <summary>
+            转换时间为unix时间戳
+            </summary>
+            <param name="date">需要传递UTC时间,避免时区误差,例:DataTime.UTCNow</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.ConvertToUnixTimestamp(System.DateTimeOffset)">
+            <summary>
+            转换时间为unix时间戳
+            </summary>
+            <param name="date">需要传递UTC时间,避免时区误差,例:DataTime.UTCNow</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.JsonCharFilter(System.String)">
+            <summary>
+            Json特符字符过滤，参见http://www.json.org/
+            </summary>
+            <param name="sourceStr">要过滤的源字符串</param>
+            <returns>返回过滤的字符串</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.GetFileExtName(System.String)">
+            <summary>
+            获取指定文件的扩展名
+            </summary>
+            <param name="fileName">指定文件名</param>
+            <returns>扩展名</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.JiaMa(System.Object)">
+            <summary>
+            对数据进行编码
+            </summary>
+            <param name="obj">需要进行编码的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.JieMa(System.String)">
+            <summary>
+            对数据进行解码。只能解码由JiaMa(obj)产生的数据
+            </summary>
+            <param name="str">需要进行解码的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StrToBase64(System.String)">
+            <summary>
+            将字符串转为base64
+            </summary>
+            <param name="str">待转换的字符串</param>
+            <returns>转换后的base64数据</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.Base64StringToString(System.String)">
+            <summary>
+            将base64转换为字符串
+            </summary>
+            <param name="base64">待转换的base64数据</param>
+            <returns>转换后的字符串</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.HtmlToTxt(System.String)">
+            <summary>
+            对字符串进行检查和替换其中的特殊字符
+            </summary>
+            <param name="strHtml">需要进行替换检查的html字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.RandomNum(System.Int32)">
+            <summary>
+            数字随机数 
+            </summary>
+            <param name="n">生成长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.RandCode(System.Int32)">
+            <summary> 
+            数字和字母随机数 数字+大写字母
+            </summary> 
+            <param name="n">生成长度</param> 
+            <returns></returns> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.RandLetter(System.Int32)">
+            <summary> 
+            字母随机数 
+            </summary> 
+            <param name="n">生成长度</param> 
+            <returns></returns> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.DateRndName(System.Random)">
+            <summary> 
+            日期随机函数 
+            </summary> 
+            <param name="ra">长度</param> 
+            <returns></returns> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.GetGuid(System.Boolean)">
+            <summary>
+            生成GUID 
+            </summary>
+            <param name="h">true 生成带-的guid。否则没有-</param>
+            <returns>大写的GUID</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.GetWeek(System.DateTime)">
+            <summary>
+            得到星期几
+            </summary>
+            <param name="dt">当前时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.DateDiff(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            比较两个时间相差 
+            </summary>
+            <param name="howtocompare">参数：year/month/day/hour/minute/second</param>
+            <param name="startDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.CreateDataTableByOldDataTable(System.Data.DataTable,System.String)">
+            <summary>
+            根据查询条件，到oldDataTable中查询数据，并根据查询条件返回新的DataTable
+            </summary>
+            <param name="oldDataTable">数据源DataTable</param>
+            <param name="selectWhere">查询条件 如：id=1</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.JsonDate(System.Object)">
+            <summary>
+            处理json中的时间
+            </summary>
+            <param name="data">需要转换的时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.StringArrayToIntArray(System.String[])">
+            <summary>
+            字符串数组转换成int数组
+            </summary>
+            <param name="array">要转换的字符串数组。格式{"1","2","3"}</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.RandomNickName">
+            <summary>
+            随机返回一串中文字符
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.VerifyNumber(System.Object,System.String)">
+            <summary>
+            验证数字，返回指定小数位
+            (会进行四舍五入)
+            </summary>
+            <param name="number">待验证的数字</param>
+            <param name="type">A:（0位小数）B:（2位小数）</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.FilterSpecial(System.String)">
+            <summary>
+            过滤特殊字符
+            如果字符串为空，直接返回。
+            </summary>
+            <param name="str">需要过滤的字符串</param>
+            <returns>过滤好的字符串</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.GetLoumaNumber(System.Int32)">
+            <summary>
+            阿拉伯到罗马转换
+            </summary>
+            <param name="n">数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.ChangeToObj``1(System.String)">
+            <summary>
+            将字符串转化为指定类型
+            </summary>
+            <typeparam name="T">指定的类型</typeparam>
+            <param name="str">需要转换的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Public.Utils.Utils.ChangeToString``1(``0)">
+            <summary>
+            将指定类型转化为字符串
+            </summary>
+            <typeparam name="T">指定的类型</typeparam>
+            <param name="t">需要转换的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Utils.Utils.EnumDescriptionAttribute">
+            <summary>
+            枚举属性
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Utils.Utils.EnumHelper">
+            <summary>
+            得到属性（EnumDescriptionAttribute）中的value
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Public.Utils.UtilsEnum.CharacterState">
+             <summary>
+             返回字符串状态。大写或是小写
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>  
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Utils.UtilsEnum.CharacterState.ToUpper">
+            <summary>
+            返回大写状态
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Public.Utils.UtilsEnum.CharacterState.ToLower">
+            <summary>
+            返回小写状态
+            </summary>
+        </member>
+    </members>
+</doc>

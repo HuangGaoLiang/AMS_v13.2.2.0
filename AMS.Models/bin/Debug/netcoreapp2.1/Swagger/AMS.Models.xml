@@ -1,0 +1,5801 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AMS.Models</name>
+    </assembly>
+    <members>
+        <member name="T:AMS.Storage.Models.TblAutAudit">
+            <summary>
+            审核表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.AuditId">
+            <summary>
+            审核表主键
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.FlowNo">
+            <summary>
+            流程编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.BizType">
+            <summary>
+            业务类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.ExtField1">
+            <summary>
+            业务扩展字段1
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.ExtField2">
+            <summary>
+            业务扩展字段2
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.AuditStatus">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.AuditUserId">
+            <summary>
+            审核人Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.AuditUserName">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.AuditDate">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.CreateUserId">
+            <summary>
+            创建人Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.CreateUserName">
+            <summary>
+            创建人姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.DataExt">
+            <summary>
+            数据扩展
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.DataExtVersion">
+            <summary>
+            数据版本
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutAudit.UpdateTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblAutClass">
+            <summary>
+            审核中数据-班级课表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.AutClassId">
+            <summary>
+            主键(TblAutClass)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.AuditId">
+            <summary>
+            所属审核
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.ClassNo">
+            <summary>
+            班级代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.TermId">
+            <summary>
+            学期表主健(TblDatTerm)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.RoomCourseId">
+            <summary>
+            教室表主健(TblDatClassRoom)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.ClassRoomId">
+            <summary>
+            教室Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.CourseLeveId">
+            <summary>
+            课程等级
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.TeacherId">
+            <summary>
+            上课老师编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.CourseNum">
+            <summary>
+            课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.StudentsNum">
+            <summary>
+            学生数量/学位
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.DataStatus">
+            <summary>
+            数据状态（-1：删除 0：不变 1：修改）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClass.UpdateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblAutClassTime">
+            <summary>
+            班级上课时间表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClassTime.AutClassTimeId">
+            <summary>
+            班级上课时间表主健(TblAutClassTime)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClassTime.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClassTime.ClassTimeId">
+            <summary>
+            上课时间Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClassTime.AuditId">
+            <summary>
+            所属审核
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClassTime.ClassId">
+            <summary>
+            班级主健(TblDatClass)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClassTime.SchoolTimeId">
+            <summary>
+            上课时间段主健(TblDatSchoolTime)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClassTime.DataStatus">
+            <summary>
+            -1删除0不变1修改
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutClassTime.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblAutTerm">
+            <summary>
+            审核中的数据（学期）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.AutTermId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.AuditId">
+            <summary>
+            审核表Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.SchoolId">
+            <summary>
+            校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.TermTypeId">
+            <summary>
+            学期类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.TermName">
+            <summary>
+            学期名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.BeginDate">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.EndDate">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.Classes60">
+            <summary>
+            60分钟课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.Classes90">
+            <summary>
+            90分钟课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.Classes180">
+            <summary>
+            180分钟课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.TuitionFee">
+            <summary>
+            单次课学费
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.MaterialFee">
+            <summary>
+            单次课杂费
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.TermId">
+            <summary>
+            源数据ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.DataStatus">
+            <summary>
+            数据状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblAutTerm.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblCashOrderTrade">
+            <summary>
+            TblCashOrderTrade
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.OrderTradeId">
+            <summary>
+            主键（TblCashOrderTrade）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.OrderId">
+            <summary>
+            订单ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.OrderNo">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.TradeType">
+            <summary>
+            交易类型（1 报名订单 2退班退费订单 3游学营退费订单 4余额退费订单 5订金定单 6休学订单）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.PayType">
+            <summary>
+            付款方式(1刷卡 2现金 3转账 4微信 5支付宝 9其他)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.TradeAmount">
+            <summary>
+            交易金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.TradeBalanceAmount">
+            <summary>
+            使用余额支付
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.TotalDiscount">
+            <summary>
+            优惠总额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.Buyer">
+            <summary>
+            买家(FROM)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.Seller">
+            <summary>
+            卖家(TO)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.TradeStatus">
+            <summary>
+            交易状态（-1交易取消 1交易中 2交易完成）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.Remark">
+            <summary>
+            订单交易说明
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashOrderTrade.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblCashWallet">
+            <summary>
+            用户钱包
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWallet.WalletId">
+            <summary>
+            主健（TblCashWallet）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWallet.StudentId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWallet.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWallet.Balance">
+            <summary>
+            余额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWallet.FrozenAmount">
+            <summary>
+            冻结资金
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWallet.UpdateTime">
+            <summary>
+            更后更新时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblCashWalletForzenDetail">
+            <summary>
+            用户钱包余额冻结明细
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletForzenDetail.WalletForzenDetailId">
+            <summary>
+            主键（TblCashWalletForzenDetail）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletForzenDetail.SchoolId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletForzenDetail.StudentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletForzenDetail.BusinessType">
+            <summary>
+            业务类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletForzenDetail.BusinessId">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletForzenDetail.Amount">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletForzenDetail.Status">
+            <summary>
+            状态（-1作废1处理中2已完成）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletForzenDetail.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblCashWalletTrade">
+            <summary>
+            用户钱包余额交易流水
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletTrade.WalletTradeId">
+            <summary>
+            主健(TblCashWalletTrade)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletTrade.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletTrade.StudentId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletTrade.OrderId">
+            <summary>
+            订单交易号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletTrade.TradeType">
+            <summary>
+            交易类型（1 报名订单 2退班退费订单 3游学营退费订单 4余额退费订单）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletTrade.TransAmount">
+            <summary>
+            交易金额(可提现)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletTrade.TransBefBalance">
+            <summary>
+            交易前余额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletTrade.TransAftBalance">
+            <summary>
+            交易后余额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletTrade.TransDate">
+            <summary>
+            交易时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCashWalletTrade.Remark">
+            <summary>
+            订单交易说明
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblCstSchoolStudent">
+            <summary>
+            学生校区归属表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstSchoolStudent.SchoolStudentId">
+            <summary>
+            主健(TblCstSchoolStudent)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstSchoolStudent.CompanyId">
+            <summary>
+            归属公司
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstSchoolStudent.SchoolId">
+            <summary>
+            归属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstSchoolStudent.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstSchoolStudent.StudyStatus">
+            <summary>
+            学生状态（1在读2休学3流失）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstSchoolStudent.RemindClassTimes">
+            <summary>
+            剩余课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstSchoolStudent.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblCstStudent">
+            <summary>
+            学生信息
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.StudentId">
+            <summary>
+            主健(TblCstStudent学生信息)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.StudentNo">
+            <summary>
+            学号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.Sex">
+            <summary>
+            性别(1男2女)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.Birthday">
+            <summary>
+            出生年月
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.HeadFaceUrl">
+            <summary>
+            头像地址
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.CurrentSchool">
+            <summary>
+            就读学校
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.AreaId">
+            <summary>
+            所在区域(存储的是区域ID,可以推算出省市)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.HomeAddress">
+            <summary>
+            家庭详细地址
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.HomeAddressFormat">
+            <summary>
+            家庭详细地址（原始格式）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.IDType">
+            <summary>
+            1身份证 2护照 3港澳通行证 4台胞证
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.IDNumber">
+            <summary>
+            证件号码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.LinkMobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.LinkMail">
+            <summary>
+            电子邮箱
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.ContactPerson">
+            <summary>
+            监护人信息
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.ContactPersonMobile">
+            <summary>
+            监护人手机
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.CustomerFrom">
+            <summary>
+            名单来源(1自然到访 2线下市场活动 3线上活动 4地推 5异业合作 6 400电话)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.ParentId">
+            <summary>
+            推荐人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudent.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblCstStudentContact">
+            <summary>
+            学生联系人表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudentContact.StudentContactId">
+            <summary>
+            主健(TblCstStudentContact)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudentContact.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudentContact.GuardianName">
+            <summary>
+            监护人姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudentContact.Relationship">
+            <summary>
+            与学生的关系
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudentContact.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudentContact.Email">
+            <summary>
+            电子邮箱
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblCstStudentContact.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatAttchment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatAttchment.AttchmentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatAttchment.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatAttchment.AttchmentType">
+            <summary>
+            附件类别
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatAttchment.BusinessId">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatAttchment.Url">
+            <summary>
+            附件地址
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatAttchment.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatAttchment.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatBusinessConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatBusinessConfig.BusinessConfigKey">
+            <summary>
+            配置的KEY
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatBusinessConfig.CompanyId">
+            <summary>
+            所属公司
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatBusinessConfig.BusinessConfigName">
+            <summary>
+            配置名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatBusinessConfig.BusinessConfigData">
+            <summary>
+            配置数据
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatBusinessConfig.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatClass">
+            <summary>
+            班级
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.ClassId">
+            <summary>
+            主键 班级表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.ClassNo">
+            <summary>
+            班级代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.TermId">
+            <summary>
+            学期表主健
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.RoomCourseId">
+            <summary>
+            教室表主健
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.ClassRoomId">
+            <summary>
+            教室Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.CourseLeveId">
+            <summary>
+            课程等级
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.TeacherId">
+            <summary>
+            上课老师编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.CourseNum">
+            <summary>
+            课次 
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.StudentsNum">
+            <summary>
+            学生数量/学位
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.ClassType">
+            <summary>
+            1常规班级 2补课周班级
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClass.UpdateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatClassReplenishWeek">
+            <summary>
+            补课周信息表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassReplenishWeek.ReplenishWeekId">
+            <summary>
+            主键 补课周信息表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassReplenishWeek.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassReplenishWeek.TeacherId">
+            <summary>
+            老师编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassReplenishWeek.StudentId">
+            <summary>
+            学生编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassReplenishWeek.ClassId">
+            <summary>
+            班级编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassReplenishWeek.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassReplenishWeek.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatClassRoom">
+            <summary>
+            教室
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassRoom.ClassRoomId">
+            <summary>
+            主键 教室
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassRoom.SchoolId">
+            <summary>
+            所属校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassRoom.RoomNo">
+            <summary>
+            门牌号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassRoom.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatClassRoom.UpdateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatCost">
+            <summary>
+            费用类型表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCost.CostId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCost.CostName">
+            <summary>
+            类别名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCost.IsDisabled">
+            <summary>
+            是否禁用
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCost.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCost.UpdateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatCostMiddle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCostMiddle.TypeCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCostMiddle.CostId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCostMiddle.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatCostType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCostType.TblDatCostTypeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCostType.TypeCode">
+            <summary>
+            所属类别
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCostType.TypeName">
+            <summary>
+            类别名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCostType.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatCourse">
+            <summary>
+            课程表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.CourseId">
+            <summary>
+            课程主健 课程表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.CompanyId">
+            <summary>
+            公司编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.CourseCode">
+            <summary>
+            课程代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.CourseType">
+            <summary>
+            课程类别 0:必修课程 1:选修课程
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.ShortName">
+            <summary>
+            课程简称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.CourseCnName">
+            <summary>
+            课程中文名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.CourseEnName">
+            <summary>
+            课程英文名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.ClassCnName">
+            <summary>
+            班级中文名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.ClassEnName">
+            <summary>
+            班级英文名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.IsDisabled">
+            <summary>
+            是否禁用 0:启用 1:禁用
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourse.UpdateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatCourseLevel">
+            <summary>
+            课程级别设置
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevel.CourseLevelId">
+            <summary>
+            课程级别主健(TblDatCourseLevel)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevel.CompanyId">
+            <summary>
+            所属公司
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevel.LevelCode">
+            <summary>
+            课程级别代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevel.LevelCnName">
+            <summary>
+            中文名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevel.LevelEnName">
+            <summary>
+            英文名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevel.IsDisabled">
+            <summary>
+            停用/启用（0,：启用 1：禁用）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevel.UpdateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatCourseLevelMiddle">
+            <summary>
+            课程级别设置中间表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevelMiddle.CourseLevelMiddleId">
+            <summary>
+            课程级别设置中间表主健(CourseLevelMiddleId)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevelMiddle.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevelMiddle.CourseLevelId">
+            <summary>
+            课程级别ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevelMiddle.BeginAge">
+            <summary>
+            开始年龄
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevelMiddle.EndAge">
+            <summary>
+            结束年龄
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevelMiddle.Duration">
+            <summary>
+            时长
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevelMiddle.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatCourseLevelMiddle.UpdateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatFeedback">
+            <summary>
+            投诉与建议
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.FeedbackId">
+            <summary>
+            主键 
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.CompanyId">
+            <summary>
+            公司编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.SchoolName">
+            <summary>
+            所属校区名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.ParentUserCode">
+            <summary>
+            家长账号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.LinkMobile">
+            <summary>
+            联系手机号 
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.CreatorName">
+            <summary>
+            提交人名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.Content">
+            <summary>
+            反馈内容
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.ProcessStatus">
+            <summary>
+            处理状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.ProcessRemark">
+            <summary>
+            处理意见
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.ProcessTime">
+            <summary>
+            处理时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.ProcessUserId">
+            <summary>
+            处理人ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.ProcessUserName">
+            <summary>
+            处理人名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatFeedback.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatHoliday">
+            <summary>
+            停课日表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatHoliday.HolidayId">
+            <summary>
+            主键 停课日表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatHoliday.SchoolId">
+            <summary>
+            所属校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatHoliday.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatHoliday.BeginDate">
+            <summary>
+            BeginDate
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatHoliday.EndDate">
+            <summary>
+            EndDate
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatHoliday.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatHoliday.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatHoliday.UpdateTime">
+            <summary>
+            最后一次更新时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatOperationLog">
+            <summary>
+            业务操作日志
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatOperationLog.OperationLogId">
+            <summary>
+            主健->业务操作日志
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatOperationLog.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatOperationLog.BusinessType">
+            <summary>
+            业务类别
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatOperationLog.BusinessId">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatOperationLog.FlowStatus">
+            <summary>
+            操作状态 -2拒绝 -1撤销0提交1确认10接收
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatOperationLog.Remark">
+            <summary>
+            操作备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatOperationLog.OperatorId">
+            <summary>
+            操作人ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatOperationLog.OperatorName">
+            <summary>
+            操作人名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatOperationLog.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatPrintCounter">
+            <summary>
+            打印调用记录
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatPrintCounter.PrintCounterId">
+            <summary>
+            主键  打印调用记录
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatPrintCounter.SchoolId">
+            <summary>
+            校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatPrintCounter.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatPrintCounter.PrintBillType">
+            <summary>
+            打印类别
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatPrintCounter.Counts">
+            <summary>
+            打印次数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatPrintCounter.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatRoomCourse">
+            <summary>
+            教室课程表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatRoomCourse.RoomCourseId">
+            <summary>
+            主健 教室课程表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatRoomCourse.ClassRoomId">
+            <summary>
+            教室主健
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatRoomCourse.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatRoomCourse.MaxWeekStage">
+            <summary>
+            开班时间段数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatRoomCourse.MaxStageStudents">
+            <summary>
+            每个时间段学位数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatRoomCourse.IsDisabled">
+            <summary>
+            是否禁用
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatRoomCourse.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatRoomCourse.UpdateTime">
+            <summary>
+            最后一次修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatSchoolCourse">
+            <summary>
+            描述：校区授权课程
+            <para>作    者: Huang GaoLiang </para>
+            <para>创建时间: 2018-10-10 </para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolCourse.SchoolCourseId">
+            <summary>
+            主健 校区授权课程
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolCourse.SchoolId">
+            <summary>
+            校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolCourse.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolCourse.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolCourse.UpdateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatSchoolTime">
+            <summary>
+            上课时间段表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolTime.SchoolTimeId">
+            <summary>
+            上课时间表主键
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolTime.SchoolId">
+            <summary>
+            校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolTime.TermId">
+            <summary>
+            学期主健
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolTime.WeekDay">
+            <summary>
+            星期几
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolTime.Duration">
+            <summary>
+            时长
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolTime.BeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolTime.EndTime">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolTime.ClassTimeNo">
+            <summary>
+            时间段编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolTime.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatSchoolTime.UpdateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDatTerm">
+            <summary>
+            学期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.TermId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.SchoolId">
+            <summary>
+            校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.TermTypeId">
+            <summary>
+            学期类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.TermName">
+            <summary>
+            学期名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.BeginDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.EndDate">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.Classes60">
+            <summary>
+            60分钟课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.Classes90">
+            <summary>
+            90分钟课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.Classes180">
+            <summary>
+            180分钟课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.TuitionFee">
+            <summary>
+            单次课学费
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.MaterialFee">
+            <summary>
+            单次课杂费
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDatTerm.UpdateTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewCourseLevelMiddle">
+            <summary>
+            课程级别关联视图
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCourseLevelMiddle.CourseLevelMiddleId">
+            <summary>
+            课程级别关联中间件Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCourseLevelMiddle.CourseId">
+            <summary>
+            课程表主键Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCourseLevelMiddle.CourseLevelId">
+            <summary>
+            级别表主键Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCourseLevelMiddle.BeginAge">
+            <summary>
+            开始岁数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCourseLevelMiddle.EndAge">
+            <summary>
+            结束岁数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCourseLevelMiddle.Duration">
+            <summary>
+            时长
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCourseLevelMiddle.LevelCode">
+            <summary>
+            课程级别代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCourseLevelMiddle.LevelCnName">
+            <summary>
+            课程级别中文名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCourseLevelMiddle.LevelEnName">
+            <summary>
+            课程级别英文名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCourseLevelMiddle.IsDisabled">
+            <summary>
+            级别是否禁用
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewReplenishWeek">
+            <summary>
+            补课周补课视图类
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.StudentId">
+            <summary>
+            学生主键编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.StudentNo">
+            <summary>
+            学生编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.StudentName">
+            <summary>
+            学生名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.ClassNo">
+            <summary>
+            班级代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.ClassNumber">
+            <summary>
+            缺课课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.ReplenishWeekId">
+            <summary>
+            补课周主键编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.TermId">
+            <summary>
+            学期编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.TermName">
+            <summary>
+            学期名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.CourseId">
+            <summary>
+            课程编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.ClassId">
+            <summary>
+            上课班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewReplenishWeek.TeacherId">
+            <summary>
+            老师编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewRoomCourse.RoomCourseId">
+            <summary>
+            教室课程Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewRoomCourse.ClassRoomId">
+            <summary>
+            教室Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewRoomCourse.RoomNo">
+            <summary>
+            门牌号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewRoomCourse.CourseId">
+            <summary>
+            课程Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewRoomCourse.CourseCnName">
+            <summary>
+            课程中文名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewRoomCourse.ClassCnName">
+            <summary>
+            班级中文名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewRoomCourse.MaxWeekStage">
+            <summary>
+            开班时间段数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewRoomCourse.MaxStageStudents">
+            <summary>
+            每个时间段学位数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewRoomCourse.TotalDegree">
+            <summary>
+            总学位
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewRoomCourse.IsDisabled">
+            <summary>
+            启用/停用
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewStudentTimeLess">
+            <summary>
+            学生缺勤数据
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.LessonId">
+            <summary>
+            课次编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.StudentId">
+            <summary>
+            学生主键编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.ClassId">
+            <summary>
+            上课班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.ClassNo">
+            <summary>
+            班级代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.TeacherId">
+            <summary>
+            老师编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.TermId">
+            <summary>
+            学期编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.CourseId">
+            <summary>
+            课程编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.EnrollOrderItemId">
+            <summary>
+            课程编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.CourseLevelId">
+            <summary>
+            课程等级编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentTimeLess.ClassBeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDctCoupon">
+            <summary>
+            优惠券表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.CouponId">
+            <summary>
+            主健
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.CouponNo">
+            <summary>
+            券号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.CouponType">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.Amount">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.Status">
+            <summary>
+            是否使用
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.IsFreeAll">
+            <summary>
+            是否全免 (校长奖学金类型的优惠券时用,选择全免为true,没有选则为false，其余类型的优惠券为fasle)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.ExpireTime">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.StudentId">
+            <summary>
+            使用人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.UseTime">
+            <summary>
+            使用时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.FromId">
+            <summary>
+            来源ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.EnrollOrderId">
+            <summary>
+            来源订单
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.CreatorId">
+            <summary>
+            创建人Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCoupon.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblDctCouponRule">
+            <summary>
+            赠与奖学金
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.CouponRuleId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.CouponRuleName">
+            <summary>
+            优惠名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.CouponType">
+            <summary>
+            优惠类型（1转介绍 2 满减奖学金 ）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.FullAmount">
+            <summary>
+            满多少
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.CouponAmount">
+            <summary>
+            优惠额度
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.MaxQuota">
+            <summary>
+            名额限制
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.UseQuota">
+            <summary>
+            已使用人数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.BeginDate">
+            <summary>
+            优惠起始日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.EndDate">
+            <summary>
+            优惠截止日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.Remark">
+            <summary>
+            优惠原因
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.IsDisabled">
+            <summary>
+            是否禁用
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblDctCouponRule.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblFinAttendanceConfirm">
+            <summary>
+            考勤确认表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinAttendanceConfirm.AttendanceConfirmId">
+            <summary>
+            主健(考勤确认表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinAttendanceConfirm.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinAttendanceConfirm.TeacherId">
+            <summary>
+            老师ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinAttendanceConfirm.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinAttendanceConfirm.Month">
+            <summary>
+            确认的日期（0表示学期）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinAttendanceConfirm.TeacherSignUrl">
+            <summary>
+            签字的图片地址
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinAttendanceConfirm.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinAttendanceConfirm.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblFinOrderHandover">
+            <summary>
+            TblFinOrderHandover(订单交接核对主表)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.OrderHandoverId">
+            <summary>
+            主健(订单交接核对主表)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.PersonalId">
+            <summary>
+            招生专员ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.PersonalName">
+            <summary>
+            招生专员名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.DayIncomeAmout">
+            <summary>
+            当日收现钞
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.InBankAmount">
+            <summary>
+            存入银行现钞
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.ReceiptNumber">
+            <summary>
+            存单张数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.HandoverUrl">
+            <summary>
+            （交接人）招生专员签字/日期,图片地址
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.RecipientUrl">
+            <summary>
+            （接收人）驻校出纳签字/日期,图片地址
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.Remark">
+            <summary>
+            差异说明
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.HandoverDate">
+            <summary>
+            交接日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.CreatorId">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandover.CreatorName">
+            <summary>
+            创建人名称
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblFinOrderHandoverDetail">
+            <summary>
+            TblFinOrderHandoverDetail(订单交接核对明细)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.OrderHandoverDetailId">
+            <summary>
+            主健(订单交接核对明细)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.OrderHandoverId">
+            <summary>
+            所属核对主表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.PersonalId">
+            <summary>
+            招生专员ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.OrderId">
+            <summary>
+            订单ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.OrderNo">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.OrderTradeType">
+            <summary>
+            订单类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.UseBalanceAmount">
+            <summary>
+            使用余额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.TotalDiscountFee">
+            <summary>
+            优惠总额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.PayType">
+            <summary>
+            收款方式
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.PayAmount">
+            <summary>
+            收款金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.PayDate">
+            <summary>
+            收款日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.HandoverStatus">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.HandoverDate">
+            <summary>
+            交接日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.CreatorId">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblFinOrderHandoverDetail.CreatorName">
+            <summary>
+            创建人名称
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewFinOrderHandover">
+            <summary>
+            交接记录实体类
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandover.OrderHandoverId">
+            <summary>
+            主健(订单交接核对主表)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandover.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandover.PersonalId">
+            <summary>
+            招生专员ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandover.PersonalName">
+            <summary>
+            招生专员名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandover.HandoverAmount">
+            <summary>
+            交接金额（元）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandover.HandoverNumber">
+            <summary>
+            交接单数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandover.Remark">
+            <summary>
+            差异说明
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandover.HandoverDate">
+            <summary>
+            交接日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandover.CreatorId">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandover.CreatorName">
+            <summary>
+            创建人名称
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewFinOrderHandoverDetailSummary">
+            <summary>
+            订单交接核对明细汇总
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandoverDetailSummary.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandoverDetailSummary.PersonalId">
+            <summary>
+            收银员Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandoverDetailSummary.PersonalName">
+            <summary>
+            收银员
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandoverDetailSummary.Amount">
+            <summary>
+            未交接总金额（元）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewFinOrderHandoverDetailSummary.UnHandoverNumber">
+            <summary>
+            未交接单数
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblHssPassport">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblHssPassport.PassporId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblHssPassport.UserCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblHssPassport.OpenId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblHssPassport.UnionId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblHssPassport.CurrentLoginIp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblHssPassport.CurrentLoginDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblHssPassport.LastLoginIp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblHssPassport.LastLoginDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblHssPassport.LoginTimes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblHssPassport.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrCampOrder">
+            <summary>
+            退费订单-游学营
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrCampOrder.RefundOrderId">
+            <summary>
+            主键(退费订单-游学营)
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrDepositOrder">
+            <summary>
+            订金表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.DepositOrderId">
+            <summary>
+            主健（DepositOrderId）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.StudentId">
+            <summary>
+            学生编号（TblCstStudent）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.OrderNo">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.SchoolId">
+            <summary>
+            归属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.PayDate">
+            <summary>
+            付款日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.UsesType">
+            <summary>
+            订金用途(1预报名2游学营定金3写生定金)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.Amount">
+            <summary>
+            定金
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.PayeeId">
+            <summary>
+            收银人编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.Payee">
+            <summary>
+            收银人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.PayType">
+            <summary>
+            1刷卡 2现金 3转账 4微信 5支付宝 9其他
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.OrderStatus">
+            <summary>
+            单据状态（-1订单取消, 0待付款,1已付款/正常 10完成）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.CancelUserId">
+            <summary>
+            作废操作人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.CancelUserName">
+            <summary>
+            作废操作名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.CancelDate">
+            <summary>
+            作废时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.CancelRemark">
+            <summary>
+            作废原因
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrDepositOrder.CreateTime">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrEnrollOrder">
+            <summary>
+            报名订单
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.EnrollOrderId">
+            <summary>
+            主键(报名订单)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.OrderNo">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.OrderNewType">
+            <summary>
+            1新生2老生
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.SchoolId">
+            <summary>
+            报名校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.TotalClassTimes">
+            <summary>
+            报名总课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.TotalTuitionFee">
+            <summary>
+            学费总额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.TotalMaterialFee">
+            <summary>
+            杂费总额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.TotalDiscountFee">
+            <summary>
+            优惠总额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.PayType">
+            <summary>
+            付款方式
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.TotalTradeAmount">
+            <summary>
+            交易总额(订单交易总额=付款总额+使用余额总额)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.PayAmount">
+            <summary>
+            交易总额（实收金额）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.UseBalance">
+            <summary>
+            使用余额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.CreateId">
+            <summary>
+            操作人ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.CreateName">
+            <summary>
+            操作人名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.OrderStatus">
+            <summary>
+            订单状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.CancelUserId">
+            <summary>
+            作废操作人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.CancelUserName">
+            <summary>
+            作废操作名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.CancelDate">
+            <summary>
+            作废时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.CancelRemark">
+            <summary>
+            作废原因
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrder.CreateTime">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrEnrollOrderAchieve">
+            <summary>
+            业绩归属人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderAchieve.EnrollOrderAchieveId">
+            <summary>
+            主键(TblOdrEnrollOrderAchieve)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderAchieve.SchoolId">
+            <summary>
+            校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderAchieve.EnrollOrderId">
+            <summary>
+            所属订单
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderAchieve.PersonalId">
+            <summary>
+            业绩归属人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderAchieve.Proportion">
+            <summary>
+            业绩比例
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrEnrollOrderDiscount">
+            <summary>
+            报名订单优惠
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderDiscount.EnrollOrderDiscountId">
+            <summary>
+            主健(报名订单优惠)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderDiscount.SchoolId">
+            <summary>
+            校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderDiscount.EnrollOrderId">
+            <summary>
+            所属订单
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderDiscount.CouponId">
+            <summary>
+            使用的优惠券ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderDiscount.CouponAmount">
+            <summary>
+            优惠券金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderDiscount.CouponType">
+            <summary>
+            优惠券类型（1：转介绍，2 ：满减奖学金，3：校长奖学金）
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrEnrollOrderItem">
+            <summary>
+            报名订单课程明细
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.EnrollOrderItemId">
+            <summary>
+            主健(报名订单课程明细)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.EnrollOrderId">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.EnrollType">
+            <summary>
+            报名方式(1报名课程 2 报名学期类型)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.TermTypeId">
+            <summary>
+            学期类型ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.CourseType">
+            <summary>
+            课程类型(0必修1选修)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.CourseLevelId">
+            <summary>
+            课程级别ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.Duration">
+            <summary>
+            课程时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.ClassTimes">
+            <summary>
+            报名课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.ClassTimesUse">
+            <summary>
+            已排课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.DiscountFee">
+            <summary>
+            优惠总额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.TuitionFee">
+            <summary>
+            学费单价(原价)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.MaterialFee">
+            <summary>
+            杂费单价(原价)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.TuitionFeeReal">
+            <summary>
+            学费单价(实价)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.MaterialFeeReal">
+            <summary>
+            杂费单价(实价)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrEnrollOrderItem.Status">
+            <summary>
+            状态(1:已报名,2:已退费,3:已休学,4:已转校,5:已作废)
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrLeaveClassOrder">
+            <summary>
+            退费订单-退班
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveClassOrder.RefundOrderId">
+            <summary>
+            主键(退费订单-退班)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveClassOrder.SchoolId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveClassOrder.StopClassDate">
+            <summary>
+            停课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveClassOrder.Reason">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveClassOrder.ReceiptStatus">
+            <summary>
+            票据情况
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrLeaveSchoolOrder">
+            <summary>
+            退费订单-休学
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveSchoolOrder.RefundOrderId">
+            <summary>
+            主键(退费订单-休学)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveSchoolOrder.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveSchoolOrder.LeaveTime">
+            <summary>
+            休学日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveSchoolOrder.ResumeTime">
+            <summary>
+            复课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveSchoolOrder.TotalRefundLessonCount">
+            <summary>
+            退课总课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveSchoolOrder.TotalUseLessonCount">
+            <summary>
+            实际上课总课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveSchoolOrder.Remark">
+            <summary>
+            补充说明
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrLeaveSchoolOrder.Reason">
+            <summary>
+            休学原因
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder">
+            <summary>
+            退费订单-转校转出
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder.RefundOrderId">
+            <summary>
+            主键(退费订单-转校转出)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder.InSchoolId">
+            <summary>
+            转入校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder.OutSchoolId">
+            <summary>
+            转出校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder.Remark">
+            <summary>
+            转校原因
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder.OutDate">
+            <summary>
+            转出日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder.ReceiptStatus">
+            <summary>
+            票据情况 1未开发票2发票齐全3发票遗失
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder.TransFromBalance">
+            <summary>
+            从余额转出多少金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder.TotalRefundLessonCount">
+            <summary>
+            退课总课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundChangeSchoolOrder.TotalUseLessonCount">
+            <summary>
+            实际上课总课次
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrRefundOrdeEnroll">
+            <summary>
+            退费订单-订单课程明细
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrdeEnroll.RefundOrderEnrollId">
+            <summary>
+            主键(退费订单-订单课程明细)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrdeEnroll.SchoolId">
+            <summary>
+            校区ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrdeEnroll.EnrollOrderItemId">
+            <summary>
+            报名订单课程明细ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrdeEnroll.RefundOrderId">
+            <summary>
+            退费订单ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrdeEnroll.LessonCount">
+            <summary>
+            退课课次数量
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrdeEnroll.UseLessonCount">
+            <summary>
+            实际上课课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrdeEnroll.LessonPrice">
+            <summary>
+            已上课课次单价
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrdeEnroll.Amount">
+            <summary>
+            退费金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrdeEnroll.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrRefundOrder">
+            <summary>
+            退费订单
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.RefundOrderId">
+            <summary>
+            主键(TblOdrRefundOrder)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.SchoolId">
+            <summary>
+            所属校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.OrderNo">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.OrderType">
+            <summary>
+            订单类型（1 报名订单 2退班退费订单 3游学营退费订单 4余额退费订单 5休学退费订单）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.TotalDeductAmount">
+            <summary>
+            扣款合计
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.Amount">
+            <summary>
+            退费金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.OrderStatus">
+            <summary>
+            订单状态（-1订单取消0待付款1已付款/正常）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.CancelUserId">
+            <summary>
+            作废操作人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.CancelDate">
+            <summary>
+            作废时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.CancelRemark">
+            <summary>
+            作废原因
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.CreatorId">
+            <summary>
+            创建人Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.CreatorName">
+            <summary>
+            创建人姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrder.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrRefundOrderCost">
+            <summary>
+            退费订单-其他费用
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrderCost.RefundClassCostId">
+            <summary>
+            主键(退费订单-其他费用)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrderCost.RefundOrderId">
+            <summary>
+            退费订单
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrderCost.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrderCost.CostId">
+            <summary>
+            费用ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrderCost.Amount">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundOrderCost.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrRefundPay">
+            <summary>
+            退费订单-支付信息
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundPay.RefundPayId">
+            <summary>
+            主键(退费订单-支付信息)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundPay.SchoolId">
+            <summary>
+            校区ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundPay.RefundOrderId">
+            <summary>
+            退费订单ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundPay.RefundType">
+            <summary>
+            退款方式
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundPay.BankName">
+            <summary>
+            发卡银行
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundPay.BankCardNo">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundPay.BankUserName">
+            <summary>
+            账户名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundPay.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrRefundPay.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrStudyPlan">
+            <summary>
+            描    述：报名学习计划
+            <para>作    者：郭伟佳</para>
+            <para>创建时间：2018-11-28</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlan.StudyPlanId">
+            <summary>
+            主健(报名学习计划)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlan.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlan.CourseName">
+            <summary>
+            课程名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlan.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlan.CourseLevelId">
+            <summary>
+            课程级别ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlan.CourseLevelName">
+            <summary>
+            课程级别名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlan.Age">
+            <summary>
+            适用年龄
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlan.Duration">
+            <summary>
+            时长(60为60分钟,90为90分钟)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlan.PriorityLevel">
+            <summary>
+            显示优先级
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlan.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblOdrStudyPlanTerm">
+            <summary>
+            描    述：报名学习计划学期
+            <para>作    者：郭伟佳</para>
+            <para>创建时间：2018-11-28</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.StudyPlanTermId">
+            <summary>
+            主键(报名学习计划学期)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.TermTypeId">
+            <summary>
+            所属学期类型ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.TermTypeName">
+            <summary>
+            所属学期类型名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.Classes60">
+            <summary>
+            60分钟的课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.Classes90">
+            <summary>
+            90分钟的课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.Classes180">
+            <summary>
+            180分钟的课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.BeginDate">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.EndDate">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.TuitionFee">
+            <summary>
+            单次课学费
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.MaterialFee">
+            <summary>
+            单次课杂费
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblOdrStudyPlanTerm.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewBalanceRefundOrder">
+            <summary>
+            余额退费列表信息
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.OrderId">
+            <summary>
+            订单Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.OrderNo">
+            <summary>
+            退费单号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.StudentNo">
+            <summary>
+            学号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.GuardianMobile">
+            <summary>
+            监护人手机号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.Amount">
+            <summary>
+            退费金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.TotalDeductAmount">
+            <summary>
+            扣款金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.RealRefundAmount">
+            <summary>
+            实退金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.RefundType">
+            <summary>
+            退费方式
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.BankName">
+            <summary>
+            发卡银行
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.BankCardNo">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.BankUserName">
+            <summary>
+            账户名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.Remark">
+            <summary>
+            退费备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.RefundDate">
+            <summary>
+            退费日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewBalanceRefundOrder.CreatorName">
+            <summary>
+            提交人
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewChangeSchooolOrder">
+            <summary>
+            转校订单
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.RefundOrderId">
+            <summary>
+            主键(TblOdrRefundOrder)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.SchoolId">
+            <summary>
+            所属校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.OrderNo">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.OrderType">
+            <summary>
+            订单类型（1 报名订单 2退班退费订单 3游学营退费订单 4余额退费订单 5休学退费订单）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.TotalDeductAmount">
+            <summary>
+            扣款合计
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.Amount">
+            <summary>
+            退费金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.OrderStatus">
+            <summary>
+            订单状态（-1订单取消0待付款1已付款/正常）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.CancelUserId">
+            <summary>
+            作废操作人
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.CancelDate">
+            <summary>
+            作废时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.CancelRemark">
+            <summary>
+            作废原因
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.CreatorId">
+            <summary>
+            创建人Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.CreatorName">
+            <summary>
+            创建人姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.InSchoolId">
+            <summary>
+            转入校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.OutSchoolId">
+            <summary>
+            转出校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.Remark">
+            <summary>
+            转校原因
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.OutDate">
+            <summary>
+            转出日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.ReceiptStatus">
+            <summary>
+            票据情况 1未开发票2发票齐全3发票遗失
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.TransFromBalance">
+            <summary>
+            从余额转出多少金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.TotalRefundLessonCount">
+            <summary>
+            退课总课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeSchooolOrder.TotalUseLessonCount">
+            <summary>
+            实际上课总课次
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewLeaveClassDetail">
+            <summary>
+            报班退费明细
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.RefundOrderId">
+            <summary>
+            退费订单主键
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.OrderNo">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.StudentNo">
+            <summary>
+            学号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.LinkMobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.Amount">
+            <summary>
+            实退金额
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.RefundType">
+            <summary>
+            退费方式
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.OrderStatus">
+            <summary>
+            票据状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewLeaveClassDetail.OrderRefundTime">
+            <summary>
+            订单退费时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblTimAdjustLesson">
+            <summary>
+            调整课次业务表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.AdjustLessonId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.SchoolId">
+            <summary>
+            校区ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.BatchNo">
+            <summary>
+            批次号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.FromLessonId">
+            <summary>
+            源课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.FromTeacherId">
+            <summary>
+            源老师
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.ToTeacherId">
+            <summary>
+            新老师
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.StudentId">
+            <summary>
+            上课学生
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.ClassRoomId">
+            <summary>
+            上课教室
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.ClassId">
+            <summary>
+            上课班级
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.SchoolTimeId">
+            <summary>
+            上课时间段ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.ClassBeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.ClassEndTime">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.BusinessType">
+            <summary>
+            业务类型 3补课 5补课周补课 6调课 7插班补课 8老师代课 9全校上课日期调整 10班级上课时间调整
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.Remark">
+            <summary>
+            备注说明
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.Status">
+            <summary>
+            状态 （1正常 -1无效）
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimAdjustLesson.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblTimChangeClass">
+            <summary>
+            转班表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.ChangeClassId">
+            <summary>
+            主健(转班表)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.EnrollOrderItemId">
+            <summary>
+            所属报名订单课程
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.OutClassId">
+            <summary>
+            转出班级
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.InClassId">
+            <summary>
+            转入班级
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.InDate">
+            <summary>
+            转入日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.OutDate">
+            <summary>
+            转出时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.ClassTimes">
+            <summary>
+            转入课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.Remark">
+            <summary>
+            转班原因
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimChangeClass.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblTimClassTime">
+            <summary>
+            班级课程表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimClassTime.ClassTimeId">
+            <summary>
+            主健 班级上课时间课表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimClassTime.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimClassTime.ClassId">
+            <summary>
+            班级主健
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimClassTime.SchoolTimeId">
+            <summary>
+            上课时间段主健
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimClassTime.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblTimLesson">
+            <summary>
+            课次基础信息表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.LessonId">
+            <summary>
+            主健(课次基础信息表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.EnrollOrderItemId">
+            <summary>
+            所属报名项
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.ClassBeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.ClassEndTime">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.ClassBeginDate">
+            <summary>
+            上课时间,日期格式
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.ClassEndDate">
+            <summary>
+            下课时间,日期格式
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.TermId">
+            <summary>
+            学期ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.ClassId">
+            <summary>
+            上课班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.CourseLevelId">
+            <summary>
+            课程级别ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.ClassRoomId">
+            <summary>
+            教室ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.TeacherId">
+            <summary>
+            上课老师ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.LessonType">
+            <summary>
+            课次类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.LessonCount">
+            <summary>
+            占用课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.BusinessType">
+            <summary>
+            业务类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.BusinessId">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.Status">
+            <summary>
+            课次最终状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLesson.UpdateTime">
+            <summary>
+            最后更新时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblTimLessonProcess">
+            <summary>
+            课次变更记录表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.LessonProcessId">
+            <summary>
+            主健(课次变更记录表)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.RootRawLessonId">
+            <summary>
+            根源课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.RawLessonId">
+            <summary>
+            源课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.LessonId">
+            <summary>
+            课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.ProcessStatus">
+            <summary>
+            处理状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.BusinessType">
+            <summary>
+            业务类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.BusinessId">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.ProcessTime">
+            <summary>
+            处理时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.Remark">
+            <summary>
+            备注说明
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonProcess.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblTimLessonStudent">
+            <summary>
+            课次基础信息表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.LessonStudentId">
+            <summary>
+            主健(课次基础信息表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.SchoolId">
+            <summary>
+            校区ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.LessonId">
+            <summary>
+            课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.AttendStatus">
+            <summary>
+            考勤状态(0正常签到 1补签 2请假)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.AdjustType">
+            <summary>
+            该字段为冗余字段，TblTimReplenishLesson,1已经安排补课2已安排调课,
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.ReplenishCode">
+            <summary>
+            考勤补签码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.AttendUserType">
+            <summary>
+            签到人员类型 1老师9财务
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.AttendDate">
+            <summary>
+            考勤时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonStudent.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblTimLessonTeacher">
+            <summary>
+            老师上课时间表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonTeacher.LessonTeacherId">
+            <summary>
+            主健(老师上课时间表)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonTeacher.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonTeacher.TeacherId">
+            <summary>
+            老师ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonTeacher.ClassId">
+            <summary>
+            上课班级
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonTeacher.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonTeacher.ClassTimeBegin">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonTeacher.ClassTimeEnd">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonTeacher.AttendStatus">
+            <summary>
+            考勤状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonTeacher.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLessonTeacher.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblTimLifeClass">
+            <summary>
+            校区写生排课表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.LifeClassId">
+            <summary>
+            主健(校区写生排课表)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.TermId">
+            <summary>
+            学期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.LifeClassCode">
+            <summary>
+            写生课代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.Title">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.Place">
+            <summary>
+            写生地点
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.TeacherId">
+            <summary>
+            上课教师
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.ClassBeginTime">
+            <summary>
+            上课开始时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.ClassEndTime">
+            <summary>
+            上课结束时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.UseLessonCount">
+            <summary>
+            消耗课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimLifeClass.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblTimMakeLesson">
+            <summary>
+            排课表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimMakeLesson.MakeLessonId">
+            <summary>
+            主健(排课表)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimMakeLesson.EnrollOrderItemId">
+            <summary>
+            报名订单明细ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimMakeLesson.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimMakeLesson.ClassId">
+            <summary>
+            上课班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimMakeLesson.ClassTimes">
+            <summary>
+            排课课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimMakeLesson.IsConfirm">
+            <summary>
+            是否确认排课
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimMakeLesson.FirstClassTime">
+            <summary>
+            首次上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimMakeLesson.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.TblTimReplenishLesson">
+            <summary>
+            补课信息表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.ReplenishLessonId">
+            <summary>
+            主健
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.SchoolId">
+            <summary>
+            校区ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.LessonId">
+            <summary>
+            课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.RootLessonId">
+            <summary>
+            根课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.ParentLessonId">
+            <summary>
+            考勤状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.AttendStatus">
+            <summary>
+            考勤状态  1正常签到2补签到3请假
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.AdjustType">
+            <summary>
+            1已经安排补课2已安排调课,
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.AttendDate">
+            <summary>
+            考勤时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.ReplenishCode">
+            <summary>
+            考勤补签码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.UpdateTime">
+            <summary>
+            最后更新时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.TblTimReplenishLesson.AttendUserType">
+            <summary>
+            签到人员类型 1老师 9财务
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewCancelMakeLesson">
+            <summary>
+            撤销排课视图类
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.LessonId">
+            <summary>
+            主健(课次基础信息表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.ClassBeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.ClassEndTime">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.TermId">
+            <summary>
+            学期ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.ClassId">
+            <summary>
+            上课班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.ClassNo">
+            <summary>
+            上课班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.CourseName">
+            <summary>
+            课程名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.TeacherId">
+            <summary>
+            上课老师ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.BusinessType">
+            <summary>
+            业务类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.BusinessId">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.Status">
+            <summary>
+            课次最终状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.LessonStudentId">
+            <summary>
+            主健(课次基础信息表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCancelMakeLesson.AttendStatus">
+            <summary>
+            考勤状态(0正常签到 1补签 2请假)
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewChangeClassTime">
+            <summary>
+            上课时间变化统计
+            <para>作    者：zhiwei.Tang</para>
+            <para>创建时间：2019-03-22</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeClassTime.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeClassTime.NewClassDate">
+            <summary>
+            新上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeClassTime.NewClassBeginTime">
+            <summary>
+            新上课开始时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeClassTime.NewClassEndTime">
+            <summary>
+            新上课结束时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeClassTime.OldClassDate">
+            <summary>
+            旧上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeClassTime.OldClassBeginTime">
+            <summary>
+            旧上课开始时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewChangeClassTime.OldClassEndTime">
+            <summary>
+            旧上课结束时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewClassTeacherDate">
+            <summary>
+             班级老师上课时间
+             <para>作    者：zhiwei.Tang</para>
+             <para>创建时间：2019-03-21</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewClassTeacherDate.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewClassTeacherDate.TeacherId">
+            <summary>
+            老师Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewClassTeacherDate.ClassDate">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewCompleteStudentAttendance">
+            <summary>
+            完整的学生考勤(包括正常/补课/调课的考勤)
+            <para>作    者：zhiwei.Tang</para>
+            <para>创建时间：2019-03-15</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.LessonId">
+            <summary>
+            主健(课次基础信息表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.EnrollOrderItemId">
+            <summary>
+            所属报名项
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.ClassBeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.ClassEndTime">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.TermId">
+            <summary>
+            学期ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.ClassId">
+            <summary>
+            上课班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.CourseLevelId">
+            <summary>
+            课程级别ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.ClassRoomId">
+            <summary>
+            教室ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.TeacherId">
+            <summary>
+            上课老师ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.LessonType">
+            <summary>
+            课次类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.LessonCount">
+            <summary>
+            占用课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.Id">
+            <summary>
+            TblTimReplenishLesson/TblTimLessonStudent 的主键
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.AttendStatus">
+            <summary>
+            考勤状态(0正常签到 1补签 2请假)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.AdjustType">
+            <summary>
+            该字段为冗余字段，TblTimReplenishLesson,1已经安排补课2已安排调课,
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.ReplenishCode">
+            <summary>
+            考勤补签码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.AttendUserType">
+            <summary>
+            签到人员类型 1老师9财务
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.AttendDate">
+            <summary>
+            考勤时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.TblType">
+            <summary>
+            1=TblTimLessonStudent
+            2=TblTimReplenishLesson
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewCompleteStudentAttendance.BusinessId">
+            <summary>
+            业务ID 比如写生课主键ID
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewStudentAttendance">
+            <summary>
+            学生考勤实体类
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.LessonId">
+            <summary>
+            学生课次Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.StudentLessonId">
+            <summary>
+            学生考勤课程Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ClassBeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ClassEndTime">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ClassBeginDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ClassEndDate">
+            <summary>
+            下课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.LessonType">
+            <summary>
+            课程类型1常规课2写生课
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ClassLessonCount">
+            <summary>
+            报名课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.LessonCount">
+            <summary>
+            耗用课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.AttendUserType">
+            <summary>
+            签到人员类型1老师9财务
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.TeacherId">
+            <summary>
+            考勤老师Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ClassTeacherId">
+            <summary>
+            班级老师Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.CourseId">
+            <summary>
+            课程Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ClassName">
+            <summary>
+            班级名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ClassNo">
+            <summary>
+            班级代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.RoomNo">
+            <summary>
+            上课地点
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.AttendStatus">
+            <summary>
+            考勤状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.LessonStatus">
+            <summary>
+            课程状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.AdjustType">
+            <summary>
+            补课/调课类型0常规课1已经安排补课2已安排调课,
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.AttendDate">
+            <summary>
+            考勤时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.BusinessType">
+            <summary>
+            课程业务类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentAttendance.ProcessStatus">
+            <summary>
+            课程处理状态
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewStudentReplenishLesson">
+            <summary>
+            K信-学生补课/调课安排列表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentReplenishLesson.RowId">
+            <summary>
+            序号Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentReplenishLesson.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentReplenishLesson.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentReplenishLesson.ClassTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentReplenishLesson.TeacherId">
+            <summary>
+            老师Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentReplenishLesson.CourseId">
+            <summary>
+            课程Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentReplenishLesson.ClassRoomId">
+            <summary>
+            教室ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentReplenishLesson.Type">
+            <summary>
+            1=缺勤 2=请假 3=未开课
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewStudentScanCodeAttend">
+            <summary>
+            学生扫码考勤
+            <para>作    者：zhiwei.Tang</para>
+            <para>创建时间：2019-03-06</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.AttendStatus">
+            <summary>
+            考勤状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.AdjustType">
+            <summary>
+            调整状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.AttendDate">
+            <summary>
+            考勤时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.LessonId">
+            <summary>
+            课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.TblSource">
+            <summary>
+            1=TblTimLessonStudent表 2=TblTimReplenishLesson 表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.ClassId">
+            <summary>
+            班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.TeacherId">
+            <summary>
+            上课老师Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.ClassDate">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.ClassBeginTime">
+            <summary>
+            上课开始时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.ClassEndTime">
+            <summary>
+            上课结束时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.SchoolId">
+            <summary>
+            校区ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.LessonType">
+            <summary>
+            业务类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.BusinessId">
+            <summary>
+            业务ID 扫码暂时用到写生课
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewStudentScanCodeAttend.CourseId">
+            <summary>
+            课程Id
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewTeacherClassDate">
+            <summary>
+            老师上课日期
+            <para>作    者：zhiwei.Tang</para>
+            <para>创建时间：2019-03-11</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTeacherClassDate.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTeacherClassDate.Mark">
+            <summary>
+            标记 是否有学生未考勤
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewTimAttendLesson">
+            <summary>
+            描述：考勤的考勤信息
+            <para>作者：瞿琦</para>
+            <para>创建时间：2019-3-12</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimAttendLesson.LessonId">
+            <summary>
+            课次Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimAttendLesson.TeacherId">
+            <summary>
+            老师Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimAttendLesson.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimAttendLesson.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimAttendLesson.ClassBeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimAttendLesson.ClassEndTime">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimAttendLesson.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewTimLifeClassStudent">
+            <summary>
+            班级学生人数实体类
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClassStudent.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClassStudent.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClassStudent.TermId">
+            <summary>
+            学期Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClassStudent.PersonNumber">
+            <summary>
+            报名人数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClassStudent.ClassNo">
+            <summary>
+            班级代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClassStudent.WeekTimes">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewTimeLessonClass">
+            <summary>
+            学期班级学生实体
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimeLessonClass.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimeLessonClass.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimeLessonClass.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimeLessonClass.TermId">
+            <summary>
+            学期Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimeLessonClass.EnrollOrderItemId">
+            <summary>
+            报名项Id
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewTimLessonStudent">
+            <summary>
+            学生课次表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.LessonId">
+            <summary>
+            主健(课次基础信息表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.EnrollOrderItemId">
+            <summary>
+            所属报名项
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.ClassBeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.ClassEndTime">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.TermId">
+            <summary>
+            学期ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.ClassId">
+            <summary>
+            上课班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.CourseLevelId">
+            <summary>
+            课程级别ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.ClassRoomId">
+            <summary>
+            教室ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.TeacherId">
+            <summary>
+            上课老师ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.LessonType">
+            <summary>
+            课次类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.LessonCount">
+            <summary>
+            占用课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.BusinessType">
+            <summary>
+            业务类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.BusinessId">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.Status">
+            <summary>
+            课次最终状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.LessonStudentId">
+            <summary>
+            主健(课次基础信息表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.AttendStatus">
+            <summary>
+            考勤状态(1正常 2请假)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.AdjustType">
+            <summary>
+            1已经安排补课2已安排调课3已经安排补课周补课 4补签未确认5补签已确认
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.AttendDate">
+            <summary>
+            考勤时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLessonStudent.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewTimLifeClass">
+            <summary>
+            写生课的学生列表
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.LessonId">
+            <summary>
+            主健(课次基础信息表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.EnrollOrderItemId">
+            <summary>
+            所属报名项
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.StudentName">
+            <summary>
+            学生名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.Birthday">
+            <summary>
+            出生年月
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.IDType">
+            <summary>
+            1身份证 2护照 3港澳通行证 4台胞证
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.IDNumber">
+            <summary>
+            证件号码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.ContactPersonMobile">
+            <summary>
+            监护人手机号
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.TermId">
+            <summary>
+            学期ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.ClassId">
+            <summary>
+            上课班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.ClassNo">
+            <summary>
+            班级代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.ClassRoomId">
+            <summary>
+            教室ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.TeacherId">
+            <summary>
+            上课老师ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.LessonType">
+            <summary>
+            课次类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.LessonCount">
+            <summary>
+            占用课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.BusinessType">
+            <summary>
+            业务类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.BusinessId">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.Status">
+            <summary>
+            课次最终状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimLifeClass.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewTimReplenishLessonStudent">
+            <summary>
+            学生调整之后的课次表(补课、调课)
+            <para>作    者：zhiwei.Tang</para>
+            <para>创建时间：2019-03-11</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.LessonId">
+            <summary>
+            主健(课次基础信息表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.EnrollOrderItemId">
+            <summary>
+            所属报名项
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.ClassBeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.ClassEndTime">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.TermId">
+            <summary>
+            学期ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.ClassId">
+            <summary>
+            上课班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.CourseId">
+            <summary>
+            课程ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.CourseLevelId">
+            <summary>
+            课程级别ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.ClassRoomId">
+            <summary>
+            教室ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.TeacherId">
+            <summary>
+            上课老师ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.LessonType">
+            <summary>
+            课次类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.LessonCount">
+            <summary>
+            占用课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.BusinessType">
+            <summary>
+            业务类型
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.BusinessId">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.Status">
+            <summary>
+            课次最终状态
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.LessonStudentId">
+            <summary>
+            主健(课次基础信息表)课次ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.AttendStatus">
+            <summary>
+            考勤状态(1正常 2请假)
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.AdjustType">
+            <summary>
+            1已经安排补课2已安排调课3已经安排补课周补课 4补签未确认5补签已确认
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.AttendDate">
+            <summary>
+            考勤时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.RootLessonId">
+            <summary>
+            根课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.ParentLessonId">
+            <summary>
+            上级课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimReplenishLessonStudent.ReplenishCreateTime">
+            <summary>
+            调整课次表行数据的创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewTimStudentStudyRecord">
+            <summary>
+            学生学习记录
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.EnrollOrderItemId">
+            <summary>
+            报名明细Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.ClassNo">
+            <summary>
+            班级代码
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.ClassDate">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.TeacherId">
+            <summary>
+            教师Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.ArrangedClassTimes">
+            <summary>
+            排课课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.AttendedClassTimes">
+            <summary>
+            已上课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.RemainingClassTimes">
+            <summary>
+            剩余课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.CourseName">
+            <summary>
+            课程名称
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.ClassTimes">
+            <summary>
+            报名课次
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.TermTypeId">
+            <summary>
+            学期类型Id
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.TermName">
+            <summary>
+            学期
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTimStudentStudyRecord.RoomNo">
+            <summary>
+            上课教室
+            </summary>
+        </member>
+        <member name="T:AMS.Storage.Models.ViewTotalClassStudentAbnormalState">
+            <summary>
+            统计学生考勤异常
+            <para>作    者：zhiwei.Tang</para>
+            <para>创建时间：2019-03-08</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTotalClassStudentAbnormalState.Total">
+            <summary>
+            统计数
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTotalClassStudentAbnormalState.ClassId">
+            <summary>
+            班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Storage.Models.ViewTotalClassStudentAbnormalState.LessonType">
+            <summary>
+            课次类型 1=常规课 2=写生课
+            </summary>
+        </member>
+        <member name="T:AMS.Models.ViewStudent">
+            <summary>
+            学生实体
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.StudentId">
+            <summary>
+            主健(TblCstStudent学生信息)
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.SchoolId">
+            <summary>
+            校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.StudentNo">
+            <summary>
+            学号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.HeadFaceUrl">
+            <summary>
+            学生头像
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.Sex">
+            <summary>
+            性别(1男2女)
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.Birthday">
+            <summary>
+            出生年月
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.LinkMobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.ContactPersonMobile">
+            <summary>
+            监护人手机号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.StudyStatus">
+            <summary>
+            学生状态编号（1在读2休学3流失）
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.RemindClassTimes">
+            <summary>
+            剩余课次
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewStudent.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:AMS.Models.ViewDepositOrder">
+            <summary>
+            订金列表
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.DepositOrderId">
+            <summary>
+            订金主键
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.CreateTime">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.OrderNo">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.Mobile">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.Amount">
+            <summary>
+            实收金额
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.PayType">
+            <summary>
+            付款方式（1刷卡 2现金 3转账 4微信 5支付宝 9其他）
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.UsesType">
+            <summary>
+            订金用途（1预报名2游学营定金3写生定金）
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.PayeeId">
+            <summary>
+            收银人编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.Payee">
+            <summary>
+            收银人名称
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewDepositOrder.OrderStatus">
+            <summary> 
+            -1订单取消, 0待付款,1已付款/正常 10 已完成
+            </summary>
+        </member>
+        <member name="T:AMS.Models.ViewLeaveSchoolOrder">
+            <summary>
+            描述：休学订单信息列表
+            <para>作者：瞿琦</para>
+            <para>创建时间：2019-3-6</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewLeaveSchoolOrder.RefundOrderId">
+            <summary>
+            退费订单表主键
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewLeaveSchoolOrder.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewLeaveSchoolOrder.StudentNo">
+            <summary>
+            学号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewLeaveSchoolOrder.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewLeaveSchoolOrder.CreateTime">
+            <summary>
+            提交日期
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewLeaveSchoolOrder.LeaveTime">
+            <summary>
+            休学日期
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewLeaveSchoolOrder.ResumeTime">
+            <summary>
+            复课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewLeaveSchoolOrder.TotalRefundLessonCount">
+            <summary>
+            休学课次
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewLeaveSchoolOrder.Amount">
+            <summary>
+            存入金额（退费金额）
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewLeaveSchoolOrder.Reason">
+            <summary>
+            休学原因
+            </summary>
+        </member>
+        <member name="T:AMS.Models.ViewOdrEnrollOrder">
+            <summary>
+            报名订单
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.EnrollOrderId">
+            <summary>
+            报名主键编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.SchoolId">
+            <summary>
+            校区编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.CreateTime">
+            <summary>
+            收款日期
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.OrderNo">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.OrderNewType">
+            <summary>
+            新生/老生
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.StudentId">
+            <summary>
+            学生编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.ContactPersonMobile">
+            <summary>
+            监护人手机号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.PayAmount">
+            <summary>
+            付款总额（实收金额）
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.PayTypeId">
+            <summary>
+            收款方式
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.CreateName">
+            <summary>
+            收银员
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.OrderStatusId">
+            <summary>
+            单据状态
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.UseBalance">
+            <summary>
+            使用余额
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOdrEnrollOrder.TotalTradeAmount">
+            <summary>
+            付款总额
+            </summary>
+        </member>
+        <member name="T:AMS.Models.ViewOrderObsoleteMonth">
+            <summary>
+            报名作废月
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.EnrollOrderId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.CreateTime">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.OrderNo">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.StudentId">
+            <summary>
+            学生ID
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.ContactPersonMobile">
+            <summary>
+            监护人手机号码
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.TotalTradeAmount">
+            <summary>
+            实收金额
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.UseBalance">
+            <summary>
+            余额
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.PayAmount">
+            <summary>
+            交易总额
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.PayType">
+            <summary>
+            付款方式（1刷卡 2现金 3转账 4微信 5支付宝 9其他）
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.PayeeId">
+            <summary>
+            收银人编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.Payee">
+            <summary>
+            收银人名称
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.OrderStatus">
+            <summary> 
+            -1订单取消, 0待付款,1已付款/正常 10 已完成
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewOrderObsoleteMonth.SchoolId">
+            <summary>
+            校区编号
+            </summary>
+        </member>
+        <member name="T:AMS.Models.ViewClassLesson">
+            <summary>
+            家校互联－老师要上课的班级考勤列表
+            <para>作    者：zhiwei.Tang</para>
+            <para>创建时间：2019-03-08</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewClassLesson.ClassDate">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewClassLesson.ClassId">
+            <summary>
+            班级ID
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewClassLesson.ClassName">
+            <summary>
+            班级名称
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewClassLesson.ClassTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewClassLesson.ClassRoom">
+            <summary>
+            教室
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewClassLesson.LessonType">
+            <summary>
+            课次类型 1：常规课  2：写生课
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewClassLesson.ClassNo">
+            <summary>
+            班级代码
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewClassLesson.TeacherId">
+            <summary>
+            老师ID
+            </summary>
+        </member>
+        <member name="T:AMS.Models.ViewTeacherNoAttendLesson">
+            <summary>
+            描述：老师未上课课次信息
+            <para>作者：瞿琦</para>
+            <para>创建时间：2019-3-7</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTeacherNoAttendLesson.ClassId">
+            <summary>
+            班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTeacherNoAttendLesson.ClassNo">
+            <summary>
+            班级代码
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTeacherNoAttendLesson.TeacherId">
+            <summary>
+            老师Id
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTeacherNoAttendLesson.ClassDate">
+            <summary>
+            上课日期
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTeacherNoAttendLesson.ClassTime">
+            <summary>
+            上课时间段
+            </summary>
+        </member>
+        <member name="T:AMS.Models.ViewTimAdjustLesson">
+            <summary>
+            补课周补课时间
+            <para>作    者：Huang GaoLiang </para>
+            <para>创建时间：2019-03-08</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimAdjustLesson.AdjustLessonId">
+            <summary>
+            主键编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimAdjustLesson.ClassId">
+            <summary>
+            班级编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimAdjustLesson.StudentId">
+            <summary>
+            学生编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimAdjustLesson.ClassRoomId">
+            <summary>
+            教室编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimAdjustLesson.LessonId">
+            <summary>
+            课次编号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimAdjustLesson.ClassDate">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimAdjustLesson.ClassBeginTime">
+            <summary>
+            上课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimAdjustLesson.ClassEndTime">
+            <summary>
+            下课时间
+            </summary>
+        </member>
+        <member name="T:AMS.Models.ViewTimChangeClass">
+            <summary>
+            描述：转班明细信息列表
+            <para>作者:瞿琦</para>
+            <para>创建时间：2019-3-6</para>
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.SchoolId">
+            <summary>
+            校区Id
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.StudentId">
+            <summary>
+            学生Id
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.StudentNo">
+            <summary>
+            学号
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.StudentName">
+            <summary>
+            学生姓名
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.EnrollTime">
+            <summary>
+            报名时间
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.TotalTradeAmount">
+            <summary>
+            课程实收价
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.EnrollClassTimes">
+            <summary>
+            报名课次
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.TermTypeId">
+            <summary>
+            学期类型Id
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.ChangeClassSubmitTime">
+            <summary>
+            转班日期
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.OutClassId">
+            <summary>
+            转出班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.OutDate">
+            <summary>
+            停课时间
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.ChangeClassTimes">
+            <summary>
+            转班课次
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.InClassId">
+            <summary>
+            转入班级Id
+            </summary>
+        </member>
+        <member name="P:AMS.Models.ViewTimChangeClass.InDate">
+            <summary>
+            转入班级时间
+            </summary>
+        </member>
+        <member name="T:YMM.Storage.Models.TblAutCouponRule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.AutCouponRuleId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.CouponRuleId">
+            <summary>
+            优惠ID
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.AuditId">
+            <summary>
+            所属审核
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.SchoolId">
+            <summary>
+            所属校区
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.CouponRuleName">
+            <summary>
+            优惠名称
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.CouponType">
+            <summary>
+            优惠类型
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.FullAmount">
+            <summary>
+            满多少
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.CouponAmount">
+            <summary>
+            优惠额度
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.MaxQuota">
+            <summary>
+            名额限制
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.BeginDate">
+            <summary>
+            优惠起始日期
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.EndDate">
+            <summary>
+            优惠截止日期
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.Remark">
+            <summary>
+            优惠原因
+            </summary>
+        </member>
+        <member name="P:YMM.Storage.Models.TblAutCouponRule.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+    </members>
+</doc>

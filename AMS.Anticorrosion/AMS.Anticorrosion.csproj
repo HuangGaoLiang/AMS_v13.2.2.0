@@ -1,0 +1,94 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\bin\Release\netcoreapp2.1\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin\Debug</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="HRS\AutoMapper\**" />
+    <EmbeddedResource Remove="HRS\AutoMapper\**" />
+    <None Remove="HRS\AutoMapper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="HRS\Service\PersonalService.cs" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <Folder Include="HRS\Config\" />
+    <Folder Include="HRS\Result\" />
+    <Folder Include="ACS\" />
+    <Folder Include="JDW\Config\" />
+    <Folder Include="JDW\Dto\Request\" />
+    <Folder Include="JDW\Dto\Response\" />
+    <Folder Include="JDW\Result\" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AMS.Core\AMS.Core.csproj" />
+    <ProjectReference Include="..\AMS.Dto\AMS.Dto.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BDP1.SDK">
+      <HintPath>..\..\DLL\BDP1.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="BDP1.Storage">
+      <HintPath>..\..\DLL\BDP1.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="FP3.Core">
+      <HintPath>..\..\DLL\FP3.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="JDW.SDK">
+      <HintPath>..\..\DLL\JDW.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Cache">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Config">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Exception">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Exception.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Log">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Logic">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Public">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Public.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Platform.Storage">
+      <HintPath>..\..\DLL\Jerrisoft.Platform.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Jerrisoft.Token">
+      <HintPath>..\..\DLL\Jerrisoft.Token.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\11.0.2\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="YMM.HRS.SDK">
+      <HintPath>..\..\DLL\YMM.HRS.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="YMM.HRS.Storage">
+      <HintPath>..\..\DLL\YMM.HRS.Storage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

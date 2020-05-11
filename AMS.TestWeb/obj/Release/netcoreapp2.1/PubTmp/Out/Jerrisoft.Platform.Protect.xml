@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jerrisoft.Platform.Protect</name>
+    </assembly>
+    <members>
+        <member name="T:Jerrisoft.Platform.Protect.AfterProtectModular">
+            <summary>
+            防护模块
+            </summary>
+            <remarks>
+            调用示例
+             
+            </remarks> 
+        </member>
+        <member name="P:Jerrisoft.Platform.Protect.AfterProtectModular._token">
+            <summary>
+            创建访问Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Protect.AfterProtectModular.DoPost``1(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Jerrisoft.Platform.Protect.CharSetEnum,System.String)">
+            <summary>
+            执行HTTP POST请求。
+            </summary>
+            <param name="url">请求地址</param>
+            <param name="parameters">请求参数</param>
+            <param name="charset">编码字符集</param>
+            <param name="tokenKey">token变量名称：例如为"token"|"imtoken"默认为"token"</param>
+            <returns>HTTP响应</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Protect.AfterProtectModular.DoGet``1(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Jerrisoft.Platform.Protect.CharSetEnum,System.String)">
+            <summary>
+            执行HTTP GET请求。
+            </summary>
+            <param name="url">请求地址</param>
+            <param name="parameters">请求参数</param>
+            <param name="charset">编码字符集</param>
+            <param name="tokenKey">token变量名称：例如为"token"|"imtoken"默认为"token"</param>
+            <returns>HTTP响应</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Protect.BaseProtect.DoPost(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,Jerrisoft.Platform.Protect.CharSetEnum,System.String)">
+            <summary>
+            执行HTTP POST请求。
+            </summary>
+            <param name="url">请求地址</param>
+            <param name="parameters">请求参数</param>
+            <param name="charset">编码字符集</param>
+            <param name="tokenKey">token变量名称：例如为"token"|"imtoken"默认为"token"</param>
+            <returns>HTTP响应</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Protect.BaseProtect.DoGet(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,Jerrisoft.Platform.Protect.CharSetEnum,System.String)">
+            <summary>
+            执行HTTP GET请求。
+            </summary>
+            <param name="url">请求地址</param>
+            <param name="parameters">请求参数</param>
+            <param name="charset">编码字符集</param>
+            <param name="tokenKey">token变量名称：例如为"token"|"imtoken"默认为"token"</param>
+            <returns>HTTP响应</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Protect.BaseProtect.GetWebRequest(System.String,System.String)">
+            <summary>
+            获取Web请求
+            </summary>
+            <param name="url"></param>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Protect.BaseProtect.GetResponseAsString(System.Net.HttpWebResponse,System.Text.Encoding)">
+            <summary>
+            把响应流转换为文本。
+            </summary>
+            <param name="rsp">响应流对象</param>
+            <param name="encoding">编码方式</param>
+            <returns>响应文本</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Protect.BaseProtect.BuildQuery(System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <summary>
+            组装普通文本请求参数。
+            </summary>
+            <param name="parameters">Key-Value形式请求参数字典</param>
+            <returns>URL编码后的请求数据</returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Protect.CharSetEnum">
+            <summary>
+            执行post请求时的内CharSet容类型
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Protect.ResultDataDto`1">
+            <summary>
+            返回数据
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Jerrisoft.Platform.Protect.ResultDataDto`1.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Protect.ResultDataDto`1.Msg">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Protect.ResultDataDto`1.Data">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Protect.ProtectModular">
+            <summary>
+            防护模块
+            </summary>
+            <remarks>
+            调用示例
+             
+            </remarks> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Protect.ProtectModular.GetResult``1(Jerrisoft.Platform.Protect.ResultDataDto{``0})">
+            <summary>
+            获取请求返回的信息
+            </summary>
+            <typeparam name="T">指定的类型</typeparam>
+            <param name="result">结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Protect.ProtectModular.DoPost``1(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Jerrisoft.Platform.Protect.CharSetEnum,System.String)">
+            <summary>
+            执行HTTP POST请求。
+            </summary>
+            <param name="url">请求地址</param>
+            <param name="parameters">请求参数</param>
+            <param name="charset">编码字符集</param>
+            <param name="tokenKey">token变量名称：例如为"token"|"imtoken"默认为"token"</param>
+            <returns>HTTP响应</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Protect.ProtectModular.DoGet``1(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Jerrisoft.Platform.Protect.CharSetEnum,System.String)">
+            <summary>
+            执行HTTP GET请求。
+            </summary>
+            <param name="url">请求地址</param>
+            <param name="parameters">请求参数</param>
+            <param name="charset">编码字符集</param>
+            <param name="tokenKey">token变量名称：例如为"token"|"imtoken"默认为"token"</param>
+            <returns>HTTP响应</returns>
+        </member>
+    </members>
+</doc>

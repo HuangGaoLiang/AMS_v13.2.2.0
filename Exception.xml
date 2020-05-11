@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Exceptions id="0x22">
+  <Model id="0">
+    <Exception id="1" message="未找到数据" />
+    <Exception id="2" message="参数错误" />
+    <Exception id="3" message="校区核对错误" />
+    <Exception id="4" message="找不到校区" />
+    <Exception id="5" message="请联系系统管理员配置【校区学期类型】" />
+    <Exception id="6" message="扫码考勤时间范围配置错误" />
+    <Exception id="7" message="无效二维码" />
+  </Model>
+  <!-- 基础资料配置模块-->
+  <Model id="1">
+    <Exception id="1" message="此教室已存在该班级" />
+    <Exception id="2" message="请输入学期和星期" />
+    <Exception id="3" message="学期编号不能为空" />
+    <Exception id="4" message="您输入的数据有误，请重新输入" />
+    <Exception id="5" message="您输入的时间有误，输入时间段必须为60分钟或者90分钟" />
+    <Exception id="6" message="时间不能交叉" />
+    <Exception id="7" message="上课时间段编号不能为空" />
+    <Exception id="8" message="该时间段已排课，不可删除" />
+    <Exception id="9" message="校区编号为空" />
+    <Exception id="10" message="本学期已被占用，不可删除。" />
+    <Exception id="11" message="课程级别编号不能为空" />
+    <Exception id="12" message="系统中没有此课程级别" />
+    <Exception id="13" message="课程级别代码不能为空" />
+    <Exception id="14" message="课程级别名称（中文）不能为空" />
+    <Exception id="15" message="课程级别名称（英文）不能为空" />
+    <Exception id="16" message="系统中已经存在该课程级别，不能重复添加" />
+    <Exception id="17" message="删除失败" />
+    <Exception id="18" message="本级别已被使用，不可删除" />
+    <Exception id="19" message="课程编号不能为空" />
+    <Exception id="20" message="班级已使用，不可删除" />
+    <Exception id="21" message="未找到班级信息" />
+    <Exception id="22" message="未找到课程信息" />
+  </Model>
+  <!-- 课程模块-->
+  <Model id="2">
+    <Exception id="1" message="课程信息录入校验参数出现重复" />
+    <Exception id="2" message="年龄不允许交叉" />
+    <Exception id="3" message="本课程已被使用，不可删除" />
+    <Exception id="4" message="请完善课程级别选项" />
+    <Exception id="5" message="课表正在审核中，不可操作" />
+    <Exception id="6" message="找不到授权校区" />
+    <Exception id="7" message="已有班级排课数据，不可复制" />
+    <Exception id="8" message="被复制的学期未进行排课" />
+    <Exception id="9" message="课表正在审核中，不可复制" />
+    <Exception id="10" message="教师上课时间冲突" />
+    <Exception id="11" message="年龄段范围值不符合规则" />
+    <Exception id="12" message="转出班级课次有误" />
+    <Exception id="13" message="系统不存在该写生课信息" />
+    <Exception id="14" message="该学期已结束，不可取消" />
+    <Exception id="15" message="主题为空，不可保存" />
+    <Exception id="16" message="写生地点为空，不可保存" />
+    <Exception id="17" message="上课教师未选择，不可保存" />
+    <Exception id="18" message="上课开始时间为空，不可保存" />
+    <Exception id="19" message="上课结束时间为空，不可保存" />
+    <Exception id="20" message="消耗课次未选择，不可保存" />
+    <Exception id="21" message="上课开始时间不能小于今天，不可保存" />
+    <Exception id="22" message="上课结束日期不能小于上课开始日期，不可保存" />
+    <Exception id="23" message="学期未选择，不可保存" />
+    <Exception id="24" message="学期不可修改" />
+    <Exception id="25" message="消耗课次不可修改" />
+    <Exception id="26" message="主题最多可输入25个字" />
+    <Exception id="27" message="写生地址最多可输入25个字" />
+    <Exception id="28" message="系统不存在该报名订单课程明细信息" />
+    <Exception id="29" message="请选择学生进行写生排课" />
+    <Exception id="30" message="实际转出课次不能为0" />
+    <Exception id="31" message="转入班级课次不足，请调整上课日期或选择其他班级" />
+    <Exception id="32" message="班级上课时间冲突" />
+    <Exception id="33" message="此报名课程状态错误,不能进行此操作(作废、转校、休学)" />
+    <Exception id="34" message="写生课已取消" />
+    <Exception id="35" message="创建的课次为空" />
+    <Exception id="36" message="销毁的课次为空" />
+    <Exception id="37" message="未到考勤时间" />
+    <Exception id="38" message="考勤失败！家长未绑定家校互联" />
+    <Exception id="39" message="考勤失败！当前没有要上的课程" />
+    <Exception id="40" message="找不到该报名订单课程" />
+    <Exception id="41" message="学生考勤课表时间转换失败" />
+    <Exception id="42" message="老师代课保存失败" />
+    <Exception id="43" message="没有找到要调整的课次信息" />
+    <Exception id="44" message="找不到课次调整业务Id" />
+    <Exception id="46" message="该课程已考勤，不能撤销！" />
+    <Exception id="47" message="未找到该学生的补课信息" />
+    <Exception id="48" message="未找到该学生的课次信息" />
+    <Exception id="49" message="补签老师跟上课老师不一致" />
+    <Exception id="50" message="考勤状态已改变,请刷新获取" />
+    <Exception id="51" message="课程已结束不能请假" />
+    <Exception id="52" message="通知已失效，请联系您孩子的上课老师。谢谢！" />
+    <Exception id="53" message="您已确认，请勿重复提交！" />
+    <Exception id="54" message="学生上课时间冲突！" />
+    <Exception id="55" message="该课程已补课/调课，不可请假" />
+    <Exception id="56" message="该课程考勤状态已发生改变，不可请假" />
+    <Exception id="57" message="补课课次不能大于缺勤课次" />
+    <Exception id="58" message="课程已正常考勤,不能再进行补课" />
+    <Exception id="59" message="课程已被调整,不能再进行补课" />
+    <Exception id="60" message="未找到课次信息" />
+    <Exception id="61" message="调整日期不能小于当前日期" />
+    <Exception id="62" message="不能跨学期安排补课" />
+    <Exception id="63" message="安排补课的课次与原课次不一致" />
+    <Exception id="64" message="安排补课周补课时间有误" />
+    <Exception id="65" message="课程已正常考勤,不能再进行调课" />
+    <Exception id="66" message="课程已被调整,不能再进行调课" />
+    <Exception id="67" message="安排调课的课次与原课次不一致" />
+    <Exception id="68" message="不能跨学期安排调课" />
+    <Exception id="69" message="未绑定家校互联" />
+    <Exception id="70" message="上课未结束不能补签" />
+    <Exception id="71" message="转入班级时间段和课次信息调整时间段不一致" />
+  </Model>
+  <!-- 审核模块 -->
+  <Model id="3">
+    <Exception id="1" message="当前已存在审核数据" />
+    <Exception id="2" message="添加审核表数据失败" />
+    <Exception id="3" message="学期名称不能重复" />
+    <Exception id="4" message="学期编号不能为空" />
+    <Exception id="5" message="当前没有需要审核的校区排课" />
+    <Exception id="6" message="审核人编号不能为空" />
+    <Exception id="7" message="审核人名称不能为空" />
+    <Exception id="8" message="数据异常" />
+    <Exception id="9" message="审核人或审核人名称不能为空" />
+    <Exception id="10" message="没有需要审核的数据" />
+    <Exception id="11" message="单据已处理，请勿重复提交" />
+    <Exception id="12" message="当前数据已在审核中，不能删除" />
+    <Exception id="13" message="该审核单据类型不存在" />
+    <Exception id="14" message="审核单据类型不一致" />
+  </Model>
+  <!-- 报名模块-->
+  <Model id="4">
+    <Exception id="1" message="系统中已经存在此学生" />
+    <Exception id="2" message="监护人信息不能全部为空" />
+    <Exception id="3" message="报名总课次必须大于零" />
+    <Exception id="4" message="业绩归属人不能为空" />
+    <Exception id="5" message="至少选择一种付款方式" />
+    <Exception id="6" message="实收金额不正确" />
+    <Exception id="7" message="数据异常" />
+    <Exception id="8" message="未排课次不足" />
+    <Exception id="9" message="已排课" />
+    <Exception id="10" message="只能当天作废" />
+    <Exception id="11" message="只能当月作废" />
+    <Exception id="12" message="已作废、已退费、已休学、已转校或者已完成的订单不能再作废" />
+    <Exception id="13" message="排课的班级有误，请重新选择" />
+    <Exception id="14" message="请输入正确的付款金额" />
+    <Exception id="15" message="排课班级不能重复，请重新排课" />
+    <Exception id="16" message="支付金额不能小于0" />
+    <Exception id="17" message="余额不足" />
+    <Exception id="18" message="已作废的订单不能再作废" />
+    <Exception id="19" message="已完成的订单不能再作废" />
+    <Exception id="20" message="已退费的订单不能再作废" />
+    <Exception id="21" message="已休学的订单不能再作废" />
+    <Exception id="22" message="已转校的订单不能再作废" />
+  </Model>
+  <!-- 优惠券模块-->
+  <Model id="5">
+    <Exception id="1" message="该奖学金信息不存在" />
+    <Exception id="2" message="当前单据已在审核中" />
+    <Exception id="3" message="校区不能为空" />
+    <Exception id="4" message="添加校长奖学金失败" />
+    <Exception id="5" message="优惠券号重复" />
+    <Exception id="6" message="券号有误，请重新输入" />
+    <Exception id="7" message="学生Id不能为空" />
+    <Exception id="8" message="添加优惠券失败" />
+    <Exception id="9" message="修改赠与奖学金使用人数失败" />
+    <Exception id="10" message="券号已被使用" />
+    <Exception id="11" message="此时间段内已存在转介绍的优惠设置" />
+    <Exception id="12" message="此时间段内已存在待提交审核的转介绍的优惠设置" />
+    <Exception id="13" message="全免时不可选择多张优惠券" />
+    <Exception id="14" message="当前登录人不是流程提交人" />
+    <Exception id="15" message="该转介绍奖学金信息不存在" />
+    <Exception id="16" message="该满减奖学金信息不存在" />
+  </Model>
+  <!-- 资金交易模块-->
+  <Model id="7">
+    <Exception id="1" message="定金充值金额必须大于0" />
+    <Exception id="2" message="预报名定金最多可以输入2000元" />
+    <Exception id="3" message="游学营定金最多可输入4万元" />
+    <Exception id="4" message="请选择付款方式" />
+    <Exception id="5" message="数据异常" />
+    <Exception id="6" message="已交接数据不能再作废" />
+    <Exception id="7" message="已作废的数据不能再作废" />
+    <Exception id="8" message="余额不足，不能作废" />
+    <Exception id="9" message="未交接的订单才允许作废" />
+    <Exception id="10" message="交易中的订单才允许取消" />
+  </Model>
+  <!-- 客户模块-->
+  <Model id="8">
+    <Exception id="1" message="系统不存在该学生" />
+    <Exception id="2" message="监护人信息不能全部为空" />
+    <Exception id="3" message="密码不正确，请重新输入" />
+  </Model>
+  <!-- 订单模块 -->
+  <Model id="9">
+    <Exception id="1" message="系统不存在该退费订单" />
+    <Exception id="2" message="系统不存在该退班信息" />
+    <Exception id="3" message="系统不存在该退费订单的支付信息" />
+    <Exception id="4" message="系统不存在该学生转校课程" />
+    <Exception id="5" message="当前状态不能执行此操作" />
+    <Exception id="6" message="该订单状态不能交接" />
+    <Exception id="7" message="订单已交接" />
+    <Exception id="8" message="没有要休学的课程" />
+    <Exception id="9" message="同校不可互转" />
+    <Exception id="10" message="系统不存在该休学信息" />
+    <Exception id="11" message="转校至少要选择一个课程" />
+    <Exception id="12" message="转出课程错误" />
+    <Exception id="13" message="此单信息核对有误" />
+    <Exception id="14" message="请输入金额" />
+    <Exception id="15" message="转出余额不足" />
+    <Exception id="16" message="转校时间不能小于当天时间" />
+    <Exception id="17" message="转入校区不存在" />
+    <Exception id="18" message="没有可转校的课程" />
+    <Exception id="19" message="必须上传转校申请表" />
+    <Exception id="20" message="该订单课程已退班退费" />
+    <Exception id="21" message="系统不存在该招生专员的收款交接信息" />
+    <Exception id="22" message="找不到可退班的订单课程" />
+    <Exception id="23" message="该学生已经没有余额可退" />
+    <Exception id="24" message="销毁课次状态错误" />
+    <Exception id="25" message="订单已作废，不可核对" />
+    <Exception id="26" message="交接单发生变化，请重新交接" />
+  </Model>
+  <Model id="6">
+    <Exception id="1" message="验证码有误" />
+    <Exception id="2" message="手机号码在系统不存在" />
+    <Exception id="3" message="验证码发送过于频繁" />
+    <Exception id="4" message="OPENID获取失败" />
+    <Exception id="5" message="用户登陆已失效" />
+    <Exception id="6" message="微信号已被其他手机号绑定" />
+    <Exception id="7" message="用户信息数据解密失败" />
+    <Exception id="8" message="用户没有未授权信息访问" />
+  </Model>
+</Exceptions>
+

@@ -1,0 +1,10 @@
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\bin\Release\netcoreapp2.1\netcoreapp2.1\AMS.Anticorrosion.deps.json
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\bin\Release\netcoreapp2.1\netcoreapp2.1\AMS.Anticorrosion.dll
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\bin\Release\netcoreapp2.1\netcoreapp2.1\AMS.Anticorrosion.pdb
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Anticorrosion\obj\Release\netcoreapp2.1\AMS.Anticorrosion.csprojAssemblyReference.cache
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Anticorrosion\obj\Release\netcoreapp2.1\AMS.Anticorrosion.csproj.CoreCompileInputs.cache
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Anticorrosion\obj\Release\netcoreapp2.1\AMS.Anticorrosion.AssemblyInfoInputs.cache
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Anticorrosion\obj\Release\netcoreapp2.1\AMS.Anticorrosion.AssemblyInfo.cs
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Anticorrosion\obj\Release\netcoreapp2.1\AMS.Anticorrosion.csproj.CopyComplete
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Anticorrosion\obj\Release\netcoreapp2.1\AMS.Anticorrosion.dll
+D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Anticorrosion\obj\Release\netcoreapp2.1\AMS.Anticorrosion.pdb

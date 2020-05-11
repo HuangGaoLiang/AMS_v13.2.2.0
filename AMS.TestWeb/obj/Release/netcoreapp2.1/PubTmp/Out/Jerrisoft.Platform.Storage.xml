@@ -1,0 +1,755 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jerrisoft.Platform.Storage</name>
+    </assembly>
+    <members>
+        <member name="P:Jerrisoft.Platform.Storage.EFRepository.CurUser">
+            <summary>
+            当前用户信息
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Storage.EFRepository`2">
+             <summary>
+             仓储模块
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks> 
+        </member>
+        <member name="P:Jerrisoft.Platform.Storage.EFRepository`2.Context">
+            <summary>
+            数据上下文
+            </summary> 
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Load(System.Object)">
+            <summary>
+            根据主键进行查询
+            </summary>
+            <param name="primaryKey">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadTask(System.Object)">
+            <summary>
+            根据主键进行查询
+            </summary>
+            <param name="primaryKey">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Add(`1,System.Boolean)">
+            <summary>
+            增加一条记录
+            </summary>
+            <param name="entity">实体模型</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.AddTask(`1,System.Boolean)">
+            <summary>
+            增加一条记录(异步方式)
+            </summary>
+            <param name="entity">实体模型</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Update(`1,System.Boolean)">
+            <summary>
+            更新一条记录
+            </summary>
+            <param name="entity">实体模型</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.UpdateTask(`1,System.Boolean)">
+            <summary>
+            更新一条记录（异步方式）
+            </summary>
+            <param name="entity">实体模型</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Load(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Boolean)">
+            <summary>
+            通过Lambda表达式获取实体
+            </summary>
+            <param name="lambdaExpression">条件<code>m=>m.id==id</code></param>
+            <param name="isContinueToOperate">
+            是否继续对结果执行操作。若要继续执行操作（改、删），该值应为true，否则为false。
+            值为false，效率会更高。
+            </param>
+            <returns>实体对象</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadTask(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Boolean)">
+            <summary>
+            通过Lambda表达式获取实体（异步方式）
+            </summary>
+            <param name="lambdaExpression">条件<code>m=>m.id==id</code></param>
+            <param name="isContinueToOperate">
+            是否继续对结果执行操作。若要继续执行操作（改、删），该值应为true，否则为false。
+            值为false，效率会更高。
+            </param>
+            <returns>实体对象</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Delete(`1,System.Boolean)">
+            <summary>
+            删除一条记录
+            </summary>
+            <param name="entity">实体模型</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.DeleteTask(`1,System.Boolean)">
+            <summary>
+            删除一条记录（异步方式）
+            </summary>
+            <param name="entity">实体模型</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Add(System.Collections.Generic.List{`1},System.Boolean)">
+            <summary>
+            增加多条记录 【同一模型】
+            </summary>
+            <param name="entities">实体模型集合</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.AddTask(System.Collections.Generic.List{`1},System.Boolean)">
+            <summary>
+            增加多条记录 【同一模型】（异步方式）
+            </summary>
+            <param name="entities">实体模型集合</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Add``1(System.Collections.Generic.List{``0},System.Boolean)">
+            <summary>
+            增加多条记录 【独立模型】
+            </summary>
+            <param name="entities">实体模型集合</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.SaveTask``1(System.Collections.Generic.List{``0},System.Boolean)">
+            <summary>
+            增加多条记录 【独立模型】（异步方式）
+            </summary>
+            <param name="entities">实体模型集合</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Update(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`1,`1}})">
+            <summary>
+            更新多条记录 【同一模型】
+            </summary>
+            <param name="sourceLambda">需要修改的数据源。如，
+            <code>
+            Expression：m => m.UserName == "张三"。禁止使用<code>Expression：m=>true</code>
+            </code>。会根据该条件从主库中读取数据，得到的是一个对象！</param>
+            <param name="whereLambda">修改条件（将X字段内容Y改为内容Z）。如，
+            <para>
+            <code>Expression：m => new User { UserName = "张三三", NickName = "三三张" }</code>，将会把根据<paramref name="sourceLambda"/>查询出来的对象中的UserName改为“张三三”，NickName改为“三三张”
+            </para> 
+            </param>
+            <returns>true=成功，false=失败或未进行任何修改动作</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.UpdateTask(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`1,`1}})">
+            <summary>
+            更新多条记录 【同一模型】（异步方式）
+            </summary>
+            <param name="sourceLambda">需要修改的数据源。如，
+            <code>
+            Expression：m => m.UserName == "张三"。禁止使用<code>Expression：m=>true</code>
+            </code>。会根据该条件从主库中读取数据，得到的是一个对象！</param>
+            <param name="whereLambda">修改条件（将X字段内容Y改为内容Z）。如，
+            <para>
+            <code>Expression：m => new User { UserName = "张三三", NickName = "三三张" }</code>，将会把根据<paramref name="sourceLambda"/>查询出来的对象中的UserName改为“张三三”，NickName改为“三三张”
+            </para> 
+            </param>
+            <returns>true=成功，false=失败或未进行任何修改动作</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Delete(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})">
+            <summary>
+            删除一条或多条记录 【同一模型】
+            </summary>
+            <param name="whereLambda">删除条件。如，
+            <para>
+            <code>Expression：m=>true</code>，将会把根据<paramref name="whereLambda"/>查询出来的结果全部删除。
+            </para>
+            <para>
+            <code>Expression：m=>m.Scores!=100</code>，将会把根据<paramref name="whereLambda"/>查询出来的结果中，Scores字段不等于100的全部删除
+            </para>
+            </param>
+            <returns>true=成功，false=失败或未进行任何修改动作</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.DeleteTask(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})">
+            <summary>
+            删除一条或多条记录 【同一模型】（异步方式）
+            </summary>
+            <param name="sourceLambda">需要删除的数据源。如，
+            <code>
+            Expression：m => m.UserName == "张三"。禁止使用<code>Expression：m=>true</code>
+            </code>。会根据该条件从主库中读取数据！</param>
+            <param name="whereLambda">删除条件。如，
+            <para>
+            <code>Expression：m=>true</code>，将会把根据<paramref name="sourceLambda"/>查询出来的结果全部删除。
+            </para>
+            <para>
+            <code>Expression：m=>m.Scores!=100</code>，将会把根据<paramref name="sourceLambda"/>查询出来的结果中，Scores字段不等于100的全部删除
+            </para>
+            </param>
+            <returns>true=成功，false=失败或未进行任何修改动作</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadPageDynamicResult``1(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},Jerrisoft.Platform.Storage.PageExtend.QueryableOrderEntry{`1,``0},System.Int32,System.Int32)">
+            <summary>
+            分页
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <param name="whereLamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <param name="orderLamdbaExpression">排序<code>m=>m.id==id</code></param>
+            <param name="pageIndex">页码</param>
+            <param name="pageSizes">每页条数</param> 
+            <returns>PageExtend.PageDynamicResult</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadQueryable(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Boolean)">
+            <summary>
+            Lamda返回IQueryable集合，延时加载数据
+            </summary>
+            <param name="whereLamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <param name="isContinueToOperate">
+            是否继续对结果执行操作。若要继续执行操作（改、删），该值应为true，否则为false。
+            值为false，效率会更高。
+            </param>
+            <returns>IQueryable</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadQueryable">
+            <summary>
+            获取一个查询对象
+            caiyakang 20180605
+            </summary>
+            <returns>查询对象</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadList(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})">
+            <summary>
+            返回List<T/>集合,不采用延时加载
+            </summary>
+            <param name="whereLamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <returns>List</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadLisTask(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})">
+            <summary>
+            返回List<T/>集合,不采用延时加载（异步方式）
+            </summary>
+            <param name="whereLamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <returns>Task_List</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadQueryableBySql(System.String,System.Object[])">
+            <summary>
+            T-Sql方式：返回IQueryable<T/>集合
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="parameters">Parameters参数</param>
+            <returns>IQueryable</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadQueryableBySqlTask(System.String,System.Object[])">
+            <summary>
+            T-Sql方式：返回IQueryable<T/>集合（异步方式）
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="parameters">Parameters参数</param>
+            <returns>Task_IQueryable</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadListBySql(System.String,System.Object[])">
+            <summary>
+            T-Sql方式：返回List<T/>集合
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="parameters">Parameters参数</param>
+            <returns>List</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadListBySqlTask(System.String,System.Object[])">
+            <summary>
+            T-Sql方式：返回List<T/>集合（异步方式）
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="parameters">Parameters参数</param>
+            <returns>Task_List</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Load``3(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`1,``1}},System.Linq.Expressions.Expression{System.Func{`1,``2}},System.Boolean)">
+            <summary>
+            可指定返回结果、排序、查询条件的通用查询方法，返回实体对象集合
+            </summary>
+            <typeparam name="TEntities">实体对象</typeparam>
+            <typeparam name="TOrderBy">排序字段类型</typeparam>
+            <typeparam name="TResult">数据结果，与T一致</typeparam>
+            <param name="whereLambdaExpression">过滤条件，需要用到类型转换的需要提前处理与数据表一致的<code>m=>m.id==id</code></param>
+            <param name="orderbyLambdaExpression">排序字段<code>m=>m.id==id</code></param>
+            <param name="selectorLambdaExpression">返回结果（必须是模型中存在的字段）<code>m=>m.id==id</code></param>
+            <param name="isAsc">排序方向，true为正序false为倒序</param>
+            <returns>List</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.LoadTask``3(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`1,``1}},System.Linq.Expressions.Expression{System.Func{`1,``2}},System.Boolean)">
+            <summary>
+            可指定返回结果、排序、查询条件的通用查询方法，返回实体对象集合（异步方式）
+            </summary>
+            <typeparam name="TEntities">实体对象</typeparam>
+            <typeparam name="TOrderBy">排序字段类型</typeparam>
+            <typeparam name="TResult">数据结果，与T一致</typeparam>
+            <param name="whereLambdaExpression">过滤条件，需要用到类型转换的需要提前处理与数据表一致的<code>m=>m.id==id</code></param>
+            <param name="orderbyLambdaExpression">排序字段<code>m=>m.id==id</code></param>
+            <param name="selectorLambdaExpression">返回结果（必须是模型中存在的字段）<code>m=>m.id==id</code></param>
+            <param name="isAsc">排序方向，true为正序false为倒序</param>
+            <returns>实体集合</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.QueryObject``2(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`1,``1}},System.Func{System.Linq.IQueryable{`1},System.Collections.Generic.List{System.Object}},System.Boolean)">
+            <summary>
+            可指定返回结果、排序、查询条件的通用查询方法，返回Object对象集合
+            </summary>
+            <typeparam name="TEntiys">实体对象</typeparam>
+            <typeparam name="TOrderBy">排序字段类型</typeparam>
+            <param name="whereLambdaExpression">过滤条件，需要用到类型转换的需要提前处理与数据表一致的<code>m=>m.id==id</code></param>
+            <param name="orderbyLambdaExpression">排序字段<code>m=>m.id==id</code></param>
+            <param name="selectorLambdaExpression">返回结果（必须是模型中存在的字段）<code>m=>m.id==id</code></param>
+            <param name="isAsc">排序方向，true为正序false为倒序</param>
+            <returns>自定义实体集合</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.QueryObjectAsync``2(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`1,``1}},System.Func{System.Linq.IQueryable{`1},System.Collections.Generic.List{System.Object}},System.Boolean)">
+            <summary>
+            可指定返回结果、排序、查询条件的通用查询方法，返回Object对象集合（异步方式）
+            </summary>
+            <typeparam name="TEntiys">实体对象</typeparam>
+            <typeparam name="TOrderBy">排序字段类型</typeparam>
+            <param name="whereLambdaExpression">过滤条件，需要用到类型转换的需要提前处理与数据表一致的<code>m=>m.id==id</code></param>
+            <param name="orderbyLambdaExpression">排序字段<code>m=>m.id==id</code></param>
+            <param name="selectorLambdaExpression">返回结果（必须是模型中存在的字段）<code>m=>m.id==id</code></param>
+            <param name="isAsc">排序方向，true为正序false为倒序</param>
+            <returns>自定义实体集合</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.IsExist(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})">
+            <summary>
+            验证当前条件是否存在相同项（异步方式）
+            </summary>
+            <param name="lamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.IsExistAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})">
+            <summary>
+            验证当前条件是否存在相同项（异步方式）
+            </summary>
+            <param name="lamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.IsExist(System.String,System.Object[])">
+            <summary>
+            根据SQL验证实体对象是否存在（异步方式）
+            </summary>
+            <param name="sql">sql 脚本</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.IsExistAsync(System.String,System.Object[])">
+            <summary>
+            根据SQL验证实体对象是否存在（异步方式）
+            </summary>
+            <param name="sql">sql 脚本</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.AutoCreateSetValue``1(``0)">
+            <summary>
+            自动为 CreateUserId CreateUserName  CreateTime  赋值
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.AutoUpdateSetValue``1(``0)">
+            <summary>
+            自动为  UpdateUserId UpdateUserName UpdateTime 赋值
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.FindKeyName">
+            <summary>
+            根据实体类型获取主健名称
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.FindKeyValue(`1)">
+            <summary>
+            根据实体获取主健值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.FindEntity(`1)">
+            <summary>
+            根据主健找实体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.UpdateInternal(`1)">
+            <summary>
+            解决如下异常：
+            <example>
+            附加类型“Core.Member”的实体失败，因为相同类型的其他实体已具有相同的主键值。
+            在使用 "Attach" 方法或者将实体的状态设置为 "Unchanged" 或 "Modified" 时如果图形中的任何实体具有冲突键值，
+            则可能会发生上述行为。这可能是因为某些实体是新的并且尚未接收数据库生成的键值。在此情况下，
+            使用 "Add" 方法或者 "Added" 实体状态跟踪该图形，然后将非新实体的状态相应设置为 "Unchanged" 或 "Modified"。
+            </example>
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.SaveChanges">
+            <summary>
+            事物提交
+            </summary>
+            <returns>返回 -1，一般都出现了异常</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.SaveChangesAsync">
+            <summary>
+            事物提交。异步
+            </summary>
+            <returns>返回 -1，一般都出现了异常</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.EFRepository`2.Finalize">
+            <summary>
+            析构方法。类使用完毕后会执行该方法。
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Storage.PredicateBuilder">
+            <summary>
+            1：构造函数使用True时：单个AND有效，多个AND有效；单个OR无效，多个OR无效；混合时写在AND后的OR有效 
+            2：构造函数使用False时：单个AND无效，多个AND无效；单个OR有效，多个OR有效；混合时写在OR后面的AND有效
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Storage.RepositoryResult">
+            <summary>
+            DataRepository 返回数据
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Storage.RepositoryResult.Result.EntityIsNull">
+            <summary>
+            传入对象为null
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Storage.RepositoryResult.Result.Error">
+            <summary>
+            操作失败，请查询日志信息
+            </summary>
+        </member>
+        <member name="F:Jerrisoft.Platform.Storage.RepositoryResult.Result.NotOperated">
+            <summary>
+            没有进行任何操作
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.Load(System.Object)">
+            <summary>
+            根据主键进行查询
+            </summary>
+            <param name="primaryKey">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.LoadTask(System.Object)">
+            <summary>
+            根据主键进行查询
+            </summary>
+            <param name="primaryKey">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.Add(System.Collections.Generic.List{`0},System.Boolean)">
+            <summary>
+            增加多条记录 【同一模型】
+            </summary>
+            <param name="entities">实体模型集合</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.AddTask(System.Collections.Generic.List{`0},System.Boolean)">
+            <summary>
+            增加多条记录 【同一模型】（异步方式）
+            </summary>
+            <param name="entities">实体模型集合</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.Add``1(System.Collections.Generic.List{``0},System.Boolean)">
+            <summary>
+            增加多条记录 【独立模型】
+            </summary>
+            <param name="entities">实体模型集合</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.SaveTask``1(System.Collections.Generic.List{``0},System.Boolean)">
+            <summary>
+            增加多条记录 【独立模型】（异步方式）
+            </summary>
+            <param name="entities">实体模型集合</param>
+            <param name="isCommit">是否提交（默认自动提交，会执行SaveChanges()）</param>
+            <returns>true：操作成功  false：操作失败</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.Update(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,`0}})">
+            <summary>
+            更新多条记录 【同一模型】
+            </summary>
+            <param name="sourceLambda">需要修改的数据源。如，
+            <code>
+            Expression：m => m.UserName == "张三"。禁止使用<code>Expression：m=>true</code>
+            </code>。会根据该条件从主库中读取数据，得到的是一个对象！</param>
+            <param name="whereLambda">修改条件（将X字段内容Y改为内容Z）。如，
+            <para>
+            <code>Expression：m => new User { UserName = "张三三", NickName = "三三张" }</code>，将会把根据<paramref name="sourceLambda"/>查询出来的对象中的UserName改为“张三三”，NickName改为“三三张”
+            </para> 
+            </param>
+            <returns>true=成功，false=失败或未进行任何修改动作</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.UpdateTask(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,`0}})">
+            <summary>
+            更新多条记录 【同一模型】（异步方式）
+            </summary>
+            <param name="sourceLambda">需要修改的数据源。如，
+            <code>
+            Expression：m => m.UserName == "张三"。禁止使用<code>Expression：m=>true</code>
+            </code>。会根据该条件从主库中读取数据，得到的是一个对象！</param>
+            <param name="whereLambda">修改条件（将X字段内容Y改为内容Z）。如，
+            <para>
+            <code>Expression：m => new User { UserName = "张三三", NickName = "三三张" }</code>，将会把根据<paramref name="sourceLambda"/>查询出来的对象中的UserName改为“张三三”，NickName改为“三三张”
+            </para> 
+            </param>
+            <returns>true=成功，false=失败或未进行任何修改动作</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.Delete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            删除一条或多条记录 【同一模型】
+            </summary>
+            <param name="whereLambda">删除条件。如，
+            <para>
+            <code>Expression：m=>true</code>，将会把根据<paramref name="whereLambda"/>查询出来的结果全部删除。
+            </para>
+            <para>
+            <code>Expression：m=>m.Scores!=100</code>，将会把根据<paramref name="whereLambda"/>查询出来的结果中，Scores字段不等于100的全部删除
+            </para>
+            </param>
+            <returns>true=成功，false=失败或未进行任何修改动作</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.DeleteTask(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            删除一条或多条记录 【同一模型】（异步方式）
+            </summary>
+            <param name="sourceLambda">需要删除的数据源。如，
+            <code>
+            Expression：m => m.UserName == "张三"。禁止使用<code>Expression：m=>true</code>
+            </code>。会根据该条件从主库中读取数据！</param>
+            <param name="whereLambda">删除条件。如，
+            <para>
+            <code>Expression：m=>true</code>，将会把根据<paramref name="sourceLambda"/>查询出来的结果全部删除。
+            </para>
+            <para>
+            <code>Expression：m=>m.Scores!=100</code>，将会把根据<paramref name="sourceLambda"/>查询出来的结果中，Scores字段不等于100的全部删除
+            </para>
+            </param>
+            <returns>true=成功，false=失败或未进行任何修改动作</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.LoadPageDynamicResult``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},Jerrisoft.Platform.Storage.PageExtend.QueryableOrderEntry{`0,``0},System.Int32,System.Int32)">
+            <summary>
+            分页
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <param name="whereLamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <param name="orderLamdbaExpression">排序<code>m=>m.id==id</code></param>
+            <param name="pageIndex">页码</param>
+            <param name="pageSizes">每页条数</param> 
+            <returns>PageExtend.PageDynamicResult</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.LoadQueryable(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Boolean)">
+            <summary>
+            Lamda返回IQueryable集合，延时加载数据
+            </summary>
+            <param name="whereLamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <param name="isContinueToOperate">
+            是否继续对结果执行操作。若要继续执行操作（改、删），该值应为true，否则为false。
+            值为false，效率会更高。
+            </param>
+            <returns>IQueryable</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.LoadList(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            返回List<T/>集合,不采用延时加载
+            </summary>
+            <param name="whereLamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <returns>List</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.LoadLisTask(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            返回List<T/>集合,不采用延时加载（异步方式）
+            </summary>
+            <param name="whereLamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <returns>Task_List</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.LoadQueryableBySql(System.String,System.Object[])">
+            <summary>
+            T-Sql方式：返回IQueryable<T/>集合
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="parameters">Parameters参数</param>
+            <returns>IQueryable</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.LoadQueryableBySqlTask(System.String,System.Object[])">
+            <summary>
+            T-Sql方式：返回IQueryable<T/>集合（异步方式）
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="parameters">Parameters参数</param>
+            <returns>Task_IQueryable</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.LoadListBySql(System.String,System.Object[])">
+            <summary>
+            T-Sql方式：返回List<T/>集合
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="parameters">Parameters参数</param>
+            <returns>List</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.LoadListBySqlTask(System.String,System.Object[])">
+            <summary>
+            T-Sql方式：返回List<T/>集合（异步方式）
+            </summary>
+            <param name="sql">SQL语句</param>
+            <param name="parameters">Parameters参数</param>
+            <returns>Task_List</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.Load``3(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.Linq.Expressions.Expression{System.Func{`0,``2}},System.Boolean)">
+            <summary>
+            可指定返回结果、排序、查询条件的通用查询方法，返回实体对象集合
+            </summary>
+            <typeparam name="TEntities">实体对象</typeparam>
+            <typeparam name="TOrderBy">排序字段类型</typeparam>
+            <typeparam name="TResult">数据结果，与T一致</typeparam>
+            <param name="whereLambdaExpression">过滤条件，需要用到类型转换的需要提前处理与数据表一致的<code>m=>m.id==id</code></param>
+            <param name="orderbyLambdaExpression">排序字段<code>m=>m.id==id</code></param>
+            <param name="selectorLambdaExpression">返回结果（必须是模型中存在的字段）<code>m=>m.id==id</code></param>
+            <param name="isAsc">排序方向，true为正序false为倒序</param>
+            <returns>List</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.LoadTask``3(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.Linq.Expressions.Expression{System.Func{`0,``2}},System.Boolean)">
+            <summary>
+            可指定返回结果、排序、查询条件的通用查询方法，返回实体对象集合（异步方式）
+            </summary>
+            <typeparam name="TEntities">实体对象</typeparam>
+            <typeparam name="TOrderBy">排序字段类型</typeparam>
+            <typeparam name="TResult">数据结果，与T一致</typeparam>
+            <param name="whereLambdaExpression">过滤条件，需要用到类型转换的需要提前处理与数据表一致的<code>m=>m.id==id</code></param>
+            <param name="orderbyLambdaExpression">排序字段<code>m=>m.id==id</code></param>
+            <param name="selectorLambdaExpression">返回结果（必须是模型中存在的字段）<code>m=>m.id==id</code></param>
+            <param name="isAsc">排序方向，true为正序false为倒序</param>
+            <returns>实体集合</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.QueryObject``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.Func{System.Linq.IQueryable{`0},System.Collections.Generic.List{System.Object}},System.Boolean)">
+            <summary>
+            可指定返回结果、排序、查询条件的通用查询方法，返回Object对象集合
+            </summary>
+            <typeparam name="TEntiys">实体对象</typeparam>
+            <typeparam name="TOrderBy">排序字段类型</typeparam>
+            <param name="whereLambdaExpression">过滤条件，需要用到类型转换的需要提前处理与数据表一致的<code>m=>m.id==id</code></param>
+            <param name="orderbyLambdaExpression">排序字段<code>m=>m.id==id</code></param>
+            <param name="selectorLambdaExpression">返回结果（必须是模型中存在的字段）<code>m=>m.id==id</code></param>
+            <param name="isAsc">排序方向，true为正序false为倒序</param>
+            <returns>自定义实体集合</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.QueryObjectAsync``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.Func{System.Linq.IQueryable{`0},System.Collections.Generic.List{System.Object}},System.Boolean)">
+            <summary>
+            可指定返回结果、排序、查询条件的通用查询方法，返回Object对象集合（异步方式）
+            </summary>
+            <typeparam name="TEntiys">实体对象</typeparam>
+            <typeparam name="TOrderBy">排序字段类型</typeparam>
+            <param name="whereLambdaExpression">过滤条件，需要用到类型转换的需要提前处理与数据表一致的<code>m=>m.id==id</code></param>
+            <param name="orderbyLambdaExpression">排序字段<code>m=>m.id==id</code></param>
+            <param name="selectorLambdaExpression">返回结果（必须是模型中存在的字段）<code>m=>m.id==id</code></param>
+            <param name="isAsc">排序方向，true为正序false为倒序</param>
+            <returns>自定义实体集合</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.IsExist(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            验证当前条件是否存在相同项（异步方式）
+            </summary>
+            <param name="lamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.IsExistAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            验证当前条件是否存在相同项（异步方式）
+            </summary>
+            <param name="lamdbaExpression">条件<code>m=>m.id==id</code></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.IsExist(System.String,System.Object[])">
+            <summary>
+            根据SQL验证实体对象是否存在（异步方式）
+            </summary>
+            <param name="sql">sql 脚本</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Storage.IBaseRepository`1.IsExistAsync(System.String,System.Object[])">
+            <summary>
+            根据SQL验证实体对象是否存在（异步方式）
+            </summary>
+            <param name="sql">sql 脚本</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Storage.PageExtensions">
+             <summary>
+              
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>
+        </member>
+        <member name="T:Jerrisoft.Platform.Storage.PageExtensions.PageResult`1">
+            <summary>
+            分页返回数据
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Jerrisoft.Platform.Storage.PageExtensions.PageResult`1.TotalData">
+            <summary>
+            数据源数据总量
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Storage.PageExtensions.PageResult`1.CurrentPage">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Storage.PageExtensions.PageResult`1.PageSize">
+            <summary>
+            每页显示数据量
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Storage.PageExtensions.PageResult`1.TotalPage">
+            <summary>
+            数据源总页数
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Storage.StorageModular">
+             <summary>
+             仓储模块
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks> 
+        </member>
+    </members>
+</doc>

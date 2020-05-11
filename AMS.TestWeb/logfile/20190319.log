@@ -1,0 +1,164 @@
+﻿2019-03-19 20:37:39,356 线程ID:[9] 日志级别：DEBUG 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-19 08:37:39 338	[AMS.Storage.Repository	AMS.Storage.Repository.TblDatCourseRepository]	[Debug]	[执行SaveChanges() 出现了'DbUpdateException: 更新条目时出错。'异常信息：不能将值 NULL 插入列 'CompanyId'，表 'AMS.dbo.TblDatCourse'；列不允许有 Null 值。UPDATE 失败。
+语句已终止。An error occurred while updating the entries. See the inner exception for details.
+]
+
+2019-03-19 20:37:40,417 线程ID:[9] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-19 08:37:40 415	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLCCTUOEG9O moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.CourseController.Put (AMS.API)
+RequestParameter：courseId = 14082803993216000
+request = {"CourseType":0,"CourseCode":"01","ShortName":"早稻","CourseCnName":"早稻","CourseEnName":"zaodao","ClassCnName":"早稻工作室","ClassEnName":"zaodaogongzuoshi","CourseLevels":[{"CourseLevelId":14082802432410624,"SAge":1,"EAge":1,"Duration":60}]}
+
+
+                   ErrorMessage: An error occurred while updating the entries. See the inner exception for details.
+                   StackMessage:    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Jerrisoft.Platform.Storage.EFRepository`2.SaveChangesAsync() in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 1058
+   at Jerrisoft.Platform.Storage.EFRepository`2.UpdateTask(T entity, Boolean isCommit) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.Storage\EF\EFRepository.cs:line 171
+   at AMS.Service.CourseService.ModifyAsync(CourseAddRequest dto) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Datum\Course\CourseService.cs:line 434
+   at AMS.API.Controllers.Internal.CourseController.Put(Int64 courseId, CourseAddRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Datum\CourseController.cs:line 116
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-19 20:50:24,029 线程ID:[19] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-19 08:50:24 009	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLCD4I736F6 moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.CourseLevelController.Post (AMS.API)
+RequestParameter：request = {"CourseLevelId":0,"LevelCode":"07","LevelCnName":"无","LevelEnName":"D"}
+
+
+                   ErrorMessage: 课程级别代码"07"已存在
+                   StackMessage:    at AMS.Service.CourseLevelService.CheckAddOrUpdate(TblDatCourseLevel courseLevel, List`1 courseLevelList) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Datum\Course\CourseLevelService.cs:line 350
+   at AMS.Service.CourseLevelService.CourseLeaveVerification(CourseLevelAddRequest dto) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Datum\Course\CourseLevelService.cs:line 323
+   at AMS.Service.CourseLevelService.Add(CourseLevelAddRequest dto) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Datum\Course\CourseLevelService.cs:line 184
+   at AMS.API.Controllers.Internal.CourseLevelController.Post(CourseLevelAddRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Datum\CourseLevelController.cs:line 63
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-19 21:50:55,790 线程ID:[21] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-19 09:50:55 775	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLCE7CQB5FL moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.EnrollOrderController.Post (AMS.API)
+RequestParameter：request = {"StudentId":14138347548935168,"FirstClassTime":"2019-03-05T00:00:00","AchievementList":[{"PersonalId":"0423cba92f134546b5d24e534ab08743","Proportion":1.0}],"TotalClassTimes":24,"TotalTuitionFee":5640.0,"TotalMaterialFee":600.0,"TotalDiscountFee":0.0,"TotalScholarshipFee":0.0,"UseBalanceAmount":0.0,"PayAmount":6240.00,"PayType":2,"Remark":"","EnrollOrderItem":[{"EnrollType":1,"TermTypeId":13983659425720320,"Year":2019,"CourseId":14082804897563648,"CourseType":0,"CourseLevelId":14082802626216960,"Duration":60,"ClassTimes":24,"ClassScheduling":19,"ClassId":14169650775311360}],"EnrollDiscounts":[],"RecommendCouponRuleId":null,"FullCouponRulId":null}
+
+
+                   ErrorMessage: 排课的班级有误，请重新选择
+                   StackMessage:    at AMS.Service.EnrollOrderService.SignUpCheck(EnrollOrderRequest dto) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Orders\EnrollOrderService.cs:line 572
+   at AMS.Service.EnrollOrderService.Enrolling(EnrollOrderRequest dto, String userId, String userName, String companyId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Orders\EnrollOrderService.cs:line 103
+   at AMS.API.Controllers.Internal.EnrollOrderController.Post(EnrollOrderRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Orders\EnrollOrderController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-19 21:51:13,416 线程ID:[9] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-19 09:51:13 416	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLCE7CQB5FL moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.EnrollOrderController.Post (AMS.API)
+RequestParameter：request = {"StudentId":14138347548935168,"FirstClassTime":"2019-03-05T00:00:00","AchievementList":[{"PersonalId":"0423cba92f134546b5d24e534ab08743","Proportion":1.0}],"TotalClassTimes":24,"TotalTuitionFee":5640.0,"TotalMaterialFee":600.0,"TotalDiscountFee":0.0,"TotalScholarshipFee":0.0,"UseBalanceAmount":0.0,"PayAmount":6240.00,"PayType":2,"Remark":"","EnrollOrderItem":[{"EnrollType":1,"TermTypeId":13983659425720320,"Year":2019,"CourseId":14082804897563648,"CourseType":0,"CourseLevelId":14082802626216960,"Duration":60,"ClassTimes":24,"ClassScheduling":19,"ClassId":14169650775311360}],"EnrollDiscounts":[],"RecommendCouponRuleId":null,"FullCouponRulId":null}
+
+
+                   ErrorMessage: 排课的班级有误，请重新选择
+                   StackMessage:    at AMS.Service.EnrollOrderService.SignUpCheck(EnrollOrderRequest dto) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Orders\EnrollOrderService.cs:line 572
+   at AMS.Service.EnrollOrderService.Enrolling(EnrollOrderRequest dto, String userId, String userName, String companyId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Orders\EnrollOrderService.cs:line 103
+   at AMS.API.Controllers.Internal.EnrollOrderController.Post(EnrollOrderRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Orders\EnrollOrderController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-19 21:51:23,959 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-19 09:51:23 959	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLCE7CQB5FL moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.EnrollOrderController.Post (AMS.API)
+RequestParameter：request = {"StudentId":14138347548935168,"FirstClassTime":"2019-03-05T00:00:00","AchievementList":[{"PersonalId":"0423cba92f134546b5d24e534ab08743","Proportion":1.0}],"TotalClassTimes":24,"TotalTuitionFee":5640.0,"TotalMaterialFee":600.0,"TotalDiscountFee":0.0,"TotalScholarshipFee":0.0,"UseBalanceAmount":0.0,"PayAmount":6240.00,"PayType":2,"Remark":"","EnrollOrderItem":[{"EnrollType":1,"TermTypeId":13983659425720320,"Year":2019,"CourseId":14082804897563648,"CourseType":0,"CourseLevelId":14082802626216960,"Duration":60,"ClassTimes":24,"ClassScheduling":19,"ClassId":14169650775311360}],"EnrollDiscounts":[],"RecommendCouponRuleId":null,"FullCouponRulId":null}
+
+
+                   ErrorMessage: 排课的班级有误，请重新选择
+                   StackMessage:    at AMS.Service.EnrollOrderService.SignUpCheck(EnrollOrderRequest dto) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Orders\EnrollOrderService.cs:line 572
+   at AMS.Service.EnrollOrderService.Enrolling(EnrollOrderRequest dto, String userId, String userName, String companyId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Orders\EnrollOrderService.cs:line 103
+   at AMS.API.Controllers.Internal.EnrollOrderController.Post(EnrollOrderRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Orders\EnrollOrderController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-19 21:51:44,543 线程ID:[16] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-19 09:51:44 543	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLCE7CQB5FL moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.EnrollOrderController.Post (AMS.API)
+RequestParameter：request = {"StudentId":14138347548935168,"FirstClassTime":"2019-03-05T00:00:00","AchievementList":[{"PersonalId":"0423cba92f134546b5d24e534ab08743","Proportion":1.0}],"TotalClassTimes":24,"TotalTuitionFee":5640.0,"TotalMaterialFee":600.0,"TotalDiscountFee":0.0,"TotalScholarshipFee":0.0,"UseBalanceAmount":0.0,"PayAmount":6240.00,"PayType":2,"Remark":"","EnrollOrderItem":[{"EnrollType":1,"TermTypeId":13983659425720320,"Year":2019,"CourseId":14082804897563648,"CourseType":0,"CourseLevelId":14082802626216960,"Duration":60,"ClassTimes":24,"ClassScheduling":19,"ClassId":14169650775311360}],"EnrollDiscounts":[],"RecommendCouponRuleId":null,"FullCouponRulId":null}
+
+
+                   ErrorMessage: 排课的班级有误，请重新选择
+                   StackMessage:    at AMS.Service.EnrollOrderService.SignUpCheck(EnrollOrderRequest dto) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Orders\EnrollOrderService.cs:line 572
+   at AMS.Service.EnrollOrderService.Enrolling(EnrollOrderRequest dto, String userId, String userName, String companyId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Orders\EnrollOrderService.cs:line 103
+   at AMS.API.Controllers.Internal.EnrollOrderController.Post(EnrollOrderRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Orders\EnrollOrderController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+
+2019-03-19 21:52:27,020 线程ID:[8] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2019-03-19 09:52:27 020	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[TraceIdentifier: 0HLLCE7CQB5FL moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.EnrollOrderController.Post (AMS.API)
+RequestParameter：request = {"StudentId":14138347548935168,"FirstClassTime":"2019-03-05T00:00:00","AchievementList":[{"PersonalId":"0423cba92f134546b5d24e534ab08743","Proportion":1.0}],"TotalClassTimes":24,"TotalTuitionFee":5640.0,"TotalMaterialFee":600.0,"TotalDiscountFee":0.0,"TotalScholarshipFee":0.0,"UseBalanceAmount":0.0,"PayAmount":6240.00,"PayType":2,"Remark":"","EnrollOrderItem":[{"EnrollType":1,"TermTypeId":13983659425720320,"Year":2019,"CourseId":14082804897563648,"CourseType":0,"CourseLevelId":14082802626216960,"Duration":60,"ClassTimes":24,"ClassScheduling":19,"ClassId":14169650775311420}],"EnrollDiscounts":[],"RecommendCouponRuleId":null,"FullCouponRulId":null}
+
+
+                   ErrorMessage: 排课的班级有误，请重新选择
+                   StackMessage:    at AMS.Service.EnrollOrderService.SignUpCheck(EnrollOrderRequest dto) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Orders\EnrollOrderService.cs:line 572
+   at AMS.Service.EnrollOrderService.Enrolling(EnrollOrderRequest dto, String userId, String userName, String companyId) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.Service\Orders\EnrollOrderService.cs:line 103
+   at AMS.API.Controllers.Internal.EnrollOrderController.Post(EnrollOrderRequest request) in D:\huanggaoliang\新招生系统\trunk\2.软件代码\Develop\AMS_v13.2.2.0\API\AMS\AMS.API\Controllers\Orders\EnrollOrderController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]
+

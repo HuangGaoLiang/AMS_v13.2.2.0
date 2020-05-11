@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jerrisoft.Platform.Cache</name>
+    </assembly>
+    <members>
+        <member name="T:Jerrisoft.Platform.Cache.CacheException">
+             <summary>
+             
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>
+        </member>
+        <!-- 对于成员“T:Jerrisoft.Platform.Cache.CacheModular”忽略有格式错误的 XML 注释 -->
+        <member name="F:Jerrisoft.Platform.Cache.CacheModular._cacheObjCaches">
+            <summary>
+            数据缓存与读取集合对象
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.CacheModular.Get``1(System.Byte,System.String)">
+            <summary>
+            获取值
+            </summary>
+            <typeparam name="T">值类型</typeparam>
+            <param name="bussinessID">业务号</param>
+            <param name="key">Key</param>
+            <param name="db">索引库</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.CacheModular.Get(System.Byte,System.String)">
+            <summary>
+            获取值
+            </summary>
+            <typeparam name="T">值类型</typeparam>
+            <param name="bussinessID">业务号</param>
+            <param name="key">Key</param>
+            <param name="db">索引库</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.CacheModular.GetHash(System.Byte,System.String,System.String)">
+            <summary>
+            获取Hash值
+            </summary>
+            <param name="bussinessID">业务号</param>
+            <param name="key">key</param>
+            <param name="hashKey">hashKey</param>
+            <param name="db">索引库</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.CacheModular.GetHash(System.Byte,System.String,System.String[])">
+            <summary>
+            获取Hash值集合
+            </summary>
+            <param name="bussinessID">业务号</param>
+            <param name="key">key</param>
+            <param name="hashKey">hashKey</param>
+            <param name="db">索引库</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.CacheModular.Set``1(System.Byte,System.String,``0,System.TimeSpan)">
+            <summary>
+            设置值
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="bussinessID">业务号</param>
+            <param name="key">Key</param>
+            <param name="value">值</param>
+            <param name="timeout">超时时间</param>
+            <param name="db">索引库</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.CacheModular.Set``1(System.Byte,System.String,``0)">
+            <summary>
+            设置值
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="bussinessID">业务号</param>
+            <param name="key">Key</param>
+            <param name="value">值</param>
+            <param name="db">索引库</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.CacheModular.Delete(System.Byte,System.String)">
+            <summary>
+            删除值
+            </summary>
+            <param name="bussinessID">业务号</param>
+            <param name="key">Key</param>
+            <param name="db">索引库</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.CacheModular.ConnCache(System.Byte)">
+            <summary>
+            使用指定的业务号进行数据缓存与读取
+            </summary>
+            <param name="bussinessID">业务号</param>
+            <param name="db">索引库</param>
+            <returns>数据缓存与读取对象</returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Cache.KeyValueCache">
+            <summary>
+            缓存模块
+            </summary>
+            <remarks>
+            初始化示例
+            </remarks>
+        </member>
+        <member name="P:Jerrisoft.Platform.Cache.KeyValueCache._db">
+            <summary>
+            数据库
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Cache.KeyValueCache.CacheConnection">
+            
+            缓存数据库，数据库连接
+            
+        </member>
+        <member name="P:Jerrisoft.Platform.Cache.KeyValueCache.CacheRedis">
+            
+            缓存数据库
+            
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.StringSet(System.String,System.String)">
+            <summary>
+            单条存值
+            </summary>
+            <param name="key">key</param>
+            <param name="value">The value.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.StringSet(System.String,System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+            保存单个key value
+            </summary>
+            <param name="key">Redis Key</param>
+            <param name="value">保存的值</param>
+            <param name="expiry">过期时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.StringSet(System.Collections.Generic.KeyValuePair{StackExchange.Redis.RedisKey,StackExchange.Redis.RedisValue}[])">
+            <summary>
+            保存多个key value
+            </summary>
+            <param name="arr">key</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.StringSetMany(System.String[],System.String[])">
+            <summary>
+            批量存值
+            </summary>
+            <param name="keysStr">key</param>
+            <param name="valuesStr">The value.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.SetStringKey``1(System.String,``0,System.Nullable{System.TimeSpan})">
+            <summary>
+            保存一个对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.StringAppend(System.String,System.String)">
+            <summary>
+            追加值
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.GetStringKey(System.String)">
+            <summary>
+            获取单个key的值
+            </summary>
+            <param name="key">Redis Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.StringGet(System.String)">
+            <summary>
+            根据Key获取值
+            </summary>
+            <param name="key">键值</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.StringHashGet(System.String,System.String)">
+            <summary>
+            根据Key-Hashkey获取值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.StringHashGet(System.String,System.String[])">
+            <summary>
+            根据Key-Hashkey获取值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.GetStringKey(System.Collections.Generic.List{StackExchange.Redis.RedisKey})">
+            <summary>
+            获取多个Key
+            </summary>
+            <param name="listKey">Redis Key集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.StringGetMany(System.String[])">
+            <summary>
+            批量获取值
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.GetStringKey``1(System.String)">
+            <summary>
+            获取一个key的对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.KeyDelete(System.String)">
+            <summary>
+            删除单个key
+            </summary>
+            <param name="key">redis key</param>
+            <returns>是否删除成功</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.KeyDelete(System.String[])">
+            <summary>
+            删除多个key
+            </summary>
+            <param name="keys">rediskey</param>
+            <returns>成功删除的个数</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.KeyExists(System.String)">
+            <summary>
+            判断key是否存储
+            </summary>
+            <param name="key">redis key</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.KeyRename(System.String,System.String)">
+            <summary>
+            重新命名key
+            </summary>
+            <param name="key">就的redis key</param>
+            <param name="newKey">新的redis key</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.HaseDelete(StackExchange.Redis.RedisKey,StackExchange.Redis.RedisValue)">
+            <summary>
+            删除hasekey
+            </summary>
+            <param name="key"></param>
+            <param name="hashField"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.HashRemove(System.String,System.String)">
+            <summary>
+            移除hash中的某值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="dataKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.SetExpire(System.String,System.DateTime)">
+            <summary>
+            设置缓存过期
+            </summary>
+            <param name="key"></param>
+            <param name="datetime"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.ArrayToRedisValueArray(System.String[])">
+            <summary>
+            string数组类型转换成RedisValue数组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Cache.KeyValueCache.ArrayToRedisKeyArray(System.String[])">
+            <summary>
+            string数组类型转换成RedisKey数组
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

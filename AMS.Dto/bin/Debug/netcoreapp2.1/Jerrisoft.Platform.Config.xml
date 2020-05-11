@@ -1,0 +1,866 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jerrisoft.Platform.Config</name>
+    </assembly>
+    <members>
+        <member name="P:Jerrisoft.Platform.Config.BaseConfTree.ApiUrl">
+            <summary>
+            API 服务地址
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.BaseConfTree.EnvCode">
+            <summary>
+            环境,分为DEV,SIT,RELEASE
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.BaseConfTree.AppCode">
+            <summary>
+            应用标识
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.BaseConfTree.AppSecret">
+            <summary>
+            App访问密钥
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.ConfClient">
+            <summary>
+            客户端配置文件树
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ConfClient.Start">
+            <summary>
+            启用统一配置平台
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ConfClient.InitZookeeper">
+            <summary>
+            初始化Zookeeper服务器连接,并启用长连接和节点监听
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ConfClient.InitZkConnection">
+            <summary>
+            从服务端获取ZK服务器配置
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ConfClient.InitConfigData">
+            <summary>
+            加载所有配置文件
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.Configs.AliyunOssConfig">
+            <summary>
+            阿里云OSS存储配置
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.AliyunOssConfig.AccessKeyId">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.AliyunOssConfig.AccessKeySecret">
+            <summary>
+            密钥
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.AliyunOssConfig.BucketName">
+            <summary>
+            存储空间名
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.AliyunOssConfig.EndPoint">
+            <summary>
+            OSS地址
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.AliyunOssConfig.FilePrefix">
+            <summary>
+            存储文件前缀
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.AliyunOssConfig.ViewUrl">
+            <summary>
+            访问路径
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.AliyunOssConfig.ChunkSize">
+            <summary>
+            分片大小
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.Configs.ApiGatewayConfig">
+            <summary>
+            域名网关地址配置
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.ApiGatewayConfig.JurisdictionUrl">
+            <summary>
+            权限系统接口域名
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.ApiGatewayConfig.JerrsoftSystemUrl">
+            <summary>
+            管理平台接口Url
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.ApiGatewayConfig.FileManagerUrl">
+            <summary>
+            文件管理系统Url
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.ApiGatewayConfig.PcAppDownUrl">
+            <summary>
+            桌面版登录程序下载地址
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.ApiGatewayConfig.EnrollSystemApiUrl">
+            <summary>
+            招生系统接口Url地址
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.ApiGatewayConfig.UniversalInterfaceUrl">
+            <summary>
+            统一接口URL地址
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.Configs.ConfigManager">
+            <summary>
+            公用配置管理
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.ConfigManager.RedisConfig">
+            <summary>
+            Redis配置文件
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.ConfigManager.AliyunOssConfig">
+            <summary>
+            Redis配置文件
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.ConfigManager.ApiGatewayConfig">
+            <summary>
+            域名网关地址配置
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.Configs.RedisConfig">
+            <summary>
+            Redis配置文件
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.RedisConfig.Host">
+            <summary>
+            Redis主机名和端口号
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.RedisConfig.Password">
+            <summary>
+            Redis密码
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.Configs.RedisConfig.Database">
+            <summary>
+            Redis数据库名称
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.ConfReader">
+            <summary>
+            配置文件读取类
+            caiyakang 2018-07-12
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ConfReader.Get``1(System.String,System.String)">
+            <summary>
+            读取一个配置文件并转换成指定的类
+            </summary>
+            <typeparam name="TConfig">配置文件的类</typeparam>
+            <param name="name">配置文件名称,带扩展名.如app.json</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ConfReader.Get(System.String,System.String)">
+            <summary>
+            读取一个配置文件并转换成JObject
+            </summary>
+            <param name="name">配置文件名称,带扩展名.如app.json</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.ConfStore">
+            <summary>
+            配置文件存储类
+            caiyakang 2018-07-12
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ConfStore.Set(System.String,System.String)">
+            <summary>
+            设置配置文件到缓存
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ConfStore.Get(System.String)">
+            <summary>
+            从缓存中读取配置文件
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.ClientConfigManager">
+            <summary>
+            本文件为范例,
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ClientConfigManager.SysConfig">
+            <summary>
+            权限系统基础配置文件
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.IsReadWriteSeparation">
+            <summary>
+            是否开启 “读写分离”模式 true：开启  false：关闭
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.IsSingleStrategy">
+            <summary>
+            若开启“读写分离”模式，是开启“单一从库”还是“多个从库” true：单一从库 false：多个从库
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.Domain">
+            <summary>
+            Cookie域  ymm.hk
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.SmsSecretKey">
+            <summary>
+            短信KEY
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.SmsSecret">
+            <summary>
+            短信密钥
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.SmsSignature">
+            <summary>
+            短信签名
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.Startpass">
+            <summary>
+            初始密码
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.TokenTimestamp">
+            <summary>
+            Token生成过期时长 ，以小时为单位
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.Explain">
+            <summary>
+            白名单验证
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.AfterOnlyCode">
+            <summary>
+            售后服务组类 唯一编号
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.MscrmOnlyCode">
+            <summary>
+            实施工程师类 唯一编号
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.Fileprefix">
+            <summary>
+            FTP服务器域名
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.UserPic">
+            <summary>
+            用户默认头像地址
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.PublicKey">
+            <summary>
+            Token解密的密钥
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.ForbidPassword">
+            <summary>
+            禁止使用的密码
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.AuditorOnlyCode">
+            <summary>
+            审核人ID
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.AuditorName">
+            <summary>
+            审核人名称,必须和审核ID对应
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.AuditMsg">
+            <summary>
+            审核卡片文字配置
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.SubBillTypeAudit">
+            <summary>
+            用户提交审核的消息
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.SubBillTypeRoleAudit">
+            <summary>
+            角色提交审核的消息
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.SystemMenus">
+            <summary>
+            系统菜单
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.SkeeperQRUrl">
+            <summary>
+            登陆二维码地址
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.SkeeperQREffective">
+            <summary>
+            Skeeper登陆二维码有效时间
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.QRCodeLoginUrl">
+            <summary>
+            二维码自动登陆PC接口
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.UserPirUrlPrefix">
+            <summary>
+            用户头像地址前缀
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.OrgConfig">
+            <summary>
+            组织架构
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.TokenKey">
+            <summary>
+            新框架认证授权Key
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.InitializeUserAuthDefaultRoleName">
+            <summary>
+            初始化用户权限默认角色名称 【用户初始化默认角色】
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SysConfig.MessageServerUrl">
+            <summary>
+            单聊推送
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.TokenKey">
+            <summary>
+            新框架认证授权Key
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.TokenKey.PublicKey">
+            <summary>
+            公钥
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.TokenKey.PrivateKey">
+            <summary>
+            私钥
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.SubBillTypeUserAudit">
+            <summary>
+            用户提交审核的消息
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeUserAudit.UserAudit">
+            <summary>
+            提交所有授权
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeUserAudit.RoleAudit">
+            <summary>
+            角色审核
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeUserAudit.SchoolAudit">
+            <summary>
+            校区审核
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeUserAudit.CanLogToComputerAudit">
+            <summary>
+            可登录电脑审核
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeUserAudit.LoginSystem">
+            <summary>
+            可登录其它系统审核
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeUserAudit.ContactsAudit">
+            <summary>
+            通讯录审核
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeUserAudit.FileViewAudit">
+            <summary>
+            手机查看手机文件审核
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeUserAudit.SpecialPermissionsAudit">
+            <summary>
+            特殊权限审核
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.SubBillTypeRoleAudit">
+            <summary>
+            角色提交审核的消息
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeRoleAudit.RoleRemoveUserAudit">
+            <summary>
+            删除角色下的用户授权审核
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeRoleAudit.RoleModifyNameAudit">
+            <summary>
+            角色名称修改审核
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.SubBillTypeRoleAudit.RoleAudit">
+            <summary>
+            角色权限设置审核
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.AuditMsg">
+            <summary>
+            审核卡片文字配置
+            用户和角色通用
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.AuditMsg.SubmitReviewMsg">
+            <summary>
+            (会话标题)  提交审核消息:[权限设置审核链接]
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.AuditMsg.ExaminationPassedMsg">
+            <summary>
+            (会话标题) 审核通过消息:[权限设置审核链接]
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.AuditMsg.ReturnMsg">
+            <summary>
+            (会话标题) 审核不通过消息:[权限设置审核链接]
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.AuditMsg.SubmitReviewNotice">
+            <summary>
+            (卡片消息) 提交审核标题:权限设置审核-待审核
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.AuditMsg.ExaminationPassedNotice">
+            <summary>
+            (卡片消息) 审核通过标题:权限设置审核-同意授权
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.AuditMsg.ReturnNotice">
+            <summary>
+            (卡片消息) 审核不通过标题:退回原因
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.AuditMsg.Reviewed">
+            <summary>
+            (卡片消息) 权限设置审核-已审
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.OrgConfig">
+            <summary>
+            组织架构配置
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.OrgConfig.AreaCode">
+            <summary>
+            区域 =c03d29dd4e8540b7a3a3542c167d20aa
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.OrgConfig.YmmCode">
+            <summary>
+            YMM分校ID=0101120300
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.OrgConfig.CityCode">
+            <summary>
+            城市 =6C9ABB88D980F0174FF666687411A482
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.OrgConfig.DefaultRoot">
+            <summary>
+            默认节点=001
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.OrgConfig.ExtractNode">
+            <summary>
+            提取节点=0101
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.OrgConfig.SchoolExt">
+            <summary>
+            总校=总校
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.ZkConnectionDto">
+            <summary>
+            Zookeeper服务器连接信息
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZkConnectionDto.Host">
+            <summary>
+            主机地址=IP+端口,如127.0.0.1:2181
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZkConnectionDto.SessionTimeout">
+            <summary>
+            超时时间,以秒为单位
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZkConnectionDto.Alive">
+            <summary>
+            是否保持连接
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.ConfPath">
+            <summary>
+            Zookeeper上的配置文件路径相关
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ConfPath.GetEnvPath">
+            <summary>
+            获取环境的路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.ILoader">
+            <summary>
+            配置文件加载器
+            数据的路径固定为 YMM_Configs/AppCode/xxx.json
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.LocalLoader">
+            <summary>
+            本地文件加载器
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.LocalPath">
+            <summary>
+            本地保存的文件路径
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.LocalPath.GetLocalRootPath">
+            <summary>
+            获取本地保存文件的根路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.LocalPath.CreateLocalAppPath">
+            <summary>
+            创建本地项目配置路径
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.LocalPath.GetLocalAppPath">
+            <summary>
+            获取本地一个项目配置路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.ZookeeperLoader">
+            <summary>
+            配置文件加载器,从Zookeeper中加载配置文件
+            并启用节点数据变化监控
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperLoader.CleanConfPath">
+            <summary>
+            清除所有文件
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperLoader.LoadAll">
+            <summary>
+            加载所有配置文件
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperLoader.LoadFromApp(Jerrisoft.Platform.Config.LocalPath,System.String)">
+            <summary>
+            加载一个项目的配置文件
+            </summary>
+            <param name="appCode">项目路径</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperLoader.GetAllAppPath">
+            <summary>
+            获取所有APP的路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperLoader.LoadOne(Jerrisoft.Platform.Config.LocalPath,Jerrisoft.Platform.Config.ConfPath,System.String)">
+            <summary>
+            加载一个配置文件
+            </summary>
+            <param name="localPath">本地文件路径</param>
+            <param name="confPath">zk文件路径</param>
+            <param name="contentPath">文件路径</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperLoader.Storage(Jerrisoft.Platform.Config.LocalPath,Jerrisoft.Platform.Config.ConfPath,System.String,System.String)">
+            <summary>
+            数据存储,将数据保存到本地并作缓存
+            </summary>
+            <param name="localPath">本地文件路径</param>
+            <param name="confPath">zk文件路径</param>
+            <param name="contentPath">文件路径</param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.Log.Debug(System.String,System.String)">
+            向日志文件写入调试信息
+            @param className 类名
+            @param content 写入内容
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.Log.Info(System.String,System.String)">
+            向日志文件写入运行时信息
+            @param className 类名
+            @param content 写入内容
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.Log.Error(System.String,System.Exception)">
+            向日志文件写入出错信息
+            @param className 类名
+            @param content 写入内容
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.Log.Error(System.String,System.String)">
+            向日志文件写入出错信息
+            @param className 类名
+            @param content 写入内容
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.Log.WriteLog(System.String,System.String,System.String)">
+            实际的写日志操作
+            @param type 日志记录类型
+            @param className 类名
+            @param content 写入内容
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.NodeEntry">
+            <summary>
+            被监控的节点条目
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.NodeEntry.GetChildrenAsync(System.Boolean)">
+            <summary>
+            获取所有子节点数据
+            </summary>
+            <param name="watch"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.ReConnectPolicy">
+            <summary>
+            重连策略
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ReConnectPolicy.Reset">
+            <summary>
+            重置为0
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ReConnectPolicy.Wait">
+            <summary>
+            重连等待
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ReConnectPolicy.GetWaitSecond">
+            <summary>
+            获取等待时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.PolicyRules.MinTimes">
+            <summary>
+            最小次数
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.PolicyRules.MaxTimes">
+            <summary>
+            最大连接次数
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.PolicyRules.SleepSecond">
+            <summary>
+            休眠时间,以秒为单位
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.#ctor(System.String)">
+            <summary>
+            创建一个新的ZooKeeper客户端。
+            </summary>
+            <param name="connectionString">连接字符串。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="connectionString"/> 为空。</exception>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.#ctor(Jerrisoft.Platform.Config.ZookeeperClientOptions)">
+            <summary>
+            创建一个新的ZooKeeper客户端。
+            </summary>
+            <param name="options">客户端选项。</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.CreateZooKeeper">
+            <summary>
+            创建一个ZooKeeper连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.SubscribeDataChange(System.String)">
+            <summary>
+            订阅节点数据变更。
+            </summary>
+            <param name="path">节点路径。</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.RetryUntilConnected``1(System.Func{System.Threading.Tasks.Task{``0}})">
+            <summary>
+            重试直到zk连接上。
+            </summary>
+            <typeparam name="T">返回类型。</typeparam>
+            <param name="callable">执行的zk操作。</param>
+            <returns>执行结果。</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.WaitForRetry">
+            <summary>
+            等待直到zk连接成功，超时时间为zk选项中的操作超时时间配置值。
+            </summary>
+            <param name="client">zk客户端。</param>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.WaitUntilConnected(System.TimeSpan)">
+            <summary>
+            等待直到zk连接成功。
+            </summary>
+            <param name="client">zk客户端。</param>
+            <param name="timeout">最长等待时间。</param>
+            <returns>如果成功则返回true，否则返回false。</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.WaitForKeeperState(org.apache.zookeeper.Watcher.Event.KeeperState,System.TimeSpan)">
+            <summary>
+            等待zk连接到具体的某一个状态。
+            </summary>
+            <param name="states">希望达到的状态。</param>
+            <param name="timeout">最长等待时间。</param>
+            <returns>如果成功则返回true，否则返回false。</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.GetChildrenAsync(System.String)">
+            <summary>
+            获取指定节点下的所有子节点。
+            </summary>
+            <param name="path">节点路径。</param>
+            <returns>子节点集合。</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.GetDataStringAsync(System.String)">
+            <summary>
+            获取指定节点的数据。
+            </summary>
+            <param name="path">节点路径。</param>
+            <returns>节点数据。</returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClient.ReSubscribe">
+            <summary>
+            重新订阅节点数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.ZookeeperClientOptions">
+            <summary>
+            Zookeeper 的相关连接参数
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.ConnectionString">
+            <summary>
+            连接字符串。
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.ConnectionTimeout">
+            <summary>
+            等待ZooKeeper连接的时间。
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.OperatingTimeout">
+            <summary>
+            执行ZooKeeper操作的重试等待时间。
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.SessionTimeout">
+            <summary>
+            zookeeper会话超时时间。
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.ReadOnly">
+            <summary>
+            是否只读，默认为false。
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.SessionId">
+            <summary>
+            会话Id。
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.SessionPasswd">
+            <summary>
+            会话密码。
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.RetryIntervalMillisecond">
+            <summary>
+            超时重试时间
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.BasePath">
+            <summary>
+            基础路径，会在所有的zk操作节点路径上加入此基础路径。
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClientOptions.#ctor">
+            <summary>
+            创建一个新的ZooKeeper客户端选项。
+            </summary>
+            <remarks>
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.ConnectionTimeout"/> 为10秒。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.SessionTimeout"/> 为20秒。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.OperatingTimeout"/> 为60秒。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.ReadOnly"/> 为false。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.SessionId"/> 为0。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.SessionPasswd"/> 为null。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.BasePath"/> 为null。
+            </remarks>
+        </member>
+        <member name="M:Jerrisoft.Platform.Config.ZookeeperClientOptions.#ctor(System.String)">
+            <summary>
+            创建一个新的ZooKeeper客户端选项。
+            </summary>
+            <param name="connectionString">连接字符串。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="connectionString"/> 为空。</exception>
+            <remarks>
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.ConnectionTimeout"/> 为10秒。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.SessionTimeout"/> 为20秒。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.OperatingTimeout"/> 为60秒。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.ReadOnly"/> 为false。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.SessionId"/> 为0。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.SessionPasswd"/> 为null。
+            <see cref="P:Jerrisoft.Platform.Config.ZookeeperClientOptions.BasePath"/> 为null。
+            </remarks>
+        </member>
+        <member name="T:Jerrisoft.Platform.Config.DataChangeEventHandler">
+            <summary>
+            当数据发生变化的时候
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

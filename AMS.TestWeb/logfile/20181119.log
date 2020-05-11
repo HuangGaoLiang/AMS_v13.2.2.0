@@ -1,0 +1,16 @@
+﻿2018-11-19 17:23:36,964 线程ID:[7] 日志级别：ERROR 相关类：Jerrisoft.Platform.Log.Logs.ApplicationExceptionFilter property:[(null)] - 
+信息描述：
+2018-11-19 05:23:36 958	[Jerrisoft.Platform.API.Filter	Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute]	[Error]	[moduleId: 6 innerExceptionID: 4 message: BussinessId：34
+DisplayName：AMS.API.Controllers.Internal.MyTestController.Post (AMS.API)
+RequestParameter：request = {"StudentName":"string","Sex":0,"Birthday":"2018-11-19T09:23:30.146Z","HeadFaceUrl":"string","CurrentSchool":"string","AreaId":"string","HomeAddress":"string","IDType":1,"IDNumber":"string","LinkMobile":"string","LinkMail":"string","ContactPerson":[{"GuardianName":"string","Relationship":"string","Mobile":"string","Email":"string"}],"CustomerFrom":1,"ParentId":0}
+
+
+                   ErrorMessage: token为空
+                   StackMessage:    at Jerrisoft.Platform.IdentityClient.Filters.AuthenticationService.ValidateSsoUser() in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.IdentityClient\Filters\AuthenticationService.cs:line 46
+   at Jerrisoft.Platform.IdentityClient.Filters.SSOAuthorizeAttribute.OnActionExecuting(ActionExecutingContext context) in E:\wm平台\FP7\trunk\2.软件代码\Master\SK_FP7\Jerrisoft.Platform\Jerrisoft.Platform.IdentityClient\Filters\SSOAuthorizeAttribute.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() ]

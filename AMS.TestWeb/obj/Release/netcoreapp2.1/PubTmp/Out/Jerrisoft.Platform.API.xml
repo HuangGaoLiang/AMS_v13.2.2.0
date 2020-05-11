@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jerrisoft.Platform.API</name>
+    </assembly>
+    <members>
+        <member name="T:Jerrisoft.Platform.API.BaseController">
+            <summary>
+            
+            </summary>
+            <remarks>
+            调用示例
+            
+             
+            </remarks>   
+        </member>
+        <member name="P:Jerrisoft.Platform.API.BaseController.CurrentUser">
+            <summary>
+            当前用户唯一编号
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.BaseController.BussinessId">
+            <summary>
+            系统唯一编号
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.CommController.GetConfig(System.String,System.String)">
+            <summary>
+            获取配置文件
+            </summary>
+            <param name="systemCode"></param>
+            <param name="jsonName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.CommController.AddLog(Jerrisoft.Platform.API.LogDto)">
+            <summary>
+            前端log接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Jerrisoft.Platform.API.Filter.IgnoreJerrisoftResultFilterAttribute">
+            <summary>
+            忽略全局结果封装，用于兼容老版本接口返回类型
+            在Action方法添加特性  [TypeFilter(typeof(IgnoreJerrisoftResultFilterAttribute))]
+            可忽略全局的结果拼装实现自定义的返回的结果 
+            注：全局异常结果框架依旧会封装
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute">
+            <summary>
+            在当前项目中，Request 第二步 Filter,有异常，将无法执行ResultFilter
+            </summary> 
+        </member>
+        <member name="P:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ActionExecutingContext">
+            <summary>
+            ActionExecutingContext，来自OnActionExecuting(...)
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.WriteLogs(Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ApiInsideModel)">
+            <summary>
+            将异常信息写入文本
+            </summary>
+            <param name="model">ApiInsideModel</param>
+        </member>
+        <member name="T:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ExceptionModel">
+            <summary>
+            异常对象
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+             Action 准备返回，若有异常，会进入第二步。否则进入第三步。
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Action 进入之前
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.OnResultExecuted(Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext)">
+            <summary>
+            结果已经返回到客户端
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext)">
+            <summary>
+            结果准备返回到客户端
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ReflexGetMessages">
+            <summary>
+            通过反射获取用户唯一标示和模块标示
+            </summary> 
+        </member>
+        <member name="M:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.GetRequestParams">
+            <summary>
+            获取请求参数
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ApiInsideModel">
+            <summary>
+            内部实体
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ApiInsideModel.RequestParameter">
+            <summary>
+            请求参数
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ApiInsideModel.ErrorMessage">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ApiInsideModel.ErrorStackMessage">
+            <summary>
+            异常堆栈信息
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ApiInsideModel.DisplayName">
+            <summary>
+            调用action完整名称
+            如：Jerrisoft.Platform.Values.Get
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ApiInsideModel.BussinessId">
+            <summary>
+            模块/异常 唯一编号
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.Filter.JerrisoftFilterAttribute.ApiInsideModel.CurrentUserId">
+            <summary>
+            当前用户唯一标示
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.API.IStartupInit">
+            <summary>
+            Startup时初始化接口
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.IStartupInit.Order">
+            <summary>
+            排序号 根据排序号顺序执行
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.IStartupInit.IsAsync">
+            <summary>
+            是否异步执行 如不影响依赖的组件则可设置为异步，否则需同步执行
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.IStartupInit.Run">
+            <summary>
+            初始化执行方法
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.API.OperationRightAttribute">
+             <summary>
+             权限验证属性
+             </summary>
+             <remarks>
+             调用示例
+             
+             
+            
+             </remarks>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.OperationRightAttribute.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="rightCode">权限码</param>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.OperationRightAttribute.FunctionCode">
+            <summary>
+            功能码
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.OperationRightAttribute.RightCode">
+            <summary>
+            权限码
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.API.FunctionRightAttribute">
+            <summary>
+            功能权限验证属性
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.FunctionRightAttribute.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="rightCode">权限码</param>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.FunctionRightAttribute.RightCode">
+            <summary>
+            功能码
+            </summary>
+        </member>
+        <member name="T:Jerrisoft.Platform.API.WriteOperatrionLogAttribute">
+             <summary>
+             写操作日志属性
+             </summary>
+             <remarks>
+             调用示例
+             主要用于记录当前用户成功操作的，主要记录的内容有：
+             BussinessID\UserID\UserName\Key\Name\当前的参数值\数据时间
+             
+            
+             </remarks>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.WriteOperatrionLogAttribute.Name">
+            <summary>
+            操作日志名称
+            </summary>
+        </member>
+        <member name="P:Jerrisoft.Platform.API.WriteOperatrionLogAttribute.Key">
+            <summary>
+            用于查询的关键字
+            </summary>
+        </member>
+        <member name="M:Jerrisoft.Platform.API.WriteOperatrionLogAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            Action 之后处理记录日志
+            </summary>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>
